@@ -1,4 +1,8 @@
-#V2
+#V1.3
+1. 系统简介，Add 发行版，find命令，环境变量：export，source，profile，PATH变量，变量修改，让环境变量立即生效；
+2. 
+
+#V1.2
 
 1. 系统简介，Add：GNU，GPL Linux的版本，命令查找;
 2. 用户文件目录，Add:chgrp,权限解释，/etc，/bin；
@@ -10,7 +14,7 @@
 
 
 
-# V1
+# V1.1
 
 用户、文件、目录
 
