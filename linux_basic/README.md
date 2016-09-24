@@ -1,6 +1,8 @@
 #V1.3
-1. 系统简介，Add 发行版，find命令，环境变量：export，source，profile，PATH变量，变量修改，让环境变量立即生效；
-2. 
+1. 系统简介，Add：发行版，find命令，环境变量：export，source，profile，PATH变量，变量修改，让环境变量立即生效；
+2. vim编辑器，Add：多文件编辑，窗口拆分，全局参数设置，文档加密；
+3. 磁盘，Add：Ext2文件系统
+4. 
 
 #V1.2
 
