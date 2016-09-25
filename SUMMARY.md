@@ -15,4 +15,6 @@
     * [简介](Docker/简介.md)
     * [Ubuntu上安装Docker](Docker/ubuntu上安装docker.md)
     * [Getting Started](Docker/getting-started.md)
+    * [Dockerize Redis](Docker/dockerize-redis.md)
+    * [Dockerfile](Docker/dockerfile.md)
 
