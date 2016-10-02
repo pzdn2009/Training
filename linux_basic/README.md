@@ -2,7 +2,9 @@
 
 1. 系统简介，Add：POSIX、LSB、FHS，命令别名与历史命令；重启、关机命令；软件包管理；
 2. 用户文件目录，Add：w,who,last,lastlog；useradd，usermod，userdel，usermode -G，passwd；groupadd ,groupmod,groupdel；su；rm -i;mv -u；
-od，touch，ln，umask;gzip，gunzip
+od，touch，ln，umask;gzip，gunzip；
+3. Shell，Add：退出状态，测试；
+4. 
 
 # V1.3
 
