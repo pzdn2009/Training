@@ -151,3 +151,40 @@ docker run -t -i pzdn2009/sinatra:v2 /bin/bash #运行看一下
 docker tag 0fc48b937557 pzdn2009/sinatra:devel #重新标记
 docker push pzdn2009/sinatra #发布
 ```
+
+## 3.4 命名一个容器
+
+使用 --name进行重命名
+```
+docker run -d -P --name web training/webapp python app.py
+docker ps -l
+docker inspect web
+docker stop web
+docker rm web
+```
+
+## 3.5 简单网络管理
+
+**默认网络启动一个容器**
+```
+docker network ls #查看网络类型列表
+docker run -itd --name=networktest ubuntu #启动一个实例
+docker network inspect bridge #查看桥接的配置，可以看到Containers
+docker network disconnect bridge networktest #将一个容器从网络中移除
+```
+
+**创建自己的桥接网络**
+
+```
+docker network ls #查看原来的网络驱动列表
+docker network create -d bridge my-bridge-network #创建自己的网络，桥接方式
+docker network ls #
+docker network inspect my-bridge-network #查看内容
+```
+解释：
+>-d driver
+
+# 4. 数据卷
+
+
+

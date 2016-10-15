@@ -1,4 +1,8 @@
 
+#V1.2
+1. GettingStarted,Add:对容器进行命名,简单网络管理，数据卷;
+2. 
+
 # V1.1
 
 1. Docker简介
