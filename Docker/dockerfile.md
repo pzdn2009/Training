@@ -50,3 +50,73 @@ that label-values can span multiple lines."
 EXPOSE <port> [<port>...]
 ```
 暴露容器的端口，需要使用-P来访问。
+
+**ENV**
+```
+ENV <key> <value>
+ENV <key>=<value>
+```
+
+设置环境变量，在容器内保持。影响范围是容器域。
+
+eg:
+```
+ENV myName John Doe
+ENV myDog Rex The Dog
+```
+
+**ADD**
+```
+ADD <src>... <dest>
+ADD ["<src>",... "<dest>"]
+```
+ADD指令，从<src>指定的文件、目录、远程URL，复制到容器内的<dest>路径内。
+
+eg:
+```
+ADD hom* /mydir/ # adds all files starting with "hom"
+ADD hom?.txt /mydir/ # ? is replaced with any single character, e.g., "home.txt"
+ADD test relativeDir/ # adds "test" to `WORKDIR`/relativeDir/
+ADD test /absoluteDir/ # adds "test" to /absoluteDir/
+```
+**COPY**
+```
+COPY <src> … <dest>
+```
+复制本机的<src>为容器中的<dest>。
+
+当使用本地目录作为源目录是，建议使用COPY指令
+
+**ENTRYPOINT**
+```
+ENTRYPOINT ["executable", "param1", "param2"] (exec form, preferred)
+ENTRYPOINT command param1 param2 (shell form)
+```
+配置容器启动后执行的命令，并且不可被docker run指定的参数覆盖。
+
+**VOLUME**
+```
+VOLUME [“/data”]
+```
+创建一个挂载点。
+
+**USER**
+```
+USER daemon
+```
+指定用户名或者UID。
+
+**WORKDIR**
+```
+WORKDIR /path/to/workdir
+```
+为后续的指令配置工作目录
+
+可以使用多次
+```
+WORKDIR /a
+WORKDIR b
+WORKDIR c
+RUN pwd
+```
+则最终路径为/a/b/c

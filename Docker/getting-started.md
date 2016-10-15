@@ -184,7 +184,47 @@ docker network inspect my-bridge-network #查看内容
 解释：
 >-d driver
 
-# 4. 数据卷
+# 4. 数据卷 & 数据卷容器
 
+## 4.1 数据卷
 
+**数据卷**是使用联合文件系统技术特别设计的一个目录，它在一个或多个容器内共享数据。
+- 数据卷在容器间共享和重用
+- 对数据卷的更改会立刻生效
+- 对数据卷的更改不会影响到镜像
+- 数据卷会一直存在，即使容器被删掉
 
+数据卷设计来持久化数据，独立于容器的生命周期。因此当你删除一个容器时，Docker 从不会自动删除数据卷，也不会“垃圾回收”没有任何容器引用的卷。
+
+```
+docker run -d -P --name web -v /webapp training/webapp python app.py #在容器内创建一个卷 /webapp
+docker inspect web #查看Destination为容器的地址，Source为主机的挂载地址，RW为可读写。
+
+docker run -d -P --name web -v /src/webapp:/opt/webapp training/webapp python app.py
+docker run -d -P --name web -v /src/webapp:/opt/webapp:ro training/webapp python app.py
+
+docker run --rm -it -v ~/.bash_history:/root/.bash_history ubuntu /bin/bash #将主机的一个文件挂载到容器内
+```
+
+## 4.2 数据卷容器
+
+**数据卷容器**：专门用来共享数据的一个容器。
+
+使用--volumes-from 来指定数据卷容器
+
+```
+docker run -it -v /dbdata --name dbdata ubuntu #创建一个数据卷容器dbdata
+docker run -it --volumes-from dbdata --name db1 ubuntu #可以看到/dbdata
+docker run -it --volumes-from dbdata --name db2 ubuntu #可以看到/dbdata
+```
+
+## 4.3 备份、恢复
+
+```
+docker run --volumes-from dbdata -v $(pwd):/backup --name worker ubuntu tar cvf /backup/backup.tar /dbdata #创建一个名为workder的容器，从dbdata挂载数据，将主机的当前目录挂载到worker的/backup目录。 将dbdata的/dbdata目录备份到work的/backup目录下。
+
+docker run -v /dbdata --name dbdata2 ubuntu /bin/bash
+docker run --volumes-from dbdata2 $(pwd):/backup busybox tar xvf /backup/backup.tar
+
+docker run --rm -v /foo -v awesome:/bar busybox top #当删除容器时，Docker引擎删除/foo卷，但是不删除awesome卷。 
+```
