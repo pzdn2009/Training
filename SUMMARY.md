@@ -23,4 +23,12 @@
     * [Dockerize应用](Docker/dockerize应用.md)
         * [SSH](Docker/ssh.md)
         * [Dockerize Redis](Docker/dockerize-redis.md)
+* [Hadoop](hadoop/hadoop.md)
+    * [Hadoop简介](hadoop/hadoop简介.md)
+    * [Hadoop安装](hadoop/hadoop安装.md)
+    * [Pig](hadoop/pig.md)
+    * [Hive](hadoop/hive.md)
+    * HBase
+    * Zookeeper
+    * Sqoop
 
