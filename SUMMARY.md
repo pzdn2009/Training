@@ -12,6 +12,7 @@
     * [文本处理](linux_basic/文本处理.md)
     * [日志](linux_basic/日志.md)
     * [OpenSSH](linux_basic/openssh.md)
+* [Linux系统编程](LinuxSystemProgramming/linux系统编程.md)
 * [Docker](Docker/docker.md)
     * [简介](Docker/简介.md)
     * [安装Docker](Docker/ubuntu上安装docker.md)
@@ -35,4 +36,9 @@
     * HBase
     * Zookeeper
     * Sqoop
+* [Nginx](nginx/nginx.md)
+* [ELK](elk.md)
+* [Redis](redis.md)
+* [RabbitMQ](rabbitmq.md)
+* [DDD](ddd.md)
 
