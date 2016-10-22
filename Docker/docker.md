@@ -1,3 +1,10 @@
+# V1.4
+1. Add Compose节；
+2. Add Swam 文件；
+3. Docker命令，Add：search，export，import，tag，build；
+4. 安装Docker，Add：Centos,MAC，docker Group；
+5. Dockerlize,Add：Nginx Dockerfile；
+6. Add Point节
 
 #V1.3
 1. Add网络：网络相关原理，端口映射，容器互联；网络相关参数，配置DNS和主机名；

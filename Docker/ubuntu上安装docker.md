@@ -1,5 +1,6 @@
+# 安装Docker
 
-# 1. 安装
+## 1. Ubuntu安装
 
 **方式一**：
 
@@ -17,7 +18,15 @@ ln -sf /usr/bin/docker.io /usr/local/bin/docker
 sed -i `$acomplete -F _docker docker` /etc/bash_completion.d/docker.io
 ```
 
-# 2.升级
+简单一点即：
+```
+sudo apt-get update
+sudo apt-get install docker.io
+sudo ln -sf /urs/bin/docker.io /usr/local/bin/docker
+```
+
+
+## 2.Ubuntu升级
 
 ```
 sudo apt-get install apt-transport-https
@@ -38,3 +47,31 @@ apt-get install -y lxc-docker
 apt-get update -y lxc-docker
 ln -sf /usr/bin/docker /usr/local/bin/docker
 ```
+
+## 3.Centos
+
+**centos7**
+
+```
+sudo yun install docker
+sudo service docker start
+sudo chkconfig docker on
+```
+
+## 4.MAC
+
+下载boot2docker来安装。
+将包含 docker，docker-machine，docker-compose。
+
+## 5.Docker Group
+
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo service docker restart
+```
+
+就不会提示一下信息：
+>Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
+
+原理：高版本的docker会将docker用户组设置为root权限的。
