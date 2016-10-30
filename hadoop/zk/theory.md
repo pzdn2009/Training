@@ -55,3 +55,47 @@ numChildren = 0 #子节点的个数
 - ADMIN：setACL
 
 
+# 4. Watcher
+
+服务端向客户端推送数据的变更通知。
+
+- 只会触发一次，客户端需要重复注册才会收到更多的通知。
+- 一次处理流程：客户端注册Watcher，服务端处理Watcher，客户端回调Watcher。
+- 由Watcher接口定义了标准的处理流程，一般需要自己实现此接口。
+- WatchedEvent定义了三个数据：KeeperState，EventType，Path，分别是连接状态，数据变更的类型，节点路径。
+
+**可应用Watcher的接口**
+
+- exists
+
+  触发时机：节点创建、删除、变更数据时。
+
+- getData
+
+  触发时机：节点删除、变更数据时
+
+- getChildren
+
+  触发时机：子节点创建、删除时以及节点被删除时。
+
+# 5. Session
+
+- 客户端发起的tcp长连接，通过心跳检测。
+- 自动故障切换，所有的会话状态仍然有效。
+
+**会话状态**
+
+CONNECTING，CONNECTED，RECONNECTING，RECONNECTED，CLOSE。
+
+**属性**
+
+- sessionID：标识唯一一次会员。
+- timeOut：会话超时时间。
+- tickTime：下次会话超时时间。
+- isClosing：是否已经被关闭
+
+# 6. Database
+
+- ZKDatabase，内存数据库，负责管理ZK的所有会话，DataTree存储和事务日志。
+- ZKDB会定时向磁盘dump快照数据。
+- ZK的数据存储是通过DataTree实现的，是一棵树。最小的数据单元是DataNode，即DataTree上面的节点。

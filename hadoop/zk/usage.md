@@ -79,3 +79,13 @@ set /zk_test junk
 get /zk_test
 delete /zk_test
 ```
+
+# 3. 配置
+
+- clientPort：默认2181，服务器对外的端口。
+- dataDir：数据持久化目录。
+- tickTime：ZK的滴答时间，默认为3000ms，代表一个时间单元。比如超时是2~10个单元。
+- dataLogDir：事务日志目录。尽量给事务日志配置一个单独的挂载点或磁盘，以提高性能。
+- initLimit：等待Fllower启动的时间。默认为10，即10*3000ms。初始化有数据同步的动作。
+- syncLimit：Fllower与Leader之间的心跳的时间，默认为5个tickTime。
+- server.id=host:port:port：服务器.id=主机，第一个端口用于Follow与Leader通信与数据同步，第二个端口用于Leader选举的端口。

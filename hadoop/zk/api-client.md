@@ -51,4 +51,26 @@ public class ZookeeperPractice implements Watcher {
  }
 }
 ```
+# 2. zkClient
 
+开源客户端，封装了原生的Java API接口。内部实现了同步连接管理、Session超时重连、Watcher反复注册等功能。
+
+Watcher采用了Java通用的Listener模式。
+# 3. Curator
+Apache顶级项目，开源zk客户端，全世界范围内使用最广泛的ZK客户端之一。
+- 自动重试
+- FluentAPI
+
+提供的一些典型的使用场景：
+- LeaderSelector
+- InterProcessMutex
+- DistributedAtomicInterer
+- CylicBarrier
+
+提供了一些工具：
+- ZKPaths
+- EnsurePATH
+- TestingServer
+- TestingCluster
+
+ n

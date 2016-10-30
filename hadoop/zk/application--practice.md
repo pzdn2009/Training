@@ -1,5 +1,14 @@
 # Application & Practice
 
+从以下三个方面来做设计
+
+- **W**[c|d|e] watcher：代表三种观察
+  - We：exists
+  - Wd：getData
+  - Wc：getChildren
+- **N**[s|e] znode：节点，s为顺序节点，e为临时节点，默认为永久非顺序节点。
+- **C** client-rolename：客户端操作，rolename为角色。
+
 # 1.发布订阅——配置中心
 
 能力点：
