@@ -1,0 +1,81 @@
+# Usage
+
+# 1.安装、运行
+
+下载：
+
+http://mirrors.cnnic.cn/apache/zookeeper/zookeeper-3.4.9/
+
+http://mirrors.aliyun.com/apache/zookeeper/zookeeper-3.4.9/
+
+```
+tar vxf zookeeper-3.4.9 #解压
+cd zookeeper-3.4.9
+
+export ZOOKEEPER_INSTALL=$(pwd) #配置安装目录
+export PATH=$PATH:$ZOOKEEPER_INSTALL/bin
+
+cd cfg
+mv zoo_sample.cfg zoo.cfg #修改配置文件
+
+cd ../bin
+./zkServer.sh start
+echo ruok | nc localhost 2181
+```
+返回imok即表示启动成功。
+
+# 2.命令行工具
+
+```
+$ bin/zkCli.sh -server 127.0.0.1:2181
+
+[zk: 127.0.0.1:2181(CONNECTED) 2] help
+ZooKeeper -server host:port cmd args
+ connect host:port
+ get path [watch]
+ ls path [watch]
+ set path data [version]
+ rmr path
+ delquota [-n|-b] path
+ quit
+ printwatches on|off
+ create [-s] [-e] path data acl #-s 顺序节点，-e临时节点。默认创建持久节点。
+ stat path [watch]
+ close
+ ls2 path [watch]
+ history
+ listquota path
+ setAcl path acl
+ getAcl path
+ sync path
+ redo cmdno
+ addauth scheme auth
+ delete path [version]
+ setquota -n|-b val path
+```
+
+操作：
+
+```
+ls /
+create /zk_test
+ls /
+
+get /zk_test
+my_data
+cZxid = 0xa
+ctime = Sat Oct 29 00:26:24 PDT 2016
+mZxid = 0xa
+mtime = Sat Oct 29 00:26:24 PDT 2016
+pZxid = 0xa
+cversion = 0
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x0
+dataLength = 7
+numChildren = 0
+
+set /zk_test junk
+get /zk_test
+delete /zk_test
+```
