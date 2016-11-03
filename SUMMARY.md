@@ -52,4 +52,9 @@
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * [DDD](ddd.md)
+* [R](R/README.md)
+    * [Data](R/data.md)
+    * [Graphics](R/graphics.md)
+    * [Statistics](R/stat.md)
+    * [Packages](R/packages.md)
 
