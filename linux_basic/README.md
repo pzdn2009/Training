@@ -1,5 +1,9 @@
 # V1.5
 1. 增加OpenSSH节；
+2. 增加正则表达式节；
+3. 系统简介，Add：set -o，历史命令(倒数，?str，^str1^str2),find(-exec选项），man增强；
+4. Shell，Add：命令提示符(PS1,PS2),bash启动子shell，命令替换（$,``）；
+5. 文本处理，Add：tr,wc,cut,sort,join,paste,uniq,sed，expand，col,unexpand
 
 # V1.4
 
