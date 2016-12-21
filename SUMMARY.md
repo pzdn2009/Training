@@ -49,6 +49,7 @@
     * [Sqoop](hadoop/zk/sqoop.md)
 * [Nginx](nginx/nginx.md)
 * [ELK](elk.md)
+    * [安裝](安裝.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * [DDD](ddd.md)
