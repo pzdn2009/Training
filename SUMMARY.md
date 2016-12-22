@@ -9,6 +9,7 @@
     * [Shell](linux_basic/shell.md)
     * [网络、服务](linux_basic/网络、服务.md)
     * [进程](linux_basic/进程.md)
+        * [nohup](linux_basic/nohup.md)
     * [文本处理](linux_basic/文本处理.md)
         * [sed](linux_basic/sed.md)
     * [日志](linux_basic/日志.md)
