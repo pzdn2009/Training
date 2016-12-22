@@ -50,6 +50,7 @@
 * [Nginx](nginx/nginx.md)
 * [ELK](elk.md)
     * [安裝](安裝.md)
+    * [安裝elasticsearch-head](安裝elasticsearch-head.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * [DDD](ddd.md)
