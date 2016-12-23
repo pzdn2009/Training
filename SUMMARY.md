@@ -53,6 +53,7 @@
     * [安裝](安裝.md)
     * [安裝elasticsearch-head](安裝elasticsearch-head.md)
     * [Logstash配置rabbitmq input](logstash配置rabbitmq-input.md)
+    * [Logstash配置elasticsearch output](logstash配置elasticsearch-output.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * [DDD](ddd.md)
