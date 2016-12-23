@@ -49,6 +49,7 @@
         * [Source Code](hadoop/zk/source-code.md)
     * [Sqoop](hadoop/zk/sqoop.md)
 * [Nginx](nginx/nginx.md)
+    * [安装](nginx/安装.md)
 * [ELK](elk.md)
     * [安裝](安裝.md)
     * [安裝elasticsearch-head](安裝elasticsearch-head.md)
