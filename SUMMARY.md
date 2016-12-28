@@ -58,6 +58,8 @@
     * ES
         * [基础概念](elk/基础概念.md)
         * [浏览集群](elk/浏览集群.md)
+        * [Document API](elk/document-api.md)
+            * [Index API](elk/index-api.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * [DDD](ddd.md)
