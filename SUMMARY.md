@@ -107,5 +107,10 @@
     * [Functions](R/functions.md)
         * [inspect](R/inspect.md)
         * [dist函数](R/dist函数.md)
+        * [table](R/table.md)
+        * [prop.table](R/proptable.md)
+        * [aggregate](R/aggregate.md)
+        * [sub](R/sub.md)
+        * [strsplit](R/strsplit.md)
     * [AnalysisWithR](R/analysiswithr.md)
 
