@@ -60,10 +60,32 @@
         * [浏览集群](elk/浏览集群.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
-* [DDD](ddd.md)
 * [R](R/README.md)
     * [Data](R/data.md)
+        * [基础数据类型](R/基础数据类型.md)
+        * [数据抽样](R/数据抽样.md)
+        * [datasets包](R/datasets包.md)
+        * [读取CSV与TXT](R/读取csv与txt.md)
+    * [Data Preprocessing](R/data-preprocessing.md)
     * [Graphics](R/graphics.md)
     * [Statistics](R/stat.md)
+        * [描述性统计](R/描述性统计.md)
+        * 参数估计
+        * 假设检验
+        * 方差分析
+        * 回归分析
+        * 主成成分与因子分析
+        * 时间序列
     * [Packages](R/packages.md)
+    * [DM By R](R/dm-by-r.md)
+        * [DM 算法简介](R/dm-算法简介.md)
+        * [关联分析](R/关联分析.md)
+        * 聚类分析
+        * 判别分析
+        * 决策树
+        * 集成学习
+        * 随机森林
+        * SVM
+        * 神经网络
+        * Rattle
 
