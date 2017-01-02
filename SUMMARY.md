@@ -63,10 +63,12 @@
 * [R](R/README.md)
     * [Data](R/data.md)
         * [基础数据类型](R/基础数据类型.md)
+        * [数据结构](R/数据结构.md)
         * [数据抽样](R/数据抽样.md)
         * [datasets包](R/datasets包.md)
         * [读取CSV与TXT](R/读取csv与txt.md)
     * [Data Preprocessing](R/data-preprocessing.md)
+    * [RFormula](R/rformula.md)
     * [Graphics](R/graphics.md)
     * [Statistics](R/stat.md)
         * [描述性统计](R/描述性统计.md)
@@ -80,12 +82,15 @@
     * [DM By R](R/dm-by-r.md)
         * [DM 算法简介](R/dm-算法简介.md)
         * [关联分析](R/关联分析.md)
+            * [参数控制](R/参数控制.md)
         * 聚类分析
         * 判别分析
         * 决策树
         * 集成学习
         * 随机森林
-        * SVM
+        * [SVM](R/svm.md)
         * 神经网络
         * Rattle
+    * [Functions](R/functions.md)
+        * [inspect](R/inspect.md)
 

@@ -1,3 +1,10 @@
+# V2
+1. Add Functions:Add inspect;
+2. Data:Add 数据结构，分层抽样
+3. Add RFormula
+4. svm简介
+5. 关联分析参数调整
+
 # V1 
 
 1. 创建目录：Data，Data Preprocessing,Graphics，Statistics，Packages,DM By R;
