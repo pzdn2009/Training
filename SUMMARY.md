@@ -79,16 +79,24 @@
         * 主成成分与因子分析
         * 时间序列
     * [Packages](R/packages.md)
+        * [arules](R/arules.md)
+            * [Groceries数据集](R/groceries数据集.md)
+        * [datasets](R/datasets.md)
+            * [iris数据集](R/iris数据集.md)
     * [DM By R](R/dm-by-r.md)
         * [DM 算法简介](R/dm-算法简介.md)
         * [关联分析](R/关联分析.md)
             * [参数控制](R/参数控制.md)
-        * 聚类分析
-        * 判别分析
+            * [Apriori函数](R/apriori函数.md)
+            * [可视化](R/可视化.md)
+        * [聚类分析](R/聚类分析.md)
+            * [kmeans](R/kmeans.md)
+        * [判别分析](R/判别分析.md)
         * 决策树
         * 集成学习
         * 随机森林
         * [SVM](R/svm.md)
+            * [svm函数](R/svm函数.md)
         * 神经网络
         * Rattle
     * [Functions](R/functions.md)

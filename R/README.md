@@ -1,3 +1,9 @@
+# V3
+1. 关联分析，Add：Apriori函数参数,关联分析的可视化；
+2. Add:Groceries 数据集，iris数据集。
+3. 添加svm函数；
+4. 聚类分析，Add：KMeans
+
 # V2
 1. Add Functions:Add inspect;
 2. Data:Add 数据结构，分层抽样
