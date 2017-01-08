@@ -83,6 +83,8 @@
             * [Groceries数据集](R/groceries数据集.md)
         * [datasets](R/datasets.md)
             * [iris数据集](R/iris数据集.md)
+        * [rpart](R/rpart.md)
+            * [kyphosis数据集](R/kyphosis数据集.md)
     * [DM By R](R/dm-by-r.md)
         * [DM 算法简介](R/dm-算法简介.md)
         * [关联分析](R/关联分析.md)
@@ -92,7 +94,7 @@
         * [聚类分析](R/聚类分析.md)
             * [kmeans](R/kmeans.md)
         * [判别分析](R/判别分析.md)
-        * 决策树
+        * [决策树](R/决策树.md)
         * 集成学习
         * 随机森林
         * [SVM](R/svm.md)
@@ -101,4 +103,5 @@
         * Rattle
     * [Functions](R/functions.md)
         * [inspect](R/inspect.md)
+    * [AnalysisWithR](R/analysiswithr.md)
 
