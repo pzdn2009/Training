@@ -2,8 +2,26 @@
 
 所在包：stats包
 
+# 1. 理论
 
-#1. 官方示例
+**算法简介**
+>选择K个点作为初始质心  
+>repeat  
+>    将每个点指派到最近的质心，形成K个簇  
+>    重新计算每个簇的质心  
+>until 簇不发生变化或达到最大迭代次数  
+
+**欧几里得距离**
+
+**余弦相似度**
+
+**SSE**
+SSE（Sum of Squares for Error）
+
+缺点：
+对极端值敏感。
+
+#2. 官方示例
 ```
 require(graphics)
 
@@ -17,7 +35,7 @@ points(cl$centers, col = 1:2, pch = 8, cex = 2)
 ```
 ![](/assets/kmeansOfficial.png) 
 
-#2. iris示例
+#3. iris示例
 
 ref:http://blog.csdn.net/yucan1001/article/details/23123043
 
@@ -33,6 +51,6 @@ plot(newiris[c("Sepal.Length", "Sepal.Width")], col = kc$cluster, pch = as.integ
 points(kc$centers[,c("Sepal.Length", "Sepal.Width")], col = 1:3, pch = 8, cex=2);  
 ```
 
-# 3. 函数
+# 4. 函数
 
 kmeans(x, centers, iter.max = 10, nstart = 1, algorithm = c("Hartigan-Wong", "Lloyd", "Forgy","MacQueen"), trace=FALSE)

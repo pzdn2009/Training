@@ -1,3 +1,9 @@
+# V3.2
+1. Functions,Add:dist函数；
+2. 聚类分析，kmeans修改，Add：KMedoids
+3. Rattle，安装
+4. Add神经网络简介
+
 # V3.1 
 1. 数据集：rpart包，Kyphosis（驼背）数据集
 2. Add数据分析方法：查看数据，数据预处理，模型
