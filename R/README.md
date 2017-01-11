@@ -1,3 +1,8 @@
+# V3.3
+1. R分析，Add：RStudio简介，Update数据预处理，Add特征提取；
+2. Functions，Add:table,prop.table,aggregate,sub,strsplit；
+3. 决策树：增加titanic示例。
+
 # V3.2
 1. Functions,Add:dist函数；
 2. 聚类分析，kmeans修改，Add：KMedoids
