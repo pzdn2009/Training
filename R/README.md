@@ -1,3 +1,7 @@
+# V3.4
+1. 聚类分析，Add：WSS，BSS；
+2. Kmeans,Add：寻找K
+
 # V3.3
 1. R分析，Add：RStudio简介，Update数据预处理，Add特征提取；
 2. Functions，Add:table,prop.table,aggregate,sub,strsplit；
