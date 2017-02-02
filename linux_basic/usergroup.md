@@ -1,5 +1,54 @@
 #  User & Group
 
+# 0. 核心文件与概念
+
+- /etc/passwd
+
+  账号:密码:UID:GID:注释:用户主目录:默认Shell
+  ```
+  root:x:0:0:root:/root:/bin/bash
+  daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+  bin:x:2:2:bin:/bin:/usr/sbin/nologin
+  pzdn:x:1000:1000:DotnetCore,,,:/home/pzdn:/bin/bash
+  ```
+- /etc/shadow
+
+  账号:密码:更改日期:密码不可被改动的天数:重新更改的天数:警告天数:失效日:失效日期:保留
+  ```
+  daemon:*:16365:0:99999:7:::
+  bin:*:16365:0:99999:7:::
+  pzdn:$1$8U/0HIzpPMY1ICVXvIY.dObw1:17030:0:99999:7:::
+  ```
+- /etc/group
+
+  用户组名称:用户组密码:GID:此用户组支持的账号名称
+  ```
+  root:x:0:
+  daemon:x:1:
+  bin:x:2:
+  sambashare:x:125:pzdn
+  ```
+- /etc/gshadow
+
+**初始用户组**：GID。initial group。用户一登录，就获得这个组的权限。
+
+**有效用户组**：使用newgrp来切换，那么创建的文件所属的用户组就属于切换之后的组。
+
+newgrp：用户的环境配置(例如环境变量等等其他数据)不会有影响，但是使用者的『用户组权限』将会重新被计算
+
+eg:
+```
+$ groups 
+pzdn adm cdrom sudo dip plugdev lpadmin sambashare docker
+$ newgrp docker 
+$ mkdir tes2
+$ ll tes2
+drwxrwxr-x  2 pzdn pzdn   4096 Nov  5 04:07 tes/
+drwxrwxr-x  2 pzdn docker 4096 Nov  5 04:08 tes2/
+```
+
+# 1. 用户User
+
 **用户：查看，新增，修改，删除更改密码**
 
 查看用户
@@ -71,6 +120,7 @@ usermod -l pzdnnew pzdn #修改用户名
 sudo deluser username --remove-home
 userdel [-r] pzdn #删除用户，r表示连同主目录
 ```
+# 2. 用户组Group
 
 查看用户组
 
@@ -108,6 +158,7 @@ groupdel pzdn #如果有用户的话，则删除不了。
 
 ```
 
+# 3. SU
 **su**
 
 su——change user id or become super user
@@ -126,3 +177,38 @@ su -l pzdn #切换到pzdn
 su - -c “head -n 3 /etc/shadow”
 ```
 
+# 4. 其他管理工具
+
+## 4.1 密码管理
+
+chage——change user password expiry information，change aging，维护一个用户账户的秘密过期限制。
+
+选项：
+
+- -d LAST_DAY，set date of last password change to LAST_DAY
+- -E EXPIRE_DATE，set account expiration date to EXPIRE_DATE
+- -I DAY，密码过期后，账户被锁定前，不活动的天数。
+- -l 显示账户的过期密码过期信息
+
+```
+chage -l root #列出root的密码过期信息
+chage -l pzdn #列出pzdn的密码过期信息
+chage -d 0 pzdn # 下次登录必须修改密码
+```
+
+## 4.2 finger指纹
+
+**finger** ——user information lookup program
+```
+$ finger root
+$ finger -l #显示当前登录的用户信息，多行显示
+$ finger -s #显示当前登录的用户信息，单行显示
+$ finger pzdn #查询指定用户的信息
+
+Login: pzdn           			Name: DotnetCore
+Directory: /home/pzdn               	Shell: /bin/bash
+On since Sat Nov  5 04:23 (PDT) on pts/3 from 192.168.2.105
+   7 seconds idle
+No mail.
+No Plan.
+```

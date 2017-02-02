@@ -94,3 +94,46 @@ n1 -gt n2|大于
 n1 -le n2|小于等于
 n1 -ge n2|大于等于
 
+# 3. 流程控制
+
+测试成功时，表达式的退出状态为0。
+```
+if [test-expr] ; then 
+  …
+elif [test-expr]; then
+  …
+else
+  …
+fi
+```
+
+```
+for variable in 
+do
+done
+
+while
+do
+done
+
+while :
+do
+done
+
+for( (;;))
+
+until
+do
+done
+```
+
+```
+case value in
+p1)
+  ;;
+p2)
+  ;;
+*)
+  ;;
+esac
+```
