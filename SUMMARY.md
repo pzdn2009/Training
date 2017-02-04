@@ -93,7 +93,10 @@
         * [基礎設施](DDD/基礎設施.md)
         * [領域層](DDD/領域層.md)
         * [應用層](DDD/應用層.md)
-* [.netcore](netcore.md)
+* [.netcore](netcore/README.md)
+    * [GettingStarted](netcore/gettingstarted.md)
+        * [創建.net core libaray](netcore/創建net-core-libaray.md)
+    * [核心概念](netcore/核心概念.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
 * .netcore
