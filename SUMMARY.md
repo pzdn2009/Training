@@ -99,5 +99,4 @@
     * [核心概念](netcore/核心概念.md)
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq.md)
-* .netcore
 
