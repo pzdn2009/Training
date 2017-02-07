@@ -14,7 +14,6 @@
     * [File&Directory](linux_basic/filedirectory.md)
     * [文件打包与压缩](linux_basic/文件打包与压缩.md)
   * [vim编辑器](linux_basic/vim编辑器.md)
-    * [vim模式](linux_basic/vim编辑器/vim.md)
   * [磁盘](linux_basic/磁盘.md)
   * [Shell](linux_basic/shell.md)
   * [网络、服务](linux_basic/网络、服务.md)
