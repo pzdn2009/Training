@@ -52,6 +52,7 @@
 * [Hadoop](hadoop/README.md)
   * [Hadoop简介](hadoop/hadoop简介.md)
   * [Hadoop安装](hadoop/hadoop安装.md)
+  * [HDFS](hadoop/hdfs.md)
   * [Pig](hadoop/pig.md)
   * [Hive](hadoop/hive.md)
   * HBase
