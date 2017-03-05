@@ -65,6 +65,7 @@
     * [Monitor](hadoop/zk/monitor.md)
     * [Source Code](hadoop/zk/source-code.md)
   * [Sqoop](hadoop/zk/sqoop.md)
+  * [Hadoop权威指南笔记](hadoop/hadoop.md)
 * [Nginx](nginx/nginx.md)
   * [安装](nginx/安装.md)
 * [ELK](elk/README.md)
