@@ -109,6 +109,8 @@
         * [Migration](Practice/migration.md)
         * [ComplexType](Practice/complextype.md)
         * [Index](Practice/index.md)
+        * [Key](Practice/key.md)
+        * [OptimisticConcurrency](Practice/optimisticconcurrency.md)
     * [AutoMapper实践](Practice/automapper实践.md)
     * [WebAPI实践](Practice/webapi实践.md)
 * [MongoDB](MongoDB/README.md)
