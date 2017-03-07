@@ -1,5 +1,10 @@
 # V1
 
+## V1.6
+1. MR的组成、写一个MR的过程
+2. Hive简介，Hive安装、外壳环境
+3. HDFS的Java接口汇总
+
 ## V1.5
 1. HDFS CLI 命令接口
 2. HDFS示例文件读写代码

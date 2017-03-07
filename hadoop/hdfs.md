@@ -90,3 +90,20 @@ hadoop dfsadmin -report
 hadoop dfsadmin -safemode enter | leave | get | wait
 hadoop dfsadmin -setBalancerBandwidth 1000
 ```
+
+# 5.java 接口
+
+功能：
+- 从Hadoop URL中读取数据
+- 将本地的数据复制到Hadoop（写入）
+- 新建目录
+- 展示文件状态信息
+- 列出文件
+- 删除数据
+
+```
+IOUtils.closeStream()
+IOUtils.copyBytes()
+FileSytem.get
+FileStatus
+```

@@ -53,6 +53,7 @@
   * [Hadoop简介](hadoop/hadoop简介.md)
   * [Hadoop安装](hadoop/hadoop安装.md)
   * [HDFS](hadoop/hdfs.md)
+  * [Map-Reduce](hadoop/map-reduce.md)
   * [Pig](hadoop/pig.md)
   * [Hive](hadoop/hive.md)
   * HBase
@@ -65,7 +66,7 @@
     * [Monitor](hadoop/zk/monitor.md)
     * [Source Code](hadoop/zk/source-code.md)
   * [Sqoop](hadoop/zk/sqoop.md)
-  * [Hadoop权威指南笔记](hadoop/hadoop.md)
+  * Map-Reduce
 * [Nginx](nginx/nginx.md)
   * [安装](nginx/安装.md)
 * [ELK](elk/README.md)
