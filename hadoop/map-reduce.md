@@ -103,3 +103,27 @@ public class MinTemperature {
 }
 ```
 
+# 3. MR 工作机制
+
+![](/assets/hd5.png)
+
+客户端：提交MapReduce作业。
+
+jobtracker：协调作业的运行。
+
+tasktracker：运行作业划分后的任务。
+
+HDFS：共享作业文件。
+
+1. 作业提交，JobClient.runJob(conf)。本质是创建一个JobClient，执行submitJob方法。
+2. 向jobtracker请求一个新的作业ID（JobTracker的getNewJobId()）
+3. 将运行作业所需要的资源文件复制到HDFS上（包括MapReduce程序打包的JAR文件、配置文件和客户端计算所得的输入分片信息），这些文件都存放在JobTracker专门为该作业创建的文件夹中，文件夹名为该作业的Job ID；
+4. 获得作业ID后，提交作业（调用JobTracker的submitJob()）
+5. 作业初始化：JobTracker的作业调度器内对作业进行初始化。
+6. 从HDFS获取计算好的输入分片信息，然后为每一个分片创建一个map任务。运算移动，数据不移动
+7. TaskTracker每隔一段时间会给JobTracker发送一个心跳，告诉JobTracker它依然在运行，同时心跳中还携带着很多的信息，比如当前map任务完成的进度等信息。当JobTracker收到作业的最后一个任务完成信息时，便把该作业设置成“成功”。当JobClient查询状态时，它将得知任务已完成，便显示一条消息给用户；
+8. 运行的TaskTracker从HDFS中获取运行所需要的资源，这些资源包括MapReduce程序打包的JAR文件、配置文件和客户端计算所得的输入划分等信息；
+9. TaskTracker获取资源后启动新的JVM虚拟机；
+10. 运行每一个任务；
+
+

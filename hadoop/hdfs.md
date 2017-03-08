@@ -107,3 +107,13 @@ IOUtils.copyBytes()
 FileSytem.get
 FileStatus
 ```
+
+# 6. 序列化
+
+序列化：将结构化对象转为字节流。
+
+Hadoop使用Writable来封装数据。
+
+具体类型的序列化：IntWritable、Text、ByteWritable、ObjectWritable、NullWritable、MD5Hash、ArraryWritable、MapWritable、SortedMapWritable。
+
+序列化框架：WritableSerialization
