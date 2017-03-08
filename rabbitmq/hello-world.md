@@ -19,15 +19,15 @@ class Send
 {
     public static void Main()
     {
-        var factory = new ConnectionFactory() { HostName = "localhost" };
-        using(var connection = factory.CreateConnection())
-        using(var channel = connection.CreateModel())
+        var factory = new ConnectionFactory() { HostName = "localhost" }; //1
+        using(var connection = factory.CreateConnection()) //2
+        using(var channel = connection.CreateModel()) //3
         {
             channel.QueueDeclare(queue: "hello",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
-                                 arguments: null);
+                                 arguments: null); //4
 
             string message = "Hello World!";
             var body = Encoding.UTF8.GetBytes(message);
@@ -35,7 +35,7 @@ class Send
             channel.BasicPublish(exchange: "",
                                  routingKey: "hello",
                                  basicProperties: null,
-                                 body: body);
+                                 body: body); //5
             Console.WriteLine(" [x] Sent {0}", message);
         }
 
@@ -44,10 +44,11 @@ class Send
     }
 }
 ```
-
-創建一個Connection
-
-創建一個Channel
+1. 創建連接工廠，使用本地主機，默認的用戶名和密碼guest等；
+2. 創建一個Connection，連接到Rq；
+3. 創建一個Channel；
+4. 申明隊列，名稱、持久化、排他隊列、自動刪除消息、其他參數；
+5. 寫消息到隊列
 
 
 # 2. Receive
@@ -62,15 +63,15 @@ class Receive
 {
     public static void Main()
     {
-        var factory = new ConnectionFactory() { HostName = "localhost" };
-        using(var connection = factory.CreateConnection())
-        using(var channel = connection.CreateModel())
+        var factory = new ConnectionFactory() { HostName = "localhost" };  //1
+        using(var connection = factory.CreateConnection()) //2
+        using(var channel = connection.CreateModel()) //3
         {
             channel.QueueDeclare(queue: "hello",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
-                                 arguments: null);
+                                 arguments: null); //4
 
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += (model, ea) =>
@@ -78,10 +79,10 @@ class Receive
                 var body = ea.Body;
                 var message = Encoding.UTF8.GetString(body);
                 Console.WriteLine(" [x] Received {0}", message);
-            };
+            };  //5
             channel.BasicConsume(queue: "hello",
                                  noAck: true,
-                                 consumer: consumer);
+                                 consumer: consumer); //6
 
             Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
@@ -89,3 +90,11 @@ class Receive
     }
 }
 ```
+1. 創建連接工廠，使用本地主機，默認的用戶名和密碼guest等；
+2. 創建一個Connection，連接到Rq；
+3. 創建一個Channel；
+4. 申明隊列，名稱、持久化、排他隊列、自動刪除消息、其他參數；
+5. 創建消費者，且註冊消費事件；
+6. 消費
+
+Ref:http://blog.csdn.net/lmj623565791/article/details/37607165

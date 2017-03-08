@@ -107,6 +107,8 @@
     * [Overview](rabbitmq/overview.md)
     * [示例教程](rabbitmq/示例教程.md)
         * [Hello World](rabbitmq/hello-world.md)
+    * [API](rabbitmq/api.md)
+        * [ConnectionFactory](rabbitmq/connectionfactory.md)
 * [Practice](Practice/README.md)
     * [搭建gitbook環境](Practice/搭建gitbook環境.md)
     * [Entityframework实践](Practice/entityframework实践.md)
