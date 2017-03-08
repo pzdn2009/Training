@@ -124,7 +124,10 @@
     * C\#并发异步
     * C\#ExpressionTree
     * 分布式网站架构
-    * SQL
+    * [SQL](Practice/sql.md)
+        * [SQL随机查询一条记录并对其中一个字段修改值](Practice/sql随机查询一条记录并对其中一个字段修改值.md)
+        * [SQL Inserted和deleted详解](Practice/sql-inserted和deleted详解.md)
+        * [SQL dateadd](Practice/sql-dateadd.md)
     * 企业应用架构模式
     * Autofac
     * Identity
