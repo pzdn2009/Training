@@ -30,7 +30,7 @@
     * [OpenSSH](linux_basic/openssh.md)
     * [正则表达式](linux_basic/正则表达式.md)
     * [SELinux](linux_basic/selinux.md)
-    * [系统启动与运行级别](linux_basic/.md)
+    * [系统启动与运行级别](linux_basic/系统启动与运行级别.md)
 * [Linux系统编程](LinuxSystemProgramming/linux系统编程.md)
     * [简介](LinuxSystemProgramming/简介.md)
     * [文件IO](LinuxSystemProgramming/文件io.md)
