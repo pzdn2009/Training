@@ -108,6 +108,7 @@
 * [Redis](redis.md)
 * [RabbitMQ](rabbitmq/README.md)
     * [Overview](rabbitmq/overview.md)
+        * [安裝](rabbitmq/安裝.md)
     * [示例教程](rabbitmq/示例教程.md)
         * [Hello World](rabbitmq/hello-world.md)
     * [API](rabbitmq/api.md)
