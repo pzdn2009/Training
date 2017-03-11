@@ -1,5 +1,10 @@
 # V1
 
+## V1.4
+1. IConnection API
+2. IModel API
+3. Work Queues
+
 ## V1.3
 1. 安裝
 2. 隊列，多租戶模式，publisher confirm
