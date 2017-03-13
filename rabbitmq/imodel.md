@@ -35,3 +35,37 @@ void BasicRecoverAsync(bool requeue);
 void BasicReject(ulong deliveryTag, bool requeue);
 拒絕一條消息。
 ```
+
+## Exchange
+
+```csharp
+void ExchangeBind(string destination, string source, string routingKey, IDictionary<string, object> arguments);
+void ExchangeBind(string destination, string source, string routingKey);
+void ExchangeBindNoWait(string destination, string source, string routingKey, IDictionary<string, object> arguments);
+//Bind an exchange to an exchange.
+
+void ExchangeDeclare(string exchange, string type, bool durable, bool autoDelete, IDictionary<string, object> arguments);
+void ExchangeDeclare(string exchange, string type, bool durable);
+void ExchangeDeclare(string exchange, string type);
+void ExchangeDeclareNoWait(string exchange, string type, bool durable, bool autoDelete, IDictionary<string, object> arguments);
+void ExchangeDeclarePassive(string exchange);
+//Declare an exchange
+
+void ExchangeDelete(string exchange, bool ifUnused);
+void ExchangeDelete(string exchange);
+void ExchangeDeleteNoWait(string exchange, bool ifUnused);
+//Delete an exchange.
+
+void ExchangeUnbind(string destination, string source, string routingKey, IDictionary<string, object> arguments);
+void ExchangeUnbind(string destination, string source, string routingKey);
+void ExchangeUnbindNoWait(string destination, string source, string routingKey, IDictionary<string, object> arguments);
+//Unbind an exchange from an exchange.
+```
+## Transaction
+
+```csharp
+void TxCommit();
+void TxRollback();
+void TxSelect();
+```
+

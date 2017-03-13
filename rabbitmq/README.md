@@ -1,5 +1,10 @@
 # V1
 
+## V1.5
+1. IModel API 
+2. EventingBasicConsumer API
+3. Publish/Subscribe
+
 ## V1.4
 1. IConnection API
 2. IModel API
