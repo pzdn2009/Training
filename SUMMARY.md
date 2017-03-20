@@ -165,3 +165,10 @@
 * [MLTheory](MLTheory/README.md)
     * [推荐系统](MLTheory/Rd.md)
 
+## DECO
+* [Kubernetes](Kube/README.md)
+    * [Basic](Kube/basic.md)
+        * [基礎概念](Kube/基礎概念.md)
+        * [創建集群](Kube/創建集群.md)
+        * [部署](Kube/部署.md)
+
