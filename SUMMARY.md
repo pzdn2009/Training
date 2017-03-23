@@ -168,12 +168,12 @@
 ## Language
 
 * [R](R/README.md)
-* [Data](R/data.md)
-* [基础数据类型](R/基础数据类型.md)
-* [数据结构](R/数据结构.md)
-* [数据抽样](R/数据抽样.md)
-* [datasets包](R/datasets包.md)
-* [读取CSV与TXT](R/读取csv与txt.md)
+  * [Data](R/data.md)
+    * [基础数据类型](R/基础数据类型.md)
+    * [数据结构](R/数据结构.md)
+    * [数据抽样](R/数据抽样.md)
+    * [datasets包](R/datasets包.md)
+    * [读取CSV与TXT](R/读取csv与txt.md)
 * [Data Preprocessing](R/data-preprocessing.md)
 * [RFormula](R/rformula.md)
 * [Graphics](R/graphics.md)
