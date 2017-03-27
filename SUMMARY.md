@@ -234,4 +234,8 @@
   * [簡介](Spark/jian-jie.md)
   * [核心概念](Spark/he-xin-gai-nian.md)
   * [RDD編程](Spark/rddbian-cheng.md)
+  * [SparkR](Spark/sparkr.md)
+    * [SparkDataFrames](Spark/sparkr/sparkdataframes.md)
+      * [創建SparkDataFrames](Spark/sparkr/sparkdataframes/chuang-jian-sparkdataframes.md)
+    * [MLLib](Spark/sparkr/mllib.md)
 
