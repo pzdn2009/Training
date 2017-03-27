@@ -1,7 +1,7 @@
 # datasets包
 
 # 1. 内置数据集
-```
+```r
 > data(package='datasets') #加载datasets中所有的数据集
 > ?AirPassengers #查看AirPassengers的文档
 > data(package= .packages(all.available=T)) # 获取R中的所有数据集列表，按照包分类
@@ -34,7 +34,7 @@ BJsales.lead (BJsales)
 ```
 
 # 2. 外部安装
-```
+```r
 > install.packages("arules")
 > library(Matrix)
 > library(arules)
