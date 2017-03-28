@@ -2,6 +2,9 @@
 
 # V1
 
+## V1.5
+1. add MLLIB，SparkSQL，Deploying, features,Pipleline
+
 ## V1.4
 1. select
 2. filter

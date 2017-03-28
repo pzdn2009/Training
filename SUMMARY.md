@@ -246,4 +246,10 @@
       * [filter](Spark/sparkr/api/filter.md)
       * [groupBy](Spark/sparkr/api/groupby.md)
     * [遷移指南](Spark/sparkr/qian-yi-zhi-nan.md)
+  * [MLLIB](Spark/mllib.md)
+    * [ML Pipelines](Spark/mllib/ml-pipelines.md)
+    * [features](Spark/mllib/features.md)
+  * [SparkSQL](Spark/sparksql.md)
+  * [SparkStreaming](Spark/sparkstreaming.md)
+  * [Deploying](Spark/deploying.md)
 
