@@ -2,6 +2,10 @@
 
 # V1
 
+## V1.6 
+1. als
+2. gbt
+
 ## V1.5
 1. add MLLIB，SparkSQL，Deploying, features,Pipleline
 
