@@ -237,5 +237,8 @@
   * [SparkR](Spark/sparkr.md)
     * [SparkDataFrames](Spark/sparkr/sparkdataframes.md)
       * [創建SparkDataFrames](Spark/sparkr/sparkdataframes/chuang-jian-sparkdataframes.md)
+      * [DF操作](Spark/sparkr/sparkdataframes/dfcao-zuo.md)
+      * [執行SQL查詢](Spark/sparkr/sparkdataframes/zhi-xing-sql-cha-xun.md)
     * [MLLib](Spark/sparkr/mllib.md)
+      * [glm](Spark/sparkr/mllib/glm.md)
 
