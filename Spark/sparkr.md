@@ -20,3 +20,4 @@ sparkR.session()
 
 - SparkDataFrames
 - MLLib
+- API

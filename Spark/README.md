@@ -2,8 +2,16 @@
 
 # V1
 
+## V1.4
+1. select
+2. filter
+3. groupBy
+4. 遷移指南
+
 ## V1.3
 1. DF 操作
+2. sql查詢DF
+3. MLLib 's glm
 
 ## V1.2
 1. SparkR

@@ -241,4 +241,9 @@
       * [執行SQL查詢](Spark/sparkr/sparkdataframes/zhi-xing-sql-cha-xun.md)
     * [MLLib](Spark/sparkr/mllib.md)
       * [glm](Spark/sparkr/mllib/glm.md)
+    * [API](Spark/sparkr/api.md)
+      * [select](Spark/sparkr/api/select.md)
+      * [filter](Spark/sparkr/api/filter.md)
+      * [groupBy](Spark/sparkr/api/groupby.md)
+    * [遷移指南](Spark/sparkr/qian-yi-zhi-nan.md)
 
