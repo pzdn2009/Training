@@ -111,3 +111,12 @@ Number of Fisher Scoring iterations: 1
 +------------+-----------+------------+-----------+-------+-----+------------------+
 only showing top 20 rows
 ```
+
+# 2. 可用family
+
+Family|Response Type|Supported Links
+--|--|--
+Gaussian|Continuous|Identity*, Log, Inverse
+Binomial|Binary|Logit*, Probit, CLogLog
+Poisson|Count|Log*, Identity, Sqrt
+Gamma|Continuous|Inverse*, Idenity, Log

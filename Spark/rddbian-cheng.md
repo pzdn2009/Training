@@ -8,7 +8,7 @@ RDD支持兩種類型的操作：transformation & action。
 
 ```scala
 scala> val lines = sc.parallelize(List("pandas","i like pandas"))
-scala> var lines = sc.textFile("/path/to/README.md")
+scala> val lines = sc.textFile("/path/to/README.md")
 ```
 
 # 2. Transformation
@@ -16,7 +16,7 @@ scala> var lines = sc.textFile("/path/to/README.md")
 * map
 * flatMap
 * filter
-* simple\(withReplacement,fraction,\[seed\]\)
+* sample\(withReplacement,fraction,\[seed\]\)
 
 * union
 

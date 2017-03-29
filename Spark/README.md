@@ -2,6 +2,15 @@
 
 # V1
 
+## V1.7
+1. 簡介增強，啟動
+2. read.df,count,summarize,
+3. 模型持久化
+4. glm的family：以及解釋。
+5. als參數解釋
+6. gbt結果格式調整
+
+
 ## V1.6 
 1. als
 2. gbt

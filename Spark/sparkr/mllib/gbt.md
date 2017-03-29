@@ -1,5 +1,11 @@
 # gbt
 
+Gradient Boosted Regression Trees
+
+Gradient Boosting
+
+# Sample Code
+
 ```r
 # Load training data
 df <- read.df("data/mllib/sample_libsvm_data.txt", source = "libsvm")
@@ -20,7 +26,7 @@ showDF(predictions)
 
 # 結果
 
-> 
+```r
 +-----+--------------------+----------+
 |label|            features|prediction|
 +-----+--------------------+----------+
@@ -46,3 +52,4 @@ showDF(predictions)
 |  1.0|(692,[124,125,126...|       1.0|
 +-----+--------------------+----------+
 only showing top 20 rows
+```
