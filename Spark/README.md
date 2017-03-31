@@ -2,6 +2,14 @@
 
 # V1
 
+## V1.8
+1. TF-IDF
+2. desc,structField,sql
+3. randomForest
+4. kmeans
+5. lda
+6. gmm
+
 ## V1.7
 1. 簡介增強，啟動
 2. read.df,count,summarize,

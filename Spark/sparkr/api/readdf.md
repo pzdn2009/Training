@@ -20,3 +20,22 @@ df2 <- read.df(mapTypeJsonPath, "json", schema)
 
 df3 <- loadDF("data/test_table", "parquet", mergeSchema = "true")
 ```
+# structed
+
+Create a structField object that contains the metadata for a  single field in a schema.
+
+structField(x, type, nullable = TRUE, ...)
+
+
+參數：
+- x: 字段名稱.
+- type: 數據類型
+- nullable: 是否可為空
+
+```r
+field1 <- structField("a", "integer")
+field2 <- structField("c", "string")
+field3 <- structField("avg", "double")
+schema <-  structType(field1, field2, field3)
+df1 <- gapply(df, list("a", "c"), function(key, x) { y <- data.frame(key, mean(x$b), stringsAsFactors = FALSE) }, schema)
+```
