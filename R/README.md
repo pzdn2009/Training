@@ -1,3 +1,8 @@
+# V3 
+## V3.5
+1. 查看数据的方法增加,class，levels:显示各个水平，length，attributes，nrow，ncol
+2. 分类的评判
+
 # V3.4
 1. 聚类分析，Add：WSS，BSS；
 2. Kmeans,Add：寻找K

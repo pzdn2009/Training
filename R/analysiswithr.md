@@ -23,6 +23,18 @@ names
 
 summary
 
+class
+
+levels:显示各个水平
+
+length
+
+attributes
+
+nrow
+
+ncol
+
 
 # 2. 数据预处理
 

@@ -218,6 +218,7 @@
     * [sub](R/sub.md)
     * [strsplit](R/strsplit.md)
   * [AnalysisWithR](R/analysiswithr.md)
+    * [分类问题及评判](R/analysiswithr/fen-lei-wen-ti-ji-ping-pan.md)
 
 ## DECO
 
