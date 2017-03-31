@@ -1,4 +1,10 @@
 # V3 
+
+## V3.6
+
+1. 打分模型的评判
+2. 概率模型的评判
+
 ## V3.5
 1. 查看数据的方法增加,class，levels:显示各个水平，length，attributes，nrow，ncol
 2. 分类的评判

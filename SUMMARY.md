@@ -219,6 +219,8 @@
     * [strsplit](R/strsplit.md)
   * [AnalysisWithR](R/analysiswithr.md)
     * [分类问题及评判](R/analysiswithr/fen-lei-wen-ti-ji-ping-pan.md)
+    * [打分模型及评判](R/analysiswithr/da-fen-wen-ti-ji-ping-pan.md)
+    * [概率模型及评判](R/analysiswithr/gai-lv-wen-ti-ji-ping-pan.md)
 
 ## DECO
 
