@@ -12,7 +12,7 @@ response variable ~ explanatory variables
 
 symbol |example|meaning
 --|--|--
-+|+ x|include this variable
++|+ x| 包含变量，分隔预测变量
 -|- x|delete this variable
 :|x : z|include the interaction between these variables
 *|x * z|include these variables and the interactions between them

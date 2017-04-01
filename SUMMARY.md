@@ -174,15 +174,20 @@
     * [数据抽样](R/数据抽样.md)
     * [datasets包](R/datasets包.md)
     * [读取CSV与TXT](R/读取csv与txt.md)
+    * [类型isas](R/isas.md)
+    * [scale处理](R/scale.md)
+    * [编程](R/编程.md)
+    * [数据管理函数](R/shu-ju-guan-li-han-shu.md)
   * [Data Preprocessing](R/data-preprocessing.md)
+    * [NA值处理](R/data-preprocessing/na.md)
   * [RFormula](R/rformula.md)
   * [Graphics](R/graphics.md)
   * [Statistics](R/stat.md)
     * [描述性统计](R/描述性统计.md)
     * 参数估计
-    * 假设检验
-    * 方差分析
-    * 回归分析
+    * [假设检验](R/jia-she-jian-yan.md)
+    * [方差分析](R/fang-cha-fen-xi.md)
+    * [回归分析](R/hui-gui-fen-xi.md)
     * [主成成分与因子分析](R/zhu-cheng-cheng-fen-yu-yin-zi-fen-xi.md)
     * [时间序列](R/shi-jian-xu-lie.md)
   * [Packages](R/packages.md)
