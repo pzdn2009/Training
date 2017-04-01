@@ -16,7 +16,7 @@
 
 # 混淆矩阵
 
-|true|false
+||true|false
 --|--|--
 belong|TP|FP
 no-belong|FN|TN

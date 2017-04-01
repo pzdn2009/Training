@@ -183,8 +183,8 @@
     * 假设检验
     * 方差分析
     * 回归分析
-    * 主成成分与因子分析
-    * 时间序列
+    * [主成成分与因子分析](R/zhu-cheng-cheng-fen-yu-yin-zi-fen-xi.md)
+    * [时间序列](R/shi-jian-xu-lie.md)
   * [Packages](R/packages.md)
     * [arules](R/arules.md)
       * [Groceries数据集](R/groceries数据集.md)
@@ -221,6 +221,7 @@
     * [分类问题及评判](R/analysiswithr/fen-lei-wen-ti-ji-ping-pan.md)
     * [打分模型及评判](R/analysiswithr/da-fen-wen-ti-ji-ping-pan.md)
     * [概率模型及评判](R/analysiswithr/gai-lv-wen-ti-ji-ping-pan.md)
+  * [RStudio](R/rstudio.md)
 
 ## DECO
 

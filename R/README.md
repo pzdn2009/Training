@@ -1,5 +1,9 @@
 # V3 
 
+## V3.7
+1. RStudio節
+2. 時間序列GettingStarted
+
 ## V3.6
 
 1. 打分模型的评判
