@@ -1,5 +1,11 @@
 # V3 
 
+## V3.8
+1. 輸入知識
+2. ISLR包
+3. 決策樹增加iris示例
+4. kmeans 增加 car示例
+
 ## V3.7
 1. RStudio節
 2. 時間序列GettingStarted

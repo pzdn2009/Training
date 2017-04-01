@@ -22,7 +22,7 @@ SSE（Sum of Squares for Error）
 对极端值敏感。
 
 #2. 官方示例
-```
+```r
 require(graphics)
 
 # a 2-dimensional example
@@ -39,7 +39,7 @@ points(cl$centers, col = 1:2, pch = 8, cex = 2)
 
 ref:http://blog.csdn.net/yucan1001/article/details/23123043
 
-```
+```r
 newiris <- iris;  
 newiris$Species <- NULL;  #对训练数据去掉分类标记  
 kc <- kmeans(newiris, 3);  #分类模型训练  
@@ -57,7 +57,7 @@ kmeans(x, centers, iter.max = 10, nstart = 1, algorithm = c("Hartigan-Wong", "Ll
 
 # 5. 尋找最小的K
 
-```R
+```r
 # The dataset school_result is pre-loaded
 
 # Set random seed. Don't remove this line.
@@ -84,3 +84,26 @@ for (k in 1:7) {
 plot(ratio_ss, type='b',xlab='k')
 
 ```
+
+# 6. kmeans cars example
+
+```r
+# The cars data frame is pre-loaded
+
+# Set random seed. Don't remove this line
+set.seed(1)
+
+# Group the dataset into two clusters: km_cars
+km_cars <- kmeans(cars, 2)
+
+# Add code: color the points in the plot based on the clusters
+plot(cars,col= km_cars$cluster)
+
+# Print out the cluster centroids
+km_cars$centers
+
+# Replace the ___ part: add the centroids to the plot
+points(km_cars$centers, pch = 22, bg = c(1, 2), cex = 2)
+```
+
+![](/assets/RkmeansCar.png)
