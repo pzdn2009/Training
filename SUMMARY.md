@@ -232,6 +232,10 @@
     * [打分模型及评判](R/analysiswithr/da-fen-wen-ti-ji-ping-pan.md)
     * [概率模型及评判](R/analysiswithr/gai-lv-wen-ti-ji-ping-pan.md)
   * [RStudio](R/rstudio.md)
+  * [R应用](R/rying-yong.md)
+    * [预测海藻数量](R/rying-yong/yu-ce-hai-zao-shu-liang.md)
+      * [1.加载数据到R](R/rying-yong/yu-ce-hai-zao-shu-liang/1jia-zai-shu-ju-dao-r.md)
+      * [2.数据可视化和摘要](R/rying-yong/yu-ce-hai-zao-shu-liang/2shu-ju-ke-shi-hua-he-zhai-yao.md)
 
 ## DECO
 
