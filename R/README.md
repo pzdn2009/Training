@@ -1,4 +1,10 @@
 # R & R Analyse
+
+# V4
+
+## V4.0
+1. K-Means算法伪代码
+
 # V3 
 
 ## V3.9 
