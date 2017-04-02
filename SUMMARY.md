@@ -208,13 +208,14 @@
       * [kmeans](R/kmeans.md)
       * [K-Medoids](R/k-medoids.md)
       * [判别分析](R/判别分析.md)
-      * [决策树](R/决策树.md)
     * 集成学习
     * 随机森林
     * [SVM](R/svm.md)
       * [svm函数](R/svm函数.md)
     * [神经网络](R/神经网络.md)
     * [Rattle](R/rattle.md)
+    * [分类&打分](R/fen-7c7b26-da-fen.md)
+      * [决策树](R/决策树.md)
   * [Functions](R/functions.md)
     * [inspect](R/inspect.md)
     * [dist函数](R/dist函数.md)
