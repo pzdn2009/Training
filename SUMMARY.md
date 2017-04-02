@@ -182,6 +182,9 @@
     * [NA值处理](R/data-preprocessing/na.md)
   * [RFormula](R/rformula.md)
   * [Graphics](R/graphics.md)
+    * [直方图](R/graphics/zhi-fang-tu.md)
+    * [箱线图](R/graphics/xiang-xian-tu.md)
+    * [核密度图](R/graphics/he-mi-du-tu.md)
   * [Statistics](R/stat.md)
     * [描述性统计](R/描述性统计.md)
     * 参数估计
