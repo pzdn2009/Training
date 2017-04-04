@@ -185,6 +185,7 @@
     * [直方图](R/graphics/zhi-fang-tu.md)
     * [箱线图](R/graphics/xiang-xian-tu.md)
     * [核密度图](R/graphics/he-mi-du-tu.md)
+    * [Q-Q图](R/graphics/q-qtu.md)
   * [Statistics](R/stat.md)
     * [描述性统计](R/描述性统计.md)
     * 参数估计
@@ -210,7 +211,7 @@
     * [聚类分析](R/聚类分析.md)
       * [kmeans](R/kmeans.md)
       * [K-Medoids](R/k-medoids.md)
-      * [判别分析](R/判别分析.md)
+      * [knn](R/判别分析.md)
     * 集成学习
     * 随机森林
     * [SVM](R/svm.md)

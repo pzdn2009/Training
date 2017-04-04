@@ -17,5 +17,3 @@ as.dist(m, diag = FALSE, upper = FALSE)
 - minkowski:闵可夫斯基距离
 
   The p norm, the pth root of the sum of the pth powers of the differences of the components.
-
-
