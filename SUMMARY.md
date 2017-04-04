@@ -221,6 +221,7 @@
     * [Rattle](R/rattle.md)
     * [分类&打分](R/fen-7c7b26-da-fen.md)
       * [决策树](R/决策树.md)
+      * [NaiveBayes](R/naivebayes.md)
   * [Functions](R/functions.md)
     * [inspect](R/inspect.md)
     * [dist函数](R/dist函数.md)
