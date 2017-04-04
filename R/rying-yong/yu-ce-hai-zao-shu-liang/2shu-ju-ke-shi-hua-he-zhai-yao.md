@@ -1,5 +1,7 @@
 # 2. 数据可视化和摘要
 
+# 摘要
+
 ```r
 > summary(algae)
 ```
@@ -31,6 +33,9 @@
  Max.   :44.600   Max.   :44.400   Max.   :77.600   Max.   :31.600  
 ```
 
+# 可视化
+## mxpH
+
 ```r
 > par(mfrow=c(1,2))
 > hist(algae$mxPH,probability = T,xlab='',
@@ -38,7 +43,44 @@
 > lines(density(algae$mxPH,na.rm=T))
 
 rug(jitter(algae$mxPH))
+qq.plot(algae$mxPH,main='QQ plot of max PH')
 ```
 
 ![](/assets/RplotMaxPHHISTQQ.png)
 
+>解释：
+Q-Q图，回执变量值和正态分布的理论分位数（实线）的散点图，同时，给出95%置信区间的带状图（虚线）。从图中可以看出， 变量有几个小的值明显在95%置信区间之外，它们不服从正态分布。
+
+## oPO4
+```r
+> boxplot(algae$oPO4,ylab="pPO4") #绘制箱线图
+> rug(jitter(algae$oPO4),side = 2) #left rug
+> abline(h=mean(algae$oPO4,na.rm=T),lty=2) #add Straight line
+```
+![](/assets/RplotoPo4Box.png)
+
+>解释：
+oPO4的分布集中在较小的观测值周围，因为分布为正片。大部分水样的oPO4值比较低，但有几个特别高。
+
+## NH4
+
+```r
+> plot(algae$NH4,xlab= "" )
+> abline(h=mean(algae$NH4,na.rm=T),lty=1,col="red") #均值
+> abline(h=mean(algae$NH4,na.rm=T)+
+         sd(algae$NH4,na.rm=T),lty=2,col='green') #一个标准差
+> abline(h=median(algae$NH4,na.rm=T),lty=1,col='blue',lwd=2) #中位数
+> identify(algae$NH4)
+警告: 已经找到了最近的点
+[1]  20  88 153
+```
+
+![](/assets/RplotNH4.png)
+
+## size~a1
+
+```r
+> library(lattice)
+> bwplot(size~a1,data=algae,ylab='River Size',xlab='Algal A1')
+```
+![](/assets/RplotbwPlotsizeA1.png)
