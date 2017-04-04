@@ -8,7 +8,7 @@
 3. 相关cor
 4. knn算法伪代码
 5. Q-Q图，plot，abline
-6. Na
+6. Naive Bayes原理
 
 ## V4.0
 1. K-Means算法伪代码
