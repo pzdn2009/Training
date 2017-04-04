@@ -164,6 +164,7 @@
 * [GIT](git/)
 * [MLTheory](MLTheory/README.md)
   * [推荐系统](MLTheory/Rd.md)
+* [MdMath](mdmath.md)
 
 ## Language
 
