@@ -17,7 +17,7 @@ $$ $$
 \$\$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} \$\$
 
 
-$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+$$ x^{y^z}=(1+{e}^x)^{-2xy^w} $$
 
 # 3. 如何输入括号和分隔符
 
@@ -66,7 +66,7 @@ $$ \sqrt{2} \quad and \quad \sqrt[n]{3} $$
 
 f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2
 
-$$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
+$$f(x_1,x_2,\underbrace{\ldots}_{ ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{ cdots} + x_n^2$$
 
 # 7. 如何输入矢量
 
@@ -86,7 +86,7 @@ $$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \ov
 
 \int_0^1 {x^2} \,{\rm d}x 
 
-$$ \int_0^1 {x^2} \,{\rm d}x $$
+$$ \int_0^1 {x^2} \,{d}x $$
 
 # 9. 如何 输入极限运算
 
