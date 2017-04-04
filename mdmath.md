@@ -4,7 +4,7 @@ ref:https://www.zybuluo.com/codeep/note/163962?utm_source=tuicool&utm_medium=ref
 
 # 1. 插入公式
 
-$$ 数学公式 $$
+$$ $$
 
 # 2. 插入上下标
 
