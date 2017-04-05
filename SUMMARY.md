@@ -242,6 +242,7 @@
       * [2.数据可视化和摘要](R/rying-yong/yu-ce-hai-zao-shu-liang/2shu-ju-ke-shi-hua-he-zhai-yao.md)
       * [3.数据缺失](R/rying-yong/yu-ce-hai-zao-shu-liang/3shu-ju-que-shi.md)
       * [4.获取预测模型](R/rying-yong/yu-ce-hai-zao-shu-liang/4huo-qu-yu-ce-mo-xing.md)
+      * [5.模型的评价和选择](R/rying-yong/yu-ce-hai-zao-shu-liang/5mo-xing-de-ping-jia-he-xuan-ze.md)
 
 ## DECO
 
