@@ -14,12 +14,19 @@
 * 逻辑斯蒂回归
 * 支持向量机
 
+评判：
+
+**Accuracy** and **Error**。
+其中，Error = 1 – Accuracy .
+
 # 混淆矩阵
 
-||true|false
+Confusion matrix。
+
+Truth/prediction|positive|negative
 --|--|--
-belong|TP|FP
-no-belong|FN|TN
+true|TP|FN
+false|FP|TN
 
 - TP：真阳性
 - FP：假阳性
@@ -28,8 +35,17 @@ no-belong|FN|TN
 
 含义词：
 - 精度accuracy：（TP + TN） / (TP+FP+FN+TN)，对角
-- 准确率precision：TP/(TP+FP)，上行
-- 召回率recall：TP/(TP+FN)，左列
-- 灵敏度sensitivity：TP/(TP+FN)，左列
-- 特异度specificity：TN/(TN+FP)，右列
+- 准确率precision：TP/(TP+FP)，左列
+- 召回率recall：TP/(TP+FN)，上行
+- 灵敏度sensitivity：TP/(TP+FN)，上行
+- 特异度specificity：TN/(TN+FP)，下行
 - F1:2*precision*recall/(precision+recall)
+
+eg：
+```r
+>table(titanic$Survived,pred)
+  pred
+      1   0
+  1 212  78
+  0  53 371
+```

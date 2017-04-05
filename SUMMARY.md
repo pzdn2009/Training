@@ -214,7 +214,7 @@
       * [K-Medoids](R/k-medoids.md)
       * [knn](R/判别分析.md)
     * 集成学习
-    * 随机森林
+    * [随机森林](R/sui-ji-sen-lin.md)
     * [SVM](R/svm.md)
       * [svm函数](R/svm函数.md)
     * [神经网络](R/神经网络.md)

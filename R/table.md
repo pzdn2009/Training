@@ -8,7 +8,7 @@ The table command is one of **the most basic summary statistics** functions in R
 
 eg:
 
-```
+```r
 # 类别为table
 > class(table(seq(1,10)))
 [1] "table"

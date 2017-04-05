@@ -12,3 +12,26 @@
 评判：
 - WSS
 - BSS
+- WSS/BSS
+
+
+
+示例：
+
+```
+wget https://archive.ics.uci.edu/ml/machine-learning-databases/00236/seeds_dataset.txt 
+```
+```r
+seeds<- read.table(path="seeds_dataset.txt")
+set.seed(1)
+str(seeds)
+
+# Group the seeds in three clusters
+km_seeds <- kmeans(seeds, 3)
+
+# Color the points in the plot based on the clusters
+plot(length ~ compactness, data = seeds,col=km_seeds$cluster)
+
+# Print out the ratio of the WSS to the BSS
+km_seeds$tot.withinss/km_seeds$betweenss
+```
