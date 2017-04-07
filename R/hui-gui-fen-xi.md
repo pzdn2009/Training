@@ -2,13 +2,27 @@
 
 # 理论
 
+* 预测变量X，Predictor
+* 响应变量Y，Response
+* 截距，常数 $$ \beta_0 $$，Intercept
+* 斜率，Slope
+* 统计误差
+* 估計係數，Estimate Coefficient.
+* 惩罚因子
+
 OLS
 
 残差平方和最小
 
 类型：
-- 简单线性
+- 简单线性回归
+- 多元线性回归
 - 多项式
+
+經驗：
+* log-linear：如果散點圖呈現對數格式，則取對數log(Predictor)，可以提高R^2.
+* qqnorm，查看Residual是否为正态线
+* plot(lm$residual,lm$fitted.values)，查看是否为无模式。
 
 # 简单线性回归
 
@@ -39,9 +53,10 @@ F-statistic:  1433 on 1 and 13 DF,  p-value: 1.091e-14
 
 ```
 
-Residuals：残差
+Residuals：残差，呈Q-Q分布最好
 Coefficients：相关性
 Intercept：截距
+P值：越小越重要，影响越显著，1-p表示影响的程度。
 
 ```r
 > women$weight
@@ -64,3 +79,18 @@ Intercept：截距
 ```
 
 ![](/assets/RplotLMWomen.png)
+
+# 多元线性回归
+
+拟合值与残差的分布：
+
+```r
+# Plot the residuals in function of your fitted observations
+plot(lm_choco$fitted.values,lm_choco$residuals,data=lm_choco)
+```
+![](/assets/lm_chocofitted.values_res..png)
+
+残差的Q-Q图：
+```r
+> qqnorm(lm_choco$residuals)
+```

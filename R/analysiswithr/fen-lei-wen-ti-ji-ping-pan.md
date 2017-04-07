@@ -36,9 +36,9 @@ false|FP|TN
 含义词：
 - 精度accuracy：（TP + TN） / (TP+FP+FN+TN)，对角
 - 准确率precision：TP/(TP+FP)，左列
-- 召回率recall：TP/(TP+FN)，上行
+- 召回率recall：TP/(TP+FN)，上行，TPR
 - 灵敏度sensitivity：TP/(TP+FN)，上行
-- 特异度specificity：TN/(TN+FP)，下行
+- 特异度specificity：FP/(TN+FP)，下行，FPR
 - F1:2*precision*recall/(precision+recall)
 
 eg：

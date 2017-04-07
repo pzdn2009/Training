@@ -127,6 +127,9 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 ## 12.4  三角运算符
 ## 12.5  微积分运算符
 ## 12.6  逻辑运算符
-
+## 12.7  戴帽符号
+输入|显示|输入|显示
+--|--|--|--
+\hat{xy}|$$\hat{xy}$$|\widehat{xyz}|$$\widehat{xyz}$$
 
 

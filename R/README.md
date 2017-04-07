@@ -6,6 +6,8 @@
 2. 划分Training & Test，混洗
 3. 交叉验证
 4. knn R代码
+5. ROC,AUC，RMSE，R^2
+6. 多元回归分析，补充
 
 ## V4.1
 1. R应用：预测海藻数量
