@@ -2,6 +2,13 @@
 
 # V1
 
+## V1.9
+1. 從RStudio啟動
+2. desc,arrange,collect
+3. 從Hive查詢
+4. UDF，dapply,dapplyCollect
+5. glm 補充
+
 ## V1.8
 1. TF-IDF
 2. desc,structField,sql

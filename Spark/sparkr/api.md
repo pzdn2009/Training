@@ -10,3 +10,11 @@ DF：SparkDataFrame
 - select
 - filter
 - groupBy
+- groupBy
+- read.df
+- n/count
+- summarize
+- sql
+- desc
+- arrange
+- collect

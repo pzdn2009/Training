@@ -41,3 +41,26 @@ root
 2  30    Andy
 3  19  Justin
 ```
+
+# 3. From Hive Tables
+
+也可以創建DF連到HIVE表。這需要創建一個能夠支持訪問Hive元數據庫的SparkSession。在SparkR中，創建SparkSession時使用參數(enableHiveSupport = TRUE)。
+
+```r
+> sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING)")
+SparkDataFrame[]
+
+> sql("LOAD DATA LOCAL INPATH 
+'/home/pzdn/app/spark2.1.0/examples/src/main/resources/kv1.txt' INTO TABLE src")
+SparkDataFrame[]
+
+> results <- sql("FROM src SELECT key, value")
+> head(results)
+  key   value
+1 238 val_238
+2  86  val_86
+3 311 val_311
+4  27  val_27
+5 165 val_165
+6 409 val_409
+```
