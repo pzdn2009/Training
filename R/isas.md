@@ -20,4 +20,9 @@
 
 which(A==1,arr.ind=T)
 
+```r
+which(ll <- c(TRUE, FALSE, TRUE, NA, FALSE, FALSE, TRUE)) #
+> 1 3 7
 
+which((1:12)%%2 == 0) # which are even?
+```

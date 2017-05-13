@@ -7,6 +7,25 @@
 - Inf: 正无穷大
 - -Inf: 负无穷大
 
+```r
+> NA
+[1] NA
+> NaN
+[1] NaN
+
+> class(NA)
+[1] "logical"
+> class(NaN)
+[1] "numeric"
+
+> Inf
+[1] Inf
+> class(Inf)
+[1] "numeric"
+> class(-Inf)
+[1] "numeric"
+```
+
 # 详细
 - 基础数据类型
 - 数据结构
