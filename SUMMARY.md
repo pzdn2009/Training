@@ -250,6 +250,7 @@
     * [ES6](FrontEnd/esgui-fan/es6.md)
     * [ES7](FrontEnd/esgui-fan/es7.md)
   * [CommonJS规范](FrontEnd/commonjsgui-fan.md)
+    * [Modules](FrontEnd/commonjsgui-fan/modules.md)
   * [Node](FrontEnd/node.md)
     * [基础](FrontEnd/node/ji-chu.md)
     * [API](FrontEnd/node/api.md)
