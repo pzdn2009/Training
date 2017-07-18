@@ -1,3 +1,7 @@
+# V1.5
+1. 增加Release地址；
+2. 增加Nexusdocker安裝；
+
 # V1.4
 1. Add Compose节；
 2. Add Swam 文件；

@@ -55,6 +55,7 @@
     * [SSH](Docker/ssh.md)
     * [Dockerize Redis](Docker/dockerize-redis.md)
     * [Nginx](Docker/nginx.md)
+    * [nexus3](Docker/nexus3.md)
   * [Compose](Docker/compose.md)
   * [Swarm](Docker/swarm.md)
   * [Point](Docker/point.md)

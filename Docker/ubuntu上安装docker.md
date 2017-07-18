@@ -58,6 +58,14 @@ sudo service docker start
 sudo chkconfig docker on
 ```
 
+源碼和bin下載地址：
+https://github.com/moby/moby/releases
+```shell
+tar xzvf /path/to/<FILE>.tar.gz
+sudo cp docker/* /usr/bin/
+sudo dockerd &
+sudo docker run hello-world
+```
 ## 4.MAC
 
 下载boot2docker来安装。
@@ -75,3 +83,16 @@ sudo service docker restart
 >Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
 
 原理：高版本的docker会将docker用户组设置为root权限的。
+
+## 5. cn 鏡像
+```shell
+$ docker pull registry.docker-cn.com/myname/myrepo:mytag
+$ docker pull registry.docker-cn.com/library/ubuntu:16.04
+
+$ docker --registry-mirror=https://registry.docker-cn.com daemon
+
+或者修改：/etc/docker/daemon.json
+{
+  "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+```
