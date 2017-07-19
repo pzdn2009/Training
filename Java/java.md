@@ -1,6 +1,15 @@
 # Java
 
+- 编程。 Java语言相关
+- Spring。 Spring框架相关
+- IDE。 IDE工具操作相关
+- Maven。 构建操作相关。
+
 # V1
+
+# V0.2
+1. java8新特性
+2. 
 
 # V0.1
 
