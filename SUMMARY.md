@@ -267,9 +267,12 @@
     * [反射](Java/java/bian-cheng/fan-she.md)
   * [WEB](Java/java/web.md)
   * [Spring](Java/java/spring.md)
+    * [Springboot](Java/java/spring/springboot.md)
+      * [swagger](Java/java/spring/springboot/swagger.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)
     * [Eclipse](Java/java/ide/eclipse.md)
+    * [idea](Java/java/ide/idea.md)
   * [Final](Java/java/final.md)
 
 ## DECO
