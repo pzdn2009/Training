@@ -111,6 +111,7 @@
   * [四色原型](DDD/四色原型.md)
   * [模式解析](DDD/模式解析.md)
   * [實踐](DDD/實踐.md)
+    * [领域驱动设计之领域模型netfocus](DDD/實踐/ling-yu-qu-dong-she-ji-zhi-ling-yu-mo-xing-netfocus.md)
 * [.netcore](netcore/README.md)
   * [GettingStarted](netcore/gettingstarted.md)
     * [創建.net core libaray](netcore/創建net-core-libaray.md)
