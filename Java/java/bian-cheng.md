@@ -7,3 +7,5 @@
 - 增强循环
 - 静态导入
 - 注解
+- Guava
+- serialVersionUID

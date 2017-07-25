@@ -9,7 +9,7 @@
 
 # V0.2
 1. java8新特性
-2. 
+2. 註解，Guava，serialVersionUID
 
 # V0.1
 
