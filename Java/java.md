@@ -10,6 +10,7 @@
 # V0.2
 1. java8新特性
 2. 註解，Guava，serialVersionUID
+3. JPA完善
 
 # V0.1
 

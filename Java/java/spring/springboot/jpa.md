@@ -1,8 +1,14 @@
 # JPA
 
-## 1. 教程
+JPA(Java Persistence API)。主要是为了简化现有的持久化开发工作和整合ORM技术。JPA是一套规范，不是一套产品。
 
-Ref：https://spring.io/guides/gs/accessing-data-jpa/ 
+## 1. 引用
+
+教程Ref：https://spring.io/guides/gs/accessing-data-jpa/ 
+
+官方文檔Ref：http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
+
+中文版指南：https://ityouknow.gitbooks.io/spring-data-jpa-reference-documentation/content/
 
 ## 2. 依賴
 
@@ -14,12 +20,37 @@ Ref：https://spring.io/guides/gs/accessing-data-jpa/
 
 ```
 
+配置：
+```
+# 配置数据库
+spring.jpa.database = sql_server
+# 查询时是否显示日志
+spring.jpa.show-sql = true
+# Hibernate ddl auto (create, create-drop, update)
+spring.jpa.hibernate.ddl-auto = none
+# Naming strategy
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+# stripped before adding them to the entity manager)
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+```
+
 ## 3. Annotations
 
 Entity：
-* @Entity
-* @Id
-* @GeneratedValue(strategy=GenerationType.AUTO)
+* @Entity。對應關係型DB表
+* @Document。支持Mongo表
+* @Id。對應主鍵
+* @GeneratedValue(strategy=GenerationType.AUTO)。主键的产生策略。
+ * Identity：表自动增长字段，Oracle不支持这种方式；
+ * AUTO：JPA自动选择合适的策略，是默认选项；
+ * Sequence：通过序列产生主键，通过@SequenceGenerator注解指定序列名，Mysql不支持这种方式。
+ * TABLE：通过表产生主键，框架借由表模拟产生主键，使用该策略可以使用更易于数据库的移植。 
+* @Lob
+* @Column。對應列名。
+* @Temporal。时间类型。
+ * TemporalType.DATE
+ * TemporalType.TIME
+ * TemporalType.TIMESTAMP
 
 Repository：
 * @Query(value = "select * from t_userinfo limit ?1", nativeQuery =true)
@@ -35,9 +66,44 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
     List<Customer> findByLastName(String lastName);
 }
 
+其他：
+PagingAndSortingRepository
+CrudRepository
 ```
 
 Spring Data JPA creates an implementation on the fly when you run the application.
+
+默認方法：
+```java
+userRepository.findAll();
+userRepository.findOne(1l);
+userRepository.save(user);
+userRepository.delete(user);
+userRepository.count();
+userRepository.exists(1l);
+```
+自定義簡單查詢：
+
+findXXBy,readAXXBy,queryXXBy,countXXBy, getXXBy。
+
+複雜查詢：
+```java
+Page<User> findByUserName(String userName,Pageable pageable);
+
+@Test
+public void testPageQuery() throws Exception {
+    int page=1,size=10;
+    Sort sort = new Sort(Direction.DESC, "id");
+    Pageable pageable = new PageRequest(page, size, sort);
+    userRepository.findALL(pageable);
+    userRepository.findByUserName("testName", pageable);
+}
+
+@Transactional
+@Modifying
+@Query("delete from User where id = ?1")
+void deleteByUserId(Long id);
+```
 
 ## 5. Test
 
@@ -77,4 +143,44 @@ Spring Data JPA creates an implementation on the fly when you run the applicatio
 		};
 	}
 
+```
+
+## 6. 坑
+
+### 6.1 MS SQL Exception: Incorrect syntax near '@P0'
+解決：MS SQL TOP需要加上括號
+```sql
+SELECT TOP (?)
+```
+使用2008的方言：
+```
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServer2008Dialect
+```
+Ref：Upgraded hibernate to version 5.x and came across this issue. Had to update "hibernate.dialect" configuration from org.hibernate.dialect.SQLServerDialect to org.hibernate.dialect.SQLServer2012Dialect.
+
+### 6.2 映射NVARCHAR
+
+NVARCHAR(MAX)使用@Lob來完成映射
+
+### 6.3 映射UNIQUEIDENTIFIER
+
+用類型UUID不行，改為String即可。
+
+```java
+@Id
+@GenericGenerator(name = "generator", strategy = "guid", parameters = {})
+@GeneratedValue(generator = "generator")
+@Column(name = "APPLICATION_ID" , columnDefinition="uniqueidentifier")
+private String id = UUID.randomUUID().toString();
+```
+
+### 6.4 hb5.0命名策略
+Ref：https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#naming-strategies
+
+```
+# 有 ImprovedNamingStrategy的效果。
+org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+# 有 DefaultNamingStrategy的效果。
+org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 ```

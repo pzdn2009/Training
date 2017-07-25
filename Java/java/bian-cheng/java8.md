@@ -120,10 +120,40 @@ Following the com.javacodegeeks.java8.method.references.MethodReferences$Car@7a8
 
 類似 Nullable
 
-* isPresent()來判斷是否為空，true非空；
-* orElseGet()方法通过回调函数来产生一个默认值：orElseGet( () -> "[none]" ) ); 
+APIS：
+* public<U> Optional<U> map(Function<? super T, ? extends U> mapper)
+
+map 是可能无限级联的, 比如再深一层, 获得用户名的大写形式
+
+```java
+return user.map(u -> u.getOrders()).orElse(Collections.emptyList())
+
+return user.map(u -> u.getUsername())
+           .map(name -> name.toUpperCase())
+           .orElse(null);
+```
+* public T **orElse**(T other)
+存在即返回, 无则提供默认值。
+```java
+return user.orElse(null);  //而不是 return user.isPresent() ? user.get() : null;
+return user.orElse(UNKNOWN_USER);
+```
+* public T orElseGet(Supplier<? extends T> other)
+   通过回调函数来产生一个默认值：
+```java
+orElseGet( () -> "[none]" ) ); 
+```
+* public void ifPresent(Consumer<? super T> consumer)
+
+   isPresent()來判斷是否為空，true非空；
+* public Optional<T> filter(Predicate<? super T> predicate)
+* public<U> Optional<U> flatMap(Function<? super T, Optional<U>> mapper)
+* public <X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier) throws X
 * Optional.ofNullable( null )
-* Optional.of("Tom")
+  它以一种智能的, 宽容的方式来构造一个 Optional 实例. 传 null 进到就得到 Optional.empty(), 非 null 就调用 Optional.of(obj).
+* Optional.of("Tom")。
+   
+   它要求传入的 obj 不能是 null 值的
 
 ```java
 Optional< String > fullName = Optional.ofNullable( null );
@@ -131,6 +161,9 @@ System.out.println( "Full Name is set? " + fullName.isPresent() );
 System.out.println( "Full Name: " + fullName.orElseGet( () -> "[none]" ) ); 
 System.out.println( fullName.map( s -> "Hey " + s + "!" ).orElse( "Hey Stranger!" ) );
 ```
+
+使用任何像 Optional 的类型作为字段或方法参数都是不可取的. Optional 只设计为类库方法的, 可明确表示可能无值情况下的返回类型. Optional 类型不可被序列化, 用作字段类型会出问题的。
+
 
 ## Stream
 
