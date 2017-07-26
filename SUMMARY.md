@@ -286,6 +286,7 @@
       * [actuator](Java/java/spring/springboot/actuator.md)
       * [devtools](Java/java/spring/springboot/devtools.md)
       * [Circuit Breaker](Java/java/spring/springboot/circuit-breaker.md)
+      * [Config](Java/java/spring/springboot/config.md)
     * [Springcloud](Java/java/spring/springcloud.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)

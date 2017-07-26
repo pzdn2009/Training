@@ -9,6 +9,7 @@
 
 #V0.3
 1. Circuit Breaker熔斷；
+2. Config Server/Client；
 
 
 # V0.2
