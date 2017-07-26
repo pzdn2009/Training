@@ -10,7 +10,7 @@
 #V0.3
 1. Circuit Breaker熔斷；
 2. Config Server/Client；
-
+3. Service Registration and Discovery；
 
 # V0.2
 1. java8新特性

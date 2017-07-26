@@ -287,6 +287,7 @@
       * [devtools](Java/java/spring/springboot/devtools.md)
       * [Circuit Breaker](Java/java/spring/springboot/circuit-breaker.md)
       * [Config](Java/java/spring/springboot/config.md)
+      * [Service Registration and Discovery](Java/java/spring/springboot/service-registration-and-discovery.md)
     * [Springcloud](Java/java/spring/springcloud.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)
