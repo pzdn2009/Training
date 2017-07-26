@@ -285,6 +285,7 @@
       * [單元測試](Java/java/spring/springboot/dan-yuan-ce-shi.md)
       * [actuator](Java/java/spring/springboot/actuator.md)
       * [devtools](Java/java/spring/springboot/devtools.md)
+      * [Circuit Breaker](Java/java/spring/springboot/circuit-breaker.md)
     * [Springcloud](Java/java/spring/springcloud.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)

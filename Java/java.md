@@ -7,6 +7,10 @@
 
 # V1
 
+#V0.3
+1. Circuit Breaker熔斷；
+
+
 # V0.2
 1. java8新特性
 2. 註解，Guava，serialVersionUID
