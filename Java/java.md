@@ -7,18 +7,19 @@
 
 # V1
 
-#V0.3
+## V0.3
 1. Circuit Breaker熔斷；
 2. Config Server/Client；
 3. Service Registration and Discovery；
 4. 傳輸壓縮；
+5. 連接Redis；
 
-# V0.2
+## V0.2
 1. java8新特性
 2. 註解，Guava，serialVersionUID
 3. JPA完善
 
-# V0.1
+## V0.1
 
 1. 反射、泛型、凝视符、自己主动装箱和拆箱、枚举类、可变參数、可变返回类型、增强循环、静态导入。
 2. ROA、RESI。

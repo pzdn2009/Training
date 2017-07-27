@@ -289,6 +289,7 @@
       * [Config](Java/java/spring/springboot/config.md)
       * [Service Registration and Discovery](Java/java/spring/springboot/service-registration-and-discovery.md)
       * [server.compression](Java/java/spring/springboot/servercompression.md)
+      * [Redis](Java/java/spring/springboot/redis.md)
     * [Springcloud](Java/java/spring/springcloud.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)

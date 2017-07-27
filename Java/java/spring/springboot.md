@@ -2,3 +2,4 @@
 
 * swagger
 * devtools
+* Redis

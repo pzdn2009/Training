@@ -73,6 +73,8 @@ CrudRepository
 
 Spring Data JPA creates an implementation on the fly when you run the application.
 
+
+
 默認方法：
 ```java
 userRepository.findAll();
@@ -104,6 +106,60 @@ public void testPageQuery() throws Exception {
 @Query("delete from User where id = ?1")
 void deleteByUserId(Long id);
 ```
+
+### 4.1 PagingAndSortingRepository
+
+PagingAndSortingRepository 接口继承于 CrudRepository 接口，拥有CrudRepository 接口的所有方法， 并新增两个方法：分页和排序。 但是**这两个方法不能包含筛选条件**。
+```java
+@NoRepositoryBean
+public interface PagingAndSortingRepository<T, ID extends Serializable> extends CrudRepository<T, ID> {
+
+	/**
+	 * Returns all entities sorted by the given options.
+	 * 
+	 * @param sort
+	 * @return all entities sorted by the given options
+	 */
+	Iterable<T> findAll(Sort sort);
+
+	/**
+	 * Returns a {@link Page} of entities meeting the paging restriction provided in the {@code Pageable} object.
+	 * 
+	 * @param pageable
+	 * @return a page of entities
+	 */
+	Page<T> findAll(Pageable pageable);
+} 
+```
+
+Sample：
+
+```java
+@Test  
+    public void test_findAll_page(){  
+        int currentPage =0; //当前页从0 开始  
+        int pageSize = 5;  
+          
+        //排序  
+        Order idOrder = new Order(Direction.DESC, "id");  
+        Order nameOrder = new Order(Direction.ASC,"name");  
+        Sort sort = new Sort(idOrder,nameOrder);  
+        PageRequest pageRequest  = new PageRequest(currentPage, pageSize, sort);  
+          
+        Page<StudentPO> page = this.studentdPageSortRepository.findAll(pageRequest);  
+        System.out.println("总记录数:" + page.getTotalElements());  
+        System.out.println("总页数:" + page.getTotalPages());  
+        System.out.println("当前页（request):" + page.getNumber());  
+        System.out.println("当前页总记录数（request):" + page.getSize());  
+        System.out.println("当前页记录总数：" + page.getNumberOfElements());  
+        List<StudentPO> students = page.getContent();  
+        for (StudentPO studentPO : students) {  
+            System.out.println(studentPO);  
+        }  
+    }  
+```
+
+* 排序語法構造：Sort sort = new Sort(Direction.DESC, "sort").and(new Sort(Direction.DESC, "id"));
 
 ## 5. Test
 
@@ -184,3 +240,10 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 # 有 DefaultNamingStrategy的效果。
 org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 ```
+
+### 6.5 多條件查詢與分頁
+
+spring Data JPA支持JPA2.0的Criteria查询，相应的接口是JpaSpecificationExecutor。
+
+**Criteria 查询**：是一种类型安全和更面向对象的查询 。
+
