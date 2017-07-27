@@ -11,6 +11,7 @@
 1. Circuit Breaker熔斷；
 2. Config Server/Client；
 3. Service Registration and Discovery；
+4. 傳輸壓縮；
 
 # V0.2
 1. java8新特性
