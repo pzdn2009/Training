@@ -13,6 +13,7 @@
 3. Service Registration and Discovery；
 4. 傳輸壓縮；
 5. 連接Redis；
+6. 驗證Validation；
 
 ## V0.2
 1. java8新特性

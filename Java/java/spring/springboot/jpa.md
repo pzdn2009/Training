@@ -247,3 +247,30 @@ spring Data JPA支持JPA2.0的Criteria查询，相应的接口是JpaSpecificatio
 
 **Criteria 查询**：是一种类型安全和更面向对象的查询 。
 
+```java
+private class MySpec implements Specification<ResourceItem> {
+
+    private GetResourceItemListRequestDTO requestDTO;
+
+    public MySpec(GetResourceItemListRequestDTO requestDTO) {
+        this.requestDTO = requestDTO;
+    }
+
+    @Override
+    public Predicate toPredicate(Root<ResourceItem> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+
+        List<Predicate> list = new ArrayList<Predicate>();
+
+        list.add(cb.equal(root.get("applicationID"), requestDTO.getApplicationId()));
+        list.add(cb.equal(root.get("categoryID"), requestDTO.getCategoryId()));
+
+        Predicate[] p = new Predicate[list.size()];
+
+        return cb.and(list.toArray(p));
+    }
+}
+
+var query = repository.findAll(new MySpec(requestDTO),new PageRequest(requestDTO.getPage(), requestDTO.getSize()));
+
+```
+手殘的：PageRequest的page與size傳遞反了。
