@@ -8,7 +8,8 @@
 # V1
 
 ## V0.4
-1. 配置文件，BlockingQueue，ScheduledExecutorService定時任務
+1. 配置文件，BlockingQueue，ScheduledExecutorService定時任務；
+2. format；
 
 ## V0.3
 1. Circuit Breaker熔斷；
