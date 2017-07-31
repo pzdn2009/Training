@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.4
+1. 配置文件，BlockingQueue，ScheduledExecutorService定時任務
+
 ## V0.3
 1. Circuit Breaker熔斷；
 2. Config Server/Client；
@@ -14,6 +17,7 @@
 4. 傳輸壓縮；
 5. 連接Redis；
 6. 驗證Validation；
+7. 日誌
 
 ## V0.2
 1. java8新特性

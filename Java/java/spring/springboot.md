@@ -13,3 +13,6 @@
 * compression
 * Redis
 * Validation
+* logging
+* 配置文件
+

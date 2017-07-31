@@ -9,3 +9,5 @@
 - 注解
 - Guava
 - serialVersionUID
+- BlockingQueue
+- 定時任務ScheduledExecutorService 
