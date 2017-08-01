@@ -10,6 +10,9 @@
 ## V0.4
 1. 配置文件，BlockingQueue，ScheduledExecutorService定時任務；
 2. format；
+3. 異常處理；
+4. 自定義配置；
+5. 定時任務，Spring boot 詳解，WEB增加：Servlet、Filter、Listener、Interceptor.
 
 ## V0.3
 1. Circuit Breaker熔斷；

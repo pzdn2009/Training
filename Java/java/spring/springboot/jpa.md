@@ -21,7 +21,7 @@ JPA(Java Persistence API)。主要是为了简化现有的持久化开发工作�
 ```
 
 配置：
-```
+```properties
 # 配置数据库
 spring.jpa.database = sql_server
 # 查询时是否显示日志
@@ -31,12 +31,12 @@ spring.jpa.hibernate.ddl-auto = none
 # Naming strategy
 spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 # stripped before adding them to the entity manager)
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2008Dialect
 ```
 
 ## 3. Annotations
 
-Entity：
+### 3.1 Entity的註解 
 * @Entity。對應關係型DB表
 * @Document。支持Mongo表
 * @Id。對應主鍵
@@ -45,18 +45,25 @@ Entity：
  * AUTO：JPA自动选择合适的策略，是默认选项；
  * Sequence：通过序列产生主键，通过@SequenceGenerator注解指定序列名，Mysql不支持这种方式。
  * TABLE：通过表产生主键，框架借由表模拟产生主键，使用该策略可以使用更易于数据库的移植。 
-* @Lob
+* @Lob。NVARCHAR(max)
 * @Column。對應列名。
 * @Temporal。时间类型。
  * TemporalType.DATE
  * TemporalType.TIME
  * TemporalType.TIMESTAMP
 
-Repository：
+### 3.2 Repository的註解
 * @Query(value = "select * from t_userinfo limit ?1", nativeQuery =true)
+* @Transactional
 
 ## 4. Repository
+Spring Data JPA creates an implementation on the fly when you run the application.
 
+* Repository
+* CrudRepository
+* PagingAndSortingRepository
+
+### 4.1 CrudRepository
 ```java
 package hello;
 import java.util.List;
@@ -65,15 +72,7 @@ import org.springframework.data.repository.CrudRepository;
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
     List<Customer> findByLastName(String lastName);
 }
-
-其他：
-PagingAndSortingRepository
-CrudRepository
 ```
-
-Spring Data JPA creates an implementation on the fly when you run the application.
-
-
 
 默認方法：
 ```java
@@ -107,7 +106,7 @@ public void testPageQuery() throws Exception {
 void deleteByUserId(Long id);
 ```
 
-### 4.1 PagingAndSortingRepository
+### 4.2 PagingAndSortingRepository
 
 PagingAndSortingRepository 接口继承于 CrudRepository 接口，拥有CrudRepository 接口的所有方法， 并新增两个方法：分页和排序。 但是**这两个方法不能包含筛选条件**。
 ```java

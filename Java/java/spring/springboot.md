@@ -1,5 +1,7 @@
 # Springboot
 
+Spring Boot官网：http://projects.spring.io/spring-boot/
+
 * swagger
 * restapi
 * JPA
@@ -15,4 +17,6 @@
 * Validation
 * logging
 * 配置文件
+* 異常處理
+
 

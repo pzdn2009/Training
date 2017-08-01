@@ -6,3 +6,10 @@ LogBack和Log4j都是开源日记工具库，LogBack是Log4j的改良版本，�
 
 spring-boot默认支持logback，所以无需引用任何以来只需要，配置application.properties即可。
 
+## 自定義Appender的問題
+
+Ref：http://www.itkeyword.com/doc/9602162384580714x181/spring-boot-logback-autowire
+
+自定義的AppenderBase<ILoggingEvent>不能和Spring框架的Bean很好地結合起來。
+
+要重新寫。

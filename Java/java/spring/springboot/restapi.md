@@ -1,6 +1,6 @@
 # restapi
 
-* @RestController = @Controller + @ResponseBody 
+* @RestController = @Controller + @ResponseBody ，作用是能夠返回Json數據。
 * @RequestMapping("/greeting")
 * @RequestParam(value="name", defaultValue="World")
 * @GetMapping("/")
@@ -8,6 +8,7 @@
 * @Valid
 * @RequestBody
 * RequestMethod.POST 
+* @ResponseEntity
 
 ## 註解
 1. @controller 控制器（注入服务）
