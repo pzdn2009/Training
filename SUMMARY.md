@@ -305,6 +305,7 @@
       * [自定義配置](Java/java/spring/springboot/zi-ding-yi-pei-zhi.md)
       * [詳解](Java/java/spring/springboot/xiang-jie.md)
       * [定時任務](Java/java/spring/springboot/ding-shi-ren-wu.md)
+      * [RestTemplate](Java/java/spring/springboot/resttemplate.md)
     * [Springcloud](Java/java/spring/springcloud.md)
   * [iBatis](Java/java/ibatis.md)
   * [IDE](Java/java/ide.md)

@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.5
+1. RestTemplate；
+
 ## V0.4
 1. 配置文件，BlockingQueue，ScheduledExecutorService定時任務；
 2. format；
