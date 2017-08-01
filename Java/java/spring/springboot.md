@@ -2,6 +2,7 @@
 
 Spring Boot官网：http://projects.spring.io/spring-boot/
 
+Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * swagger
 * restapi
 * JPA
