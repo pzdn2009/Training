@@ -310,6 +310,7 @@
       * [AOP](Java/java/spring/springboot/aop.md)
         * [PointCut](Java/java/spring/springboot/aop/pointcut.md)
       * [RunInDocker](Java/java/spring/springboot/runindocker.md)
+      * [普通类调用SpringBean](Java/java/spring/springboot/pu-tong-lei-diao-yong-springbean.md)
     * [Springcloud](Java/java/spring/springcloud.md)
     * [Springboot配置](Java/java/spring/springbootpei-zhi.md)
       * [datasource](Java/java/spring/springbootpei-zhi/datasource.md)

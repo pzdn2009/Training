@@ -9,6 +9,7 @@
 
 ## V0.6
 1. classpath；
+2. 普通类调用Spring Bean；
 
 ## V0.5
 1. RestTemplate；
