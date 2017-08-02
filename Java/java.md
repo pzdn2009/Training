@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.6
+1. classpath；
+
 ## V0.5
 1. RestTemplate；
 2. AOP简介，切入点；
