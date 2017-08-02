@@ -13,3 +13,61 @@ Ref：http://www.itkeyword.com/doc/9602162384580714x181/spring-boot-logback-auto
 自定義的AppenderBase<ILoggingEvent>不能和Spring框架的Bean很好地結合起來。
 
 要重新寫。
+
+在单利里面不能使用SpringUtil，总之就是获取不到SpringApplicationContext
+
+最后的解决方法：addAppender
+
+```java
+   public static void addAppender() {
+        LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+        JoranConfigurator jc = new JoranConfigurator();
+        jc.setContext(lc);
+
+        Appender appender = new AppenderBase<ILoggingEvent>() {
+            private String systemcode = "***";
+            private String source = "XXXXX";
+
+            @Override
+            protected void append(ILoggingEvent event) {
+                try {
+                    var args = event.getArgumentArray();
+                    if (args != null && args.length == 1) {
+
+                        if (args[0] != null && args[0].toString().startsWith("detail:")) {
+
+                            LogEntity logEntity = new LogEntity();
+                            logEntity.setDetail(args[0].toString());
+                            logEntity.setSource(source);
+                            logEntity.setMessage(event.getMessage());
+                            logEntity.setSystemCode(systemcode);
+
+                            logEntity.setCreateTime(LocalDateTime.now().toString() + "+08:00");
+
+                            InetAddress addr = InetAddress.getLocalHost();
+                            logEntity.setMachineName(addr.getHostName());
+                            logEntity.setIpAddress(addr.getHostAddress());
+
+                            logEntity.setProcessID(Long.parseLong(ManagementFactory.getRuntimeMXBean().getName().split("@")[0]));
+                            logEntity.setProcessName(ManagementFactory.getRuntimeMXBean().getName());
+
+                            logEntity.setThreadID(Thread.currentThread().getId());
+
+                            logEntity.setLevel(event.getLevel());
+
+                            LogManager.getInstance().Enqueue(logEntity);
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        ch.qos.logback.classic.Logger rootLogger = lc.getLogger(
+                Logger.ROOT_LOGGER_NAME);
+
+        rootLogger.addAppender(appender);
+
+        appender.start();
+    }
+```
