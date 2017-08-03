@@ -53,3 +53,9 @@ public void redisTest() {
 2. opsForValue()，返回对value操作的接口；
 3. opsForList()，返回对List操作的接口ListOperations<K, V>；
 4. 其他的类似。
+
+## 问题
+
+启动tomcat 服务时，
+ERR unknown command 'CLUSTER'
+是因为redis server 服务集群没有搭建成功，需要在配置文件中配置能够正确连接的Redis集群的connection info。

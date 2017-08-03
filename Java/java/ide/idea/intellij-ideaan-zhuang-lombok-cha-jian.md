@@ -17,3 +17,11 @@ lombok.config
 ```config
 lombok.var.flagUsage = ALLOW
 ```
+
+pom中引入依赖：
+```xml
+<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+</dependency>
+```
