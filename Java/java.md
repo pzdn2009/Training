@@ -11,6 +11,7 @@
 1. classpath；
 2. 普通类调用Spring Bean；
 3. AppenderBase的坑；
+4. idea 编辑器完善（lom），完善restapi，完善RestTemplate使用，Validation完善，完善异常处理，Lombok，Idea 配置自定义Maven
 
 ## V0.5
 1. RestTemplate；
