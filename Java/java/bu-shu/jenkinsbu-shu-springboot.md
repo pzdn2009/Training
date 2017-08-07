@@ -43,3 +43,5 @@ chmod 777 /usr/local/***/***-webapi.jar
 nohup java -jar /usr/local/***/***-webapi.jar &
 exit 0
 ```
+
+Ref：http://blog.csdn.net/u013066244/article/details/52788407 
