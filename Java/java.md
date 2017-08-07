@@ -12,6 +12,7 @@
 2. 创建目录：Hibernate、Gradle；
 3. Servlet简介；
 4. Filter完善；
+5. Listener完善；
 
 ## V0.6
 1. classpath；

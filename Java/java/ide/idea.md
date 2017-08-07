@@ -52,6 +52,7 @@ ctrl+shift+a ，搜索Rest Client，简单的Http客户端
 Ctrl+Tab，转到下一个拆分器
 Ctrl+Shift+Tab，转到上一个拆分器
 Alt+left/right，切换代码视图
+ctrl + H 查询继承层次
 
 ## 1.6 调试运行
 Ctrl+F2，停止
