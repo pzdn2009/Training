@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.7
+1. Jenkins部署MAVEn WAR；
+
 ## V0.6
 1. classpath；
 2. 普通类调用Spring Bean；
