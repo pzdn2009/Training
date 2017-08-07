@@ -14,6 +14,7 @@
 4. Filter完善；
 5. Listener完善；
 6. HandlerInterceptor完善；
+7. Springboot MVC页面；使用Thymeleaf；
 
 ## V0.6
 1. classpath；

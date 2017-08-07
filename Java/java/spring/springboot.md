@@ -23,3 +23,5 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * AOP
 * Run in docker
 * 普通类调用Spring Bean
+* MVC页面
+* thymeleaf模板

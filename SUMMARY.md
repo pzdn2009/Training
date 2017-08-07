@@ -312,6 +312,8 @@
         * [PointCut](Java/java/spring/springboot/aop/pointcut.md)
       * [RunInDocker](Java/java/spring/springboot/runindocker.md)
       * [普通类调用SpringBean](Java/java/spring/springboot/pu-tong-lei-diao-yong-springbean.md)
+      * [Mvc页面](Java/java/spring/springboot/mvcye-mian.md)
+      * [thymeleaf模板](Java/java/spring/springboot/thymeleafmo-ban.md)
     * [Springcloud](Java/java/spring/springcloud.md)
       * [Zookeeper之DConfig](Java/java/spring/springcloud/zookeeperzhi-dconfig.md)
     * [Springboot配置](Java/java/spring/springbootpei-zhi.md)
