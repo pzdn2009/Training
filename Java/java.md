@@ -11,6 +11,7 @@
 1. Jenkins部署MAVEn WAR；
 2. 创建目录：Hibernate、Gradle；
 3. Servlet简介；
+4. Filter完善；
 
 ## V0.6
 1. classpath；
