@@ -9,6 +9,7 @@
 
 ## V0.7
 1. Jenkins部署MAVEn WAR；
+2. 创建目录：Hibernate、Gradle；
 
 ## V0.6
 1. classpath；

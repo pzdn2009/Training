@@ -324,7 +324,8 @@
       * [Bean](Java/java/spring/springmvc/bean.md)
         * [Bean的作用域](Java/java/spring/springmvc/bean/beande-zuo-yong-yu.md)
         * [创建Bean](Java/java/spring/springmvc/bean/chuang-jian-bean.md)
-  * [iBatis](Java/java/ibatis.md)
+  * [MyBatis](Java/java/ibatis.md)
+  * [Hibernate](Java/java/hibernate.md)
   * [IDE](Java/java/ide.md)
     * [Eclipse](Java/java/ide/eclipse.md)
     * [idea](Java/java/ide/idea.md)
@@ -335,9 +336,11 @@
     * [存储库](Java/java/maven/cun-chu-ku.md)
     * 依赖
     * [使用MAVEN运行单元测试](Java/java/maven/shi-yong-maven-yun-xing-dan-yuan-ce-shi.md)
+  * [Gradle](Java/java/gradle.md)
   * [Final](Java/java/final.md)
   * [部署](Java/java/bu-shu.md)
     * [Jenkins部署war包到远程tomcat的webapps下](Java/java/bu-shu/jenkinsbu-shu-war-bao-dao-yuan-cheng-tomcat-de-webapps-xia.md)
+    * [Jenkins部署Springboot](Java/java/bu-shu/jenkinsbu-shu-springboot.md)
 
 ## DECO
 
