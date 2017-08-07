@@ -9,6 +9,8 @@ spring-boot-maven-plugin插件的作用，在main方法運行。
 @RestController返回json字符串的数据，直接可以编写RESTFul的接口；
 
 運行：mvn spring-boot:run
+$ java -jar target/myproject-0.0.1-SNAPSHOT.jar
+
 
 Spring Boot也是引用了JSON解析包Jackson，可以在对象上使用Jackson提供的json属性的注解，对**时间进行格式化**，对一些**字段进行忽略**等等。
 
