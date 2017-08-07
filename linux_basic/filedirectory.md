@@ -104,6 +104,20 @@ cp test father/son/grandson
 cp -r father family #r递归
 ```
 
+在linux下的使用复制命令cp，不让出现“**overwrite**”（文件覆盖）提示的方法。
+```
+# alias
+alias cp='cp -i'
+alias l.='ls -d .* --color=tty'
+alias ll='ls -l --color=tty'
+alias ls='ls --color=tty'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# \cp -f sourcefile targetdir 
+
+```
+
 删除文件
 
 ```
