@@ -12,6 +12,7 @@
 2. yml数组写法；logging补充；自定义actuate的EndPoint；
 3. 补充logging；补充actuator；
 4. 定时任务补充；静态资源处理；集成ActiveMQ；Jersey介绍；
+5. 反射完善
 
 ## V0.7
 1. Jenkins部署MAVEn WAR；

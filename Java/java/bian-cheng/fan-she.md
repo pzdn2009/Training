@@ -1,4 +1,48 @@
-# 反射
+# 反射Reflection
+
+# 原理
+在Java中，一切皆对象Object。
+类Class只是对象Object中的一种。
+而反射Reflection主要用来操作相关类实例Instance的。
+
+```
+# 类的描述：
+modifier constructor field method
+
+# 方法的描述：
+modifier return methodName (params)
+```
+
+相关的技术问题点：
+1. Class，包
+2. field、method、constructor
+3. Array
+4. Annotation
+5. generic
+6. 动态代理
+7. ClassLoader
+
+Class<T>：类
+* Class.forName()
+* Object.getClass()
+* xx.class
+
+Annotation：注解
+Constructor<T>：构造函数
+Field：字段
+Method：方法
+
+API
+* getX：返回public的X，包括集成的
+* getDeclaredX：返回所有修饰的X
+* invoke：调用方法
+* getConstructors：返回所有构造函数
+* getSuperclass：返回父类
+* getInterfaces：返回接口
+* getDeclaredField：返回属性
+* setAccessible：授权访问属性
+
+# 示例
 
 ## 通过一个对象获得完整的包名和类名
 ```java

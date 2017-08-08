@@ -1,4 +1,4 @@
-# 泛型
+# 泛型Generics
 
 ## 1. 泛型方法
 
@@ -7,6 +7,22 @@
 
 ```java
 public static<T,E> void print(T value) {
+}
+
+public <T, S extends T> T testGenericMethodDefine(T t, S s){
+
+}
+```
+定义带类型参数的方法，目的是为了**表达多个参数以及返回值之间的关系**。例如本例子中T和S的继承关系， 返回值的类型和第一个类型参数的值相同。
+
+```
+public <T> void testGenericMethodDefine2(List<T> s){
+
+}
+
+//使用通配符定义
+public void testGenericMethodDefine2(List<？> s){
+
 }
 ```
 
@@ -18,11 +34,22 @@ public static<T,E> void print(T value) {
 ```
 
 ## 3. 泛型类
+```java
+public class TestClassDefine<T, S extends T> {
 
-## 4. 通配符
+}
+```
+
+## 4. 通配符Wildcard
 
 ```java
 List<?>
 List<? extends Number>
 List<? extends T>
+
+interface Collection<E> { 
+  ... 
+  public boolean addAll(Collection<? extends E> c); 
+  ... 
+} 
 ```
