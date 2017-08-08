@@ -25,3 +25,5 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * 普通类调用Spring Bean
 * MVC页面
 * thymeleaf模板
+* yml
+* 自定义actuator的EndPoint

@@ -9,6 +9,7 @@
 
 ## V0.8
 1. BeanFactory详解；注释；
+2. yml数组写法；logging补充；自定义actuate的EndPoint；
 
 ## V0.7
 1. Jenkins部署MAVEn WAR；

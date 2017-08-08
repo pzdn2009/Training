@@ -320,6 +320,8 @@
       * [thymeleaf模板](Java/java/spring/springboot/thymeleafmo-ban.md)
       * [SpringApplication](Java/java/spring/springboot/springapplication.md)
       * [Profiles](Java/java/spring/springboot/profiles.md)
+      * [yml](Java/java/spring/springboot/yml.md)
+      * [自定义actuator的EndPoint](Java/java/spring/springboot/zi-ding-yi-actuator-de-endpoint.md)
     * [Springcloud](Java/java/spring/springcloud.md)
       * [Zookeeper之DConfig](Java/java/spring/springcloud/zookeeperzhi-dconfig.md)
     * [Springboot配置](Java/java/spring/springbootpei-zhi.md)

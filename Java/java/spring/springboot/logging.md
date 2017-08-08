@@ -71,3 +71,14 @@ Ref：http://www.itkeyword.com/doc/9602162384580714x181/spring-boot-logback-auto
         appender.start();
     }
 ```
+
+**原理**：日志框架中有一个工厂类：LoggerFactory，在这个类中可以获取到当前日志的上下文对象LoggerContext，通过LoggerContext可以获取到指定包的Logger ,通过Logger对象那就无所不能了。
+```java
+LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+
+ch.qos.logback.classic.Logger rootLogger = lc.getLogger(
+                Logger.ROOT_LOGGER_NAME);
+
+```
+
+**场景**：动态修改日志对象以及内部。
