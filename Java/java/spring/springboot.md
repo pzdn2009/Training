@@ -27,3 +27,5 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * thymeleaf模板
 * yml
 * 自定义actuator的EndPoint
+* 静态资源
+* 集成ActiveMQ
