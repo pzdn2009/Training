@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.8
+1. BeanFactory详解；注释；
+
 ## V0.7
 1. Jenkins部署MAVEn WAR；
 2. 创建目录：Hibernate、Gradle；
