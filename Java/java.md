@@ -7,6 +7,9 @@
 
 # V1
 
+## V0.9
+1. 创建一系列的目录；
+
 ## V0.8
 1. BeanFactory详解；注释；
 2. yml数组写法；logging补充；自定义actuate的EndPoint；
