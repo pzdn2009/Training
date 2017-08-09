@@ -9,6 +9,7 @@
 
 ## V0.9
 1. 创建一系列的目录；
+2. Object类，equals、clone；
 
 ## V0.8
 1. BeanFactory详解；注释；
