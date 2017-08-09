@@ -12,6 +12,7 @@
 2. Object类，equals、clone；
 3. Hibernate GettingStarted；
 4. HB 映射；
+5. JVM执行原理；
 
 ## V0.8
 1. BeanFactory详解；注释；

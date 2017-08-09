@@ -377,6 +377,7 @@
     * [Jenkins部署war包到远程tomcat的webapps下](Java/java/bu-shu/jenkinsbu-shu-war-bao-dao-yuan-cheng-tomcat-de-webapps-xia.md)
     * [Jenkins部署Springboot](Java/java/bu-shu/jenkinsbu-shu-springboot.md)
   * [JVM](Java/java/jvm.md)
+    * [原理](Java/java/jvm/yuan-li.md)
   * [Tomcat](Java/java/tomcat.md)
   * [Jetty](Java/java/jetty.md)
   * [Java分布式](Java/java/javafen-bu-shi.md)
