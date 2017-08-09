@@ -359,6 +359,8 @@
   * [Hibernate](Java/java/hibernate.md)
     * [简介](Java/java/hibernate/jian-jie.md)
     * [GettingStarted](Java/java/hibernate/gettingstarted.md)
+    * [領域模型](Java/java/hibernate/ling-yu-mo-xing.md)
+    * [映射注解](Java/java/hibernate/ying-she-zhu-jie.md)
   * [IDE](Java/java/ide.md)
     * [Eclipse](Java/java/ide/eclipse.md)
     * [idea](Java/java/ide/idea.md)

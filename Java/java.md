@@ -11,6 +11,7 @@
 1. 创建一系列的目录；
 2. Object类，equals、clone；
 3. Hibernate GettingStarted；
+4. HB 映射；
 
 ## V0.8
 1. BeanFactory详解；注释；
