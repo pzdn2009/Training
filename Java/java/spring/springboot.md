@@ -29,3 +29,4 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * 自定义actuator的EndPoint
 * 静态资源
 * 集成ActiveMQ
+* With Jndi

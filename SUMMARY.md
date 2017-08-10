@@ -332,6 +332,7 @@
       * [自定义actuator的EndPoint](Java/java/spring/springboot/zi-ding-yi-actuator-de-endpoint.md)
       * [静态资源](Java/java/spring/springboot/jing-tai-zi-yuan.md)
       * [集成ActiveMQ](Java/java/spring/springboot/ji-cheng-activemq.md)
+      * [WithJndi](Java/java/spring/springboot/withjndi.md)
     * [Springcloud](Java/java/spring/springcloud.md)
       * [Zookeeper之DConfig](Java/java/spring/springcloud/zookeeperzhi-dconfig.md)
       * [bootstrap](Java/java/spring/springcloud/bootstrap.md)
@@ -379,6 +380,8 @@
   * [JVM](Java/java/jvm.md)
     * [原理](Java/java/jvm/yuan-li.md)
   * [Tomcat](Java/java/tomcat.md)
+    * [配置Jndi](Java/java/tomcat/pei-zhi-jndi.md)
+    * [配置虚拟主机](Java/java/tomcat/pei-zhi-xu-ni-zhu-ji.md)
   * [Jetty](Java/java/jetty.md)
   * [Java分布式](Java/java/javafen-bu-shi.md)
 
