@@ -5,6 +5,9 @@
 - IDE。 IDE工具操作相关
 - Maven。 构建操作相关。
 
+# V:Next
+1. logback详细配置：https://logback.qos.ch/manual/configuration.html
+
 # V1
 
 ## V1.0
@@ -12,6 +15,9 @@
 2. Tomcat 虚拟目录配置；
 3. EurekaClient；
 4. Springboot logging补充；
+5. logging.配置；
+
+#V0
 
 ## V0.9
 1. 创建一系列的目录；

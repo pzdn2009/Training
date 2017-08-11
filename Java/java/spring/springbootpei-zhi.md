@@ -2,3 +2,4 @@
 
 * DataSource
 * thymeleaf
+* logging

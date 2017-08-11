@@ -343,6 +343,7 @@
       * [Server](Java/java/spring/springbootpei-zhi/server.md)
       * [其他](Java/java/spring/springbootpei-zhi/qi-ta.md)
       * [thymeleaf](Java/java/spring/springbootpei-zhi/thymeleaf.md)
+      * [logging](Java/java/spring/springbootpei-zhi/logging.md)
     * [Springmvc](Java/java/spring/springmvc.md)
       * [Bean](Java/java/spring/springmvc/bean.md)
         * [Bean的作用域](Java/java/spring/springmvc/bean/beande-zuo-yong-yu.md)
