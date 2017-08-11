@@ -10,6 +10,7 @@
 ## V1.0
 1. WithJndi;
 2. Tomcat 虚拟目录配置；
+3. EurekaClient；
 
 ## V0.9
 1. 创建一系列的目录；
