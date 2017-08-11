@@ -11,6 +11,7 @@
 1. WithJndi;
 2. Tomcat 虚拟目录配置；
 3. EurekaClient；
+4. Springboot logging补充；
 
 ## V0.9
 1. 创建一系列的目录；
