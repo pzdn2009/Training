@@ -62,3 +62,30 @@ aop全称Aspect Oriented Programming。
 * 使用@AfterReturning在切入点return内容之后切入内容（可以用来对处理返回值做一些加工处理）
 * 使用@Around在切入点前后切入内容，并自己控制何时执行切入点自身的内容
 * 使用@AfterThrowing用来处理当切入内容部分抛出异常之后的处理逻辑
+
+## 4. Springboot中使用
+
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
+```
+
+```java
+package com.l3.sigma.web;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class ServiceMonitor {
+    @AfterReturning("execution(* com.l3.sigma..*.*(..))")
+    public void print(JoinPoint joinPoint){
+        System.out.println("Completed: " + joinPoint);
+    }
+}
+```

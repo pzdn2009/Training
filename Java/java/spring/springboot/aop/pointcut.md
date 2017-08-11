@@ -3,6 +3,8 @@
 Ref :http://blog.csdn.net/kjfcpua/article/details/7513273
 切入点指示符用来指示切入点表达式目的.
 
+格式：修饰符 包名 类 方法 参数。
+
 ## 1. 指示符
 
 * **execution**：用于匹配方法执行的连接点；

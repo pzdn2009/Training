@@ -16,6 +16,7 @@
 3. EurekaClient；
 4. Springboot logging补充；
 5. logging.配置；
+6. Springboot aop 补充；
 
 #V0
 
