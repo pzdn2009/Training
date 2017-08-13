@@ -12,6 +12,7 @@
 
 ## V1.1
 1. Springboot Caching;
+2. Springboot Cache application配置；
 
 ## V1.0
 1. WithJndi;
