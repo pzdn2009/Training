@@ -31,3 +31,4 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * 集成ActiveMQ
 * With Jndi
 * Caching
+* Caching Using EhCache
