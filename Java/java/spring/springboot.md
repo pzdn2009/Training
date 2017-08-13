@@ -30,3 +30,4 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * 静态资源
 * 集成ActiveMQ
 * With Jndi
+* Caching

@@ -333,6 +333,7 @@
       * [静态资源](Java/java/spring/springboot/jing-tai-zi-yuan.md)
       * [集成ActiveMQ](Java/java/spring/springboot/ji-cheng-activemq.md)
       * [WithJndi](Java/java/spring/springboot/withjndi.md)
+      * [Caching](Java/java/spring/springboot/caching.md)
     * [Springcloud](Java/java/spring/springcloud.md)
       * [Zookeeper之DConfig](Java/java/spring/springcloud/zookeeperzhi-dconfig.md)
       * [bootstrap](Java/java/spring/springcloud/bootstrap.md)

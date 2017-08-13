@@ -10,6 +10,9 @@
 
 # V1
 
+## V1.1
+1. Springboot Caching;
+
 ## V1.0
 1. WithJndi;
 2. Tomcat 虚拟目录配置；
