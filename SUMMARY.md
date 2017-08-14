@@ -297,7 +297,7 @@
     * [Listener](Java/java/web/listener.md)
     * [Thymeleaf](Java/java/web/thymeleaf.md)
     * [Jersey](Java/java/web/jersey.md)
-    * [Freemaker](Java/java/web/freemaker.md)
+    * [Freemarker](Java/java/web/freemaker.md)
   * [Spring](Java/java/spring.md)
     * [Springboot](Java/java/spring/springboot.md)
       * [swagger](Java/java/spring/springboot/swagger.md)
