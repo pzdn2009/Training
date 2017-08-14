@@ -335,6 +335,7 @@
       * [WithJndi](Java/java/spring/springboot/withjndi.md)
       * [Caching](Java/java/spring/springboot/caching.md)
       * [CachingUsingEnCache](Java/java/spring/springboot/cachingusingencache.md)
+      * [Freemarker](Java/java/spring/springboot/freemarker.md)
     * [Springcloud](Java/java/spring/springcloud.md)
       * [Zookeeper之DConfig](Java/java/spring/springcloud/zookeeperzhi-dconfig.md)
       * [bootstrap](Java/java/spring/springcloud/bootstrap.md)

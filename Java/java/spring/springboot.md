@@ -32,3 +32,4 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * With Jndi
 * Caching
 * Caching Using EhCache
+* Freemarker

@@ -14,6 +14,7 @@
 1. Springboot Caching;
 2. Springboot Cache application配置；
 3. Springboot Cache使用EhCache；
+4. 使用freemarker
 
 ## V1.0
 1. WithJndi;
