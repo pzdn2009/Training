@@ -16,6 +16,7 @@
 3. Springboot Cache使用EhCache；
 4. 使用freemarker；
 5. ftl：處理缺失值，局部變量，佈局，宏。
+6. 自定義配置，嵌套。
 
 ## V1.0
 1. WithJndi;
