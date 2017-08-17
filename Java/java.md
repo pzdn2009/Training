@@ -7,6 +7,7 @@
 
 # V:Next
 1. logback详细配置：https://logback.qos.ch/manual/configuration.html
+2. COW：http://www.cnblogs.com/dolphin0520/p/3938914.html
 
 # V1
 
