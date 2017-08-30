@@ -170,6 +170,9 @@
 * [GIT](git/)
 * [MLTheory](MLTheory/README.md)
   * [推荐系统](MLTheory/Rd.md)
+  * [CNN](MLTheory/cnn.md)
+    * [Concept](MLTheory/cnn/concept.md)
+  * [Regularization](MLTheory/regularization.md)
 * [MdMath](mdmath.md)
 
 ## Language
