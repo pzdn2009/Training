@@ -173,6 +173,9 @@
   * [CNN](MLTheory/cnn.md)
     * [Concept](MLTheory/cnn/concept.md)
   * [Regularization](MLTheory/regularization.md)
+  * [Caffe](MLTheory/caffe.md)
+    * [tour](MLTheory/caffe/tour.md)
+  * [Tensorflow](MLTheory/tensorflow.md)
 * [MdMath](mdmath.md)
 
 ## Language
