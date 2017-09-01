@@ -8,12 +8,13 @@
 # 评判
 
 - ROC
-   
+  
+  發源于信号检测理论。https://zh.wikipedia.org/wiki/ROC%E6%9B%B2%E7%BA%BF#.E6.9B.B2.E7.B7.9A.E4.B8.8B.E9.9D.A2.E7.A9.8D.EF.BC.88AUC.EF.BC.89
   Receiver Operator Characteristic Curve(ROC Curve)。
   
-  TPR：y轴
+  TPR：y轴。TPR = TP / (TP + FN)。在所有实际为**阳性**的样本中，被**正确地**判断为阳性之比率。FP：诊断为有，实际却没有。
   
-  FPR：x轴
+  FPR：x轴。FPR = FP / (FP + TN)。在所有实际为阴性的样本中，被**错误地**判断为阳性之比率。FN：诊断为没有，实际却有
   
   画曲线：
   
