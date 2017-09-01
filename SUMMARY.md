@@ -175,6 +175,9 @@
   * [Regularization](MLTheory/regularization.md)
   * [Caffe](MLTheory/caffe.md)
     * [tour](MLTheory/caffe/tour.md)
+    * [Training LeNet on MNIST with Caffe](MLTheory/caffe/training-lenet-on-mnist-with-caffe.md)
+    * [Layers](MLTheory/caffe/layers.md)
+    * [Solver](MLTheory/caffe/solver.md)
   * [Tensorflow](MLTheory/tensorflow.md)
 * [MdMath](mdmath.md)
 
