@@ -178,6 +178,7 @@
     * [Training LeNet on MNIST with Caffe](MLTheory/caffe/training-lenet-on-mnist-with-caffe.md)
     * [Layers](MLTheory/caffe/layers.md)
     * [Solver](MLTheory/caffe/solver.md)
+    * Install
   * [Tensorflow](MLTheory/tensorflow.md)
 * [MdMath](mdmath.md)
 
@@ -398,6 +399,7 @@
     * [Jenkins部署war包到远程tomcat的webapps下](Java/java/bu-shu/jenkinsbu-shu-war-bao-dao-yuan-cheng-tomcat-de-webapps-xia.md)
     * [Jenkins部署Springboot](Java/java/bu-shu/jenkinsbu-shu-springboot.md)
     * [Springboot生成War包](Java/java/bu-shu/springbootsheng-cheng-war-bao.md)
+    * [部署在Window上](Java/java/bu-shu/bu-shu-zai-window-shang.md)
   * [JVM](Java/java/jvm.md)
     * [原理](Java/java/jvm/yuan-li.md)
   * [Tomcat](Java/java/tomcat.md)

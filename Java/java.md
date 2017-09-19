@@ -11,6 +11,9 @@
 
 # V1
 
+## V1.2
+1. Windows下部署；
+
 ## V1.1
 1. Springboot Caching;
 2. Springboot Cache application配置；
