@@ -15,6 +15,7 @@
 1. Windows下部署；
 2. JUnit
 3. Guava中的Preconditions类
+4. Springboot 单元测试增强
 
 ## V1.1
 1. Springboot Caching;
