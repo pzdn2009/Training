@@ -62,7 +62,7 @@ Cron表达式
  */
 @Configuration
 @EnableScheduling
-publicclass SchedulingConfig {
+public class SchedulingConfig {
    
     @Scheduled(cron = "0/20 * * * * ?") // 每20秒执行一次
     publicvoid scheduler() {
