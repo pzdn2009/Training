@@ -14,6 +14,7 @@
 ## V1.2
 1. Windows下部署；
 2. JUnit
+3. Guava中的Preconditions类
 
 ## V1.1
 1. Springboot Caching;
