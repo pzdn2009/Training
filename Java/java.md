@@ -17,6 +17,7 @@
 3. Guava中的Preconditions类
 4. Springboot 单元测试增强
 5. JSR 303 验证增强
+6. Guava EventBus
 
 ## V1.1
 1. Springboot Caching;
