@@ -273,3 +273,7 @@ var query = repository.findAll(new MySpec(requestDTO),new PageRequest(requestDTO
 
 ```
 手殘的：PageRequest的page與size傳遞反了。
+
+### 6.6 映射tinyint
+
+对应java的Byte类型。

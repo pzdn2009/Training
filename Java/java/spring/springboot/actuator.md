@@ -13,6 +13,13 @@
 ## 终结点
 提供应用程序监控的路由。
 
+配置application.yml，才能看到后面的各种指标
+```properties
+management:
+  security:
+    enabled: false
+```
+
 ### /beans
 敏感。输出应用程序中的所有Bean。
 ```json

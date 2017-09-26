@@ -17,3 +17,5 @@ MAVEN是基于POM Project Of Model的构建管理工具。
         <url>http://maven.aliyun.com/nexus/content/groups/public</url>  
     </mirror>
 ```
+
+maven插件地址：http://maven.apache.org/plugins/index.html

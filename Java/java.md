@@ -18,6 +18,7 @@
 4. Springboot 单元测试增强
 5. JSR 303 验证增强
 6. Guava EventBus
+7. Maven Repository類型 & Nexus 搭建私服
 
 ## V1.1
 1. Springboot Caching;
