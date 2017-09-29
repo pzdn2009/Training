@@ -19,6 +19,7 @@
 5. JSR 303 验证增强
 6. Guava EventBus
 7. Maven Repository類型 & Nexus 搭建私服
+8. RestTemplate補充Basic auth
 
 ## V1.1
 1. Springboot Caching;

@@ -1,5 +1,10 @@
 # RestTemplate
 
+Point
+
+* Headers，JSON，UTF-8
+* Response：StatusCode，Body
+
 ## RestTemplate实现调用路由
 
 ```java
@@ -7,8 +12,7 @@ public static String restProxy(String url, String body, HttpMethod httpMethod) {
     String result = Consts.EMPTY;
     try {
         HttpHeaders headers = new HttpHeaders();
-        MediaType type = MediaType.parseMediaType("application/json;charset=UTF-8");
-        headers.setContentType(type);
+        headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity entity = new HttpEntity<String>(body, headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, httpMethod, entity, String.class);
@@ -82,3 +86,13 @@ public class Application {
 ```
 
 * **RestTemplateBuilder ** 是通过Spring注入。
+
+## basic auth
+
+```java
+var restTemplate = restTemplateBuilder
+                .basicAuthorization(requestParameters.getUsername(), requestParameters.getPassword())
+                .build();
+```
+
+需要處理HttpClientErrorException。
