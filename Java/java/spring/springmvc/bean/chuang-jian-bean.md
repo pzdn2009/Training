@@ -42,3 +42,30 @@ Points：
 3. 既然@Bean的作用是注册bean对象，那么完全可以使用@Component、@Controller、@Service、@Ripository等注解注册bean，当然需要配置@ComponentScan注解进行自动扫描。
 
 
+## 2. XML方式
+
+```xml
+<beans>
+  <bean name="product" class="springio.bean.Product" />
+  <bean id="localDate" class="java.time.LocalDate" factory-method="now" />
+  <bean id="executorService" class="java.util.concurrent.Executors" 
+  factory-method="newCachedThreadPool" destroy-method="shutdown" />
+  <bean name="p" class="springio.bean.Product">
+    <constructor-arg name="name" value="sdfsdfsdddd" />
+    <constructor-arg name="desc" value="sdfsdfsdddd" />
+    <constructor-arg name="price" value="9.95" />
+  </bean>
+</beans>
+```
+
+```java
+ApplicationContext context = new ClassPathXmlApplicationContext(new string[]{ "config1.xml" });
+
+Product p = context.getBean("product",Product.class)
+```
+
+* name 
+* id 
+* factory-method
+* ref
+* constructor-arg
