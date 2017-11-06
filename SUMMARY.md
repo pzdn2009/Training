@@ -302,7 +302,7 @@
     * [注释](Java/java/bian-cheng/zhu-shi.md)
     * [JavaObject](Java/java/bian-cheng/javaobject.md)
     * [ClassLoader](Java/java/bian-cheng/classloader.md)
-    * 多线程
+    * [多线程](Java/java/bian-cheng/duo-xian-cheng.md)
     * [特殊关键字](Java/java/bian-cheng/te-shu-guan-jian-zi.md)
     * [IO](Java/java/bian-cheng/io.md)
     * [Collection体系](Java/java/bian-cheng/collectionti-xi.md)
@@ -462,5 +462,10 @@
 
 ## PM
 
+* 產品經理
+* 項目經理
+
 ## Solution
+
+* 設計與架構
 
