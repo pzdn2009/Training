@@ -18,6 +18,7 @@
 4. RestTemplate補充——超時設置；
 5. Druid 在Spring Boot中 使用；
 6. LocalDateTime & Date；
+7. JPA中使用Convertor：Enum--String & LocalDateTime--Timestamp；
 
 ## V1.2
 1. Windows下部署；

@@ -277,3 +277,68 @@ var query = repository.findAll(new MySpec(requestDTO),new PageRequest(requestDTO
 ### 6.6 映射tinyint
 
 对应java的Byte类型。
+
+
+## 7. JPA中使用Convertor
+
+AttributeConverter<X,Y>
+* 持久化enum
+* 加解密数据
+* 持久化日期
+
+轉換枚舉值：
+```java
+@Convert(converter = TransactionOperation.Converter.class)
+private TransactionOperation operationType;
+
+public enum TransactionOperation {
+    PAY(1, "收款"),
+    AUTHORIZE(3, "預授權"),
+
+        @Getter
+    private int code;
+
+    @Getter
+    private String chineseName;
+
+    TransactionOperation(int code, String name_ch) {
+        this.code = code;
+        this.chineseName = name_ch;
+    }
+
+    @javax.persistence.Converter(autoApply = true)
+    public static class Converter implements AttributeConverter<TransactionOperation, String> {
+        @Override
+        public String convertToDatabaseColumn(TransactionOperation transactionOperation) {
+            return transactionOperation.name();
+        }
+
+        @Override
+        public TransactionOperation convertToEntityAttribute(String s) {
+            return TransactionOperation.valueOf(s);
+        }
+    }
+}
+```
+
+JPA中的日期轉換：
+```java
+import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+
+@Converter(autoApply = true)
+public class LocalDateTimeAttributeConverter implements AttributeConverter<LocalDateTime, Timestamp> {
+
+    @Override
+    public Timestamp convertToDatabaseColumn(LocalDateTime locDateTime) {
+        return (locDateTime == null ? null : Timestamp.valueOf(locDateTime));
+    }
+
+    @Override
+    public LocalDateTime convertToEntityAttribute(Timestamp sqlTimestamp) {
+        return (sqlTimestamp == null ? null : sqlTimestamp.toLocalDateTime());
+    }
+}
+```
