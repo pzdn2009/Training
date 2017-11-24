@@ -87,12 +87,65 @@ public class Application {
 
 * **RestTemplateBuilder ** 是通过Spring注入。
 
-## basic auth
+## basic auth & Timeout設置
 
 ```java
 var restTemplate = restTemplateBuilder
+                .setConnectTimeout(mpgRestConfig.getConnectTimeout() * 1000)
+                .setReadTimeout(mpgRestConfig.getReadTimeout() * 1000)
                 .basicAuthorization(requestParameters.getUsername(), requestParameters.getPassword())
                 .build();
 ```
 
 需要處理HttpClientErrorException。
+
+## Timeout 配置
+
+通過XML配置SimpleClientHttpRequestFactory，作為構造函數注入：
+```xml
+<bean id="requestFactory" class="org.springframework.http.client.SimpleClientHttpRequestFactory">  
+    <property name="readTimeout" value="60000"/>  
+    <property name="connectTimeout" value="10000"/>  
+</bean>  
+  
+<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">  
+    <constructor-arg ref="requestFactory"/>  
+    <property name="messageConverters">  
+        <list>  
+            <bean id="jsonConverter"  
+                  class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">  
+                <property name="supportedMediaTypes" value="application/json;charset=UTF-8" />  
+            </bean>  
+        </list>  
+    </property>  
+</bean>
+```
+
+工廠方法設置：
+```java
+@Configuration
+public class AppConfig{
+    @Bean
+    public RestTemplate customRestTemplate(){
+        HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory();
+        httpRequestFactory.setConnectionRequestTimeout(3000);
+        httpRequestFactory.setConnectTimeout(3000);
+        httpRequestFactory.setReadTimeout(3000);
+
+        return new RestTemplate(httpRequestFactory);
+    }
+}
+```
+
+Builder設置：
+```java
+@Bean
+public RestTemplate restTemplate(
+        RestTemplateBuilder restTemplateBuilder) {
+
+    return restTemplateBuilder
+            .setConnectTimeout(500)
+            .setReadTimeout(500)
+            .build();
+}
+```

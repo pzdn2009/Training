@@ -15,6 +15,7 @@
 1. 編程，json工具；
 2. XML 方式创建Bean;
 3. jackson用法
+4. RestTemplate補充——超時設置；
 
 ## V1.2
 1. Windows下部署；
