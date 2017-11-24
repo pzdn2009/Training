@@ -33,3 +33,4 @@ Docs: http://docs.spring.io/spring-boot/docs/current/reference/html/
 * Caching
 * Caching Using EhCache
 * Freemarker
+* Druid Usage
