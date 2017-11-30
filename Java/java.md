@@ -19,6 +19,7 @@
 5. Druid 在Spring Boot中 使用；
 6. LocalDateTime & Date；
 7. JPA中使用Convertor：Enum--String & LocalDateTime--Timestamp；
+8. SynchronousQueue；Executor;ThreadPoolExecutor;
 
 ## V1.2
 1. Windows下部署；

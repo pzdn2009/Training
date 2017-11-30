@@ -164,7 +164,7 @@
   * [排序](MongoDB/排序.md)
   * [聚合](MongoDB/聚合.md)
   * [複製](MongoDB/複製.md)
-  * 分片
+  * [分片](MongoDB/fen-pian.md)
   * [備份](MongoDB/備份.md)
 * 微服务
 * [GIT](git/)

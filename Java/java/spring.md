@@ -41,3 +41,22 @@ org.springframework|spring-websocket|WebSocket and SockJS infrastructure, includ
 - Springcloud
 - Springboot配置
 - Spring MVC
+
+## Spring 4.0 特性
+
+* 泛型依賴注入
+```java
+private BaseRepository<M> repository;  
+@Autowired  
+private Repository<User> userRepository;
+//key是bean名字；value就是所有实现了BaseService的Bean
+@Autowired  
+private Map<String, BaseService> map;  
+```
+* List注入
+这样会注入所有实现了BaseService的Bean；但是顺序是不确定的，如果我们想要按照某个顺序获取；在Spring4中可以使用@Order或实现Ordered接口来实现
+```java
+@Autowired  
+private List<BaseService> list;  
+```
+* @Lazy可以延迟依赖注入
