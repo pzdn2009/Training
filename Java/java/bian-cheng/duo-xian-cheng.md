@@ -86,3 +86,99 @@ new ThreadPoolExecutor(nThreads, nThreads, 0L, TimeUnit.MILLISECONDS, new Linked
 ```java
 new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS,new SynchronousQueue<Runnable>());
 ```
+
+## ThreadLocal
+
+必须回收自定义的ThreadLocal变量，尤其在线程池场景下，线程经常会被复用，如果不清理自定义的 ThreadLocal变量，可能会影响后续业务逻辑和造成内存泄露等问题。尽量在代理中使用try-finally块进行回收。
+
+```java
+/**
+     * @author caikang
+     * @date 2017/04/07
+     */
+    public class UserHolder {
+        private static final ThreadLocal<User> userThreadLocal = new ThreadLocal<User>();
+
+        public static void set(User user){
+            userThreadLocal.set(user);
+        }
+
+        public static User get(){
+            return userThreadLocal.get();
+        }
+
+        public static void remove(){
+            userThreadLocal.remove();
+        }
+    }
+
+    /**
+     * @author caikang
+     * @date 2017/04/07
+     */
+    public class UserInterceptor extends HandlerInterceptorAdapter {
+        @Override
+        public boolean preHandle(HttpServletRequest request,
+            HttpServletResponse response, Object handler) throws Exception {
+            UserHolder.set(new User());
+            return true;
+        }
+
+        @Override
+        public void afterCompletion(HttpServletRequest request,
+            HttpServletResponse response, Object handler, Exception ex) throws Exception {
+            UserHolder.remove();
+        }
+    }
+```
+
+### 示例解決方法
+
+新建一個攔截器
+```java
+public class CatInfoInterceptor extends HandlerInterceptorAdapter {
+
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        HandlerMethod method = (HandlerMethod) handler;
+        CatInfo.init(method.getMethod().getDeclaringClass() + "->" + method.getMethod().getName());
+        return true;
+    }
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+    }
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        CatInfo.remove();
+    }
+
+    @Override
+    public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    }
+}
+```
+
+註冊攔截器
+```java
+@Configuration
+public class AppConfig extends WebMvcConfigurerAdapter {
+
+    /**
+     *
+     * @param registry
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new CatInfoInterceptor()).addPathPatterns("/api/mpg/**");
+    }
+}
+```
+
+CatInfo實現Remove
+```java
+public static void remove() {
+        catInfoThreadLocal.remove();
+    }
+```

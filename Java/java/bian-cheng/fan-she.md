@@ -21,6 +21,7 @@ modifier return methodName (params)
 5. generic
 6. 动态代理
 7. ClassLoader
+8. getter，setter術語方法，千萬別去從field獲取
 
 Class<T>：类
 * Class.forName()
@@ -81,4 +82,10 @@ public class VersionOne {
 }
 ```
 ## 获取一个对象的父类与实现的接口
+
+## 反射調用Getter
+```java
+var header = arg.getClass().getMethod("getHeader", null);
+CatInfo.setRequestHeader((RequestHeader) header.invoke(arg));
+```
 
