@@ -1,9 +1,13 @@
 # Java
 
 - 编程。 Java语言相关
+- Utils。 工具庫
+- WEB。 Web相關理論
 - Spring。 Spring框架相关
+- MyBatis。
 - IDE。 IDE工具操作相关
 - Maven。 构建操作相关。
+- 部署。
 
 # V:Next
 1. logback详细配置：https://logback.qos.ch/manual/configuration.html
@@ -15,6 +19,7 @@
 1. SerializationUtils；
 2. WordUtils;
 3. Linux 部署jar包；
+4. 關鍵字：native，strictfp，transient，synchronized ，throws；
 
 ## V1.3
 1. 編程，json工具；
