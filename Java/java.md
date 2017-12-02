@@ -14,6 +14,7 @@
 ## V1.4
 1. SerializationUtils；
 2. WordUtils;
+3. Linux 部署jar包；
 
 ## V1.3
 1. 編程，json工具；

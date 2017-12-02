@@ -407,6 +407,7 @@
     * [Jenkins部署Springboot](Java/java/bu-shu/jenkinsbu-shu-springboot.md)
     * [Springboot生成War包](Java/java/bu-shu/springbootsheng-cheng-war-bao.md)
     * [部署在Window上](Java/java/bu-shu/bu-shu-zai-window-shang.md)
+    * [linux部署jar包](Java/java/bu-shu/linuxbu-shu-jar-bao.md)
   * [JVM](Java/java/jvm.md)
     * [原理](Java/java/jvm/yuan-li.md)
   * [Tomcat](Java/java/tomcat.md)
