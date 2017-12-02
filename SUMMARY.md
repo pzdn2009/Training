@@ -32,6 +32,7 @@
     * [iptables](linux_basic/iptables.md)
     * [systemctl](linux_basic/systemctl.md)
     * [查看和设置时区](linux_basic/cha-kan-he-she-zhi-shi-qu.md)
+    * [Kill Process By Port](linux_basic/kill-process-by-port.md)
   * [进程](linux_basic/进程.md)
     * [pid文件的作用](linux_basic/pid.md)
     * [nohup](linux_basic/nohup.md)

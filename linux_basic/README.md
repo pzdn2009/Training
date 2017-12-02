@@ -7,6 +7,7 @@
 1. vim编辑器拆分：模式，跳转，编辑，命令，块选择，环境设置，高级;
 2. 进程Add：pid文件的作用;
 3. 服务ADD：systemctrl;
+4. Linux下通过端口杀死进程；
 
 # V1.6.1
 1. 拆分系统简介；增加源码安装：./configure, make, make install；
