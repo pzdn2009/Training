@@ -20,6 +20,7 @@
 2. WordUtils;
 3. Linux 部署jar包；
 4. 關鍵字：native，strictfp，transient，synchronized ，throws；
+5. Guava :Ordering，Range，Bimap，Table，LoadingCache；
 
 ## V1.3
 1. 編程，json工具；
