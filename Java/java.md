@@ -13,6 +13,7 @@
 
 ## V1.4
 1. SerializationUtils；
+2. WordUtils;
 
 ## V1.3
 1. 編程，json工具；

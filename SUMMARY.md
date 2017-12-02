@@ -311,6 +311,7 @@
     * [jackson](Java/java/bian-cheng/json.md)
   * [Utils](Java/java/utils.md)
     * [SerializationUtils](Java/java/utils/serializationutils.md)
+    * [WordUtils](Java/java/utils/wordutils.md)
   * [WEB](Java/java/web.md)
     * [Servlet](Java/java/web/servlet.md)
     * [Filter](Java/java/web/filter.md)
