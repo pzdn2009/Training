@@ -11,6 +11,9 @@
 
 # V1
 
+## V1.4
+1. SerializationUtils；
+
 ## V1.3
 1. 編程，json工具；
 2. XML 方式创建Bean;
