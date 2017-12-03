@@ -471,7 +471,9 @@
 ## PM
 
 * 產品經理
-* 項目經理
+* [項目經理](pm/xiang-mu-jing-li.md)
+  * [会计基础](pm/xiang-mu-jing-li/hui-ji-ji-chu.md)
+    * [基础](pm/xiang-mu-jing-li/hui-ji-ji-chu/ji-chu.md)
 
 ## Solution
 
