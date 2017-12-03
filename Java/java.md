@@ -23,6 +23,7 @@
 5. Guava :Ordering，Range，Bimap，Table，LoadingCache；
 6. Zipkin Start；
 7. Spring boot OAuth2 Start;
+8. HttpServletRequest;
 
 ## V1.3
 1. 編程，json工具；
