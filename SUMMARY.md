@@ -382,6 +382,8 @@
       * [DispatherServlet详解](Java/java/spring/springmvc/dispatherservletxiang-jie.md)
     * [SpringSecurity](Java/java/spring/springsecurity.md)
     * [Spring Data Rest](Java/java/spring/spring-data-rest.md)
+      * [自定義輸出](Java/java/spring/spring-data-rest/zi-ding-yi-shu-chu.md)
+      * 自定義查詢
   * [MyBatis](Java/java/ibatis.md)
     * [简介](Java/java/ibatis/jian-jie.md)
     * [最佳实践](Java/java/ibatis/zui-jia-shi-jian.md)

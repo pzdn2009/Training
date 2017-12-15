@@ -119,4 +119,8 @@ http://localhost:8080/user
 }
 ```
 
-
+其他地址：
+GET|PUT|DELETE http://127.0.0.1:8080/user/2
+GET http://127.0.0.1:8080/user?page=1&size=3 
+GET http://127.0.0.1:8080/user?page=1&size=3&sort=age,desc 
+POST http://127.0.0.1:8080/user  body:{jsonData} 
