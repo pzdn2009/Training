@@ -11,7 +11,6 @@
 
 # V:Next
 1. logback详细配置：https://logback.qos.ch/manual/configuration.html
-2. COW：http://www.cnblogs.com/dolphin0520/p/3938914.html
 
 # V1
 
@@ -24,6 +23,7 @@
 6. Zipkin Start；
 7. Spring boot OAuth2 Start;
 8. HttpServletRequest;
+9. COW;
 
 ## V1.3
 1. 編程，json工具；

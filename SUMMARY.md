@@ -309,6 +309,7 @@
     * [IO](Java/java/bian-cheng/io.md)
     * [Collection体系](Java/java/bian-cheng/collectionti-xi.md)
     * [jackson](Java/java/bian-cheng/json.md)
+    * [CopyOnWrite](Java/java/bian-cheng/copyonwrite.md)
   * [Utils](Java/java/utils.md)
     * [SerializationUtils](Java/java/utils/serializationutils.md)
     * [WordUtils](Java/java/utils/wordutils.md)
