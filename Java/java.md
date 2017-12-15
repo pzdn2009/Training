@@ -14,6 +14,9 @@
 
 # V1
 
+## V1.5
+1. idea生成serialVersionUID；
+
 ## V1.4
 1. SerializationUtils；
 2. WordUtils;

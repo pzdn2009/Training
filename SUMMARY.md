@@ -397,6 +397,7 @@
     * [idea](Java/java/ide/idea.md)
       * [IntelliJ IDEA安装lombok插件](Java/java/ide/idea/intellij-ideaan-zhuang-lombok-cha-jian.md)
       * [Idea 配置自定义Maven](Java/java/ide/idea/pei-zhi-maven.md)
+      * [生成serialVersionUID](Java/java/ide/idea/sheng-cheng-serialversionuid.md)
   * [Maven](Java/java/maven.md)
     * [安装](Java/java/maven/an-zhuang.md)
     * [存储库](Java/java/maven/cun-chu-ku.md)
