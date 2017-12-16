@@ -383,7 +383,10 @@
     * [SpringSecurity](Java/java/spring/springsecurity.md)
     * [Spring Data Rest](Java/java/spring/spring-data-rest.md)
       * [自定義輸出](Java/java/spring/spring-data-rest/zi-ding-yi-shu-chu.md)
-      * 自定義查詢
+      * [自定義查詢](Java/java/spring/spring-data-rest/zi-ding-yi-cha-xun.md)
+      * [Events](Java/java/spring/spring-data-rest/events.md)
+      * [安全](Java/java/spring/spring-data-rest/an-quan.md)
+      * [定制化](Java/java/spring/spring-data-rest/ding-zhi-hua.md)
   * [MyBatis](Java/java/ibatis.md)
     * [简介](Java/java/ibatis/jian-jie.md)
     * [最佳实践](Java/java/ibatis/zui-jia-shi-jian.md)

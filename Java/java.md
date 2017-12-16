@@ -18,6 +18,7 @@
 1. idea生成serialVersionUID；
 2. Spring Data Rest;
 3. Spring Data Rest 自定義輸出；
+4. Spring Data Rest 自定義查詢、事件、安全、定制化；
 
 ## V1.4
 1. SerializationUtils；
