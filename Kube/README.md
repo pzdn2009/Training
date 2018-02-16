@@ -6,7 +6,30 @@ kubeadm,kubectl,DNS,Ingress,Proxy,安全，PV，PVC，StorageClass，RESTAPI
 
 Helm，Dashboard
 
+# V6 
 
+S1：技术趋势
+
+# V5
+
+S1：Helm，实验
+
+# V4
+
+S1：运维
+
+# V3
+
+S1:核心原理
+
+
+# V2
+S1:
+kubectl：cluster-info,create,desribe,expose,get,label,rolling-update,scale,delete,exec,logs
+
+POD：配置格式，静态POD，
+
+SVC
 
 # V1
 
