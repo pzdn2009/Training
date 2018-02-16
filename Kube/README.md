@@ -6,7 +6,43 @@ kubeadm,kubectl,DNS,Ingress,Proxy,安全，PV，PVC，StorageClass，RESTAPI
 
 Helm，Dashboard
 
+
+
 # V1
+
+S1:
+
+禁用防火墙，单机集群，创建RC，服务端口号ports，containerPort，创建服务，Cluster IP，Pause容器，NodePort->Port。
+* RC，SVC配置格式
+* 熟悉kubectl子命令
+* 手动停止SVC对应容器的进程，观察后续反映
+* 修改RC数量，重新发布，观察结果
+* SVC与Pod的关联
+
+Master节点，kube-apiserver，kube-controller-manager，kube-scheduler，etcd。
+
+Node节点，kubelet，kube-proxy，Docker Engine。
+
+Pod，Pause，PodIP，Flannel，Open vSwitch，Event，CPU，Memory，Requests,Limits，Endpoint（PodIP+Container Port）
+
+Label，版本，环境，架构tier,frontend,backend,middleware，基于集合，matchLabels，matchExpressions。
+
+RC，Pod模板，scale命令，Rolling Update，Replia Set，伸缩。
+* 大多数情况下，通过定义RC实现创建过程及副本数量的自动控制
+* RC包括完整的Pod定义模板
+* RC通过Label Selector机制实现对Pod副本的自动控制
+* 通过改变RC里的Pod副本数量，可以实现Pod的扩容或缩容功能
+* 通过改变RC里POD模板中的镜像版本，可以实现POD的滚动升级功能。
+
+Deployment，POD编排，Replica Set，应用场景，HPA，Headless Service，DNS域名。
+
+SVC，kube-proxy，SVCName+ SVCClusterIP，多端口，容器SVC发现，NodeIP，PODIP，ClusterIP，集群外访问，NodePort。
+
+Volume，容器挂在路径，POD声明，emptyDir，hostPath，gcePersistentDisk，PD，awsElasticBlockStore，NFS。
+
+持久Volume，PV，ReadWriteOnce，ReadOnlyMany，ReadWriteMany，PersistenceVolumeClaim，PVC定义，POD申请挂载。
+
+Namespace，多租户。Annotation。
 
 # V1.1
 1. 基礎概念
