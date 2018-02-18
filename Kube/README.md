@@ -6,6 +6,10 @@ kubeadm,kubectl,DNS,Ingress,Proxy,安全，PV，PVC，StorageClass，RESTAPI
 
 Helm，Dashboard
 
+# k8s云实践
+
+Code，Config，Jenkins，Registry，Deploy，模板化，空库，Template Repository，HA，监控
+
 # V6 
 
 S1：技术趋势
