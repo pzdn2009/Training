@@ -25,11 +25,13 @@ S1:核心原理
 
 # V2
 S1:
-kubectl：cluster-info,create,desribe,expose,get,label,rolling-update,scale,delete,exec,logs
 
-POD：配置格式，静态POD，
+kubeadm安装，私有云，kubelet，启动参数，CA
+kubectl：cluster-info,create,desribe,expose,get,label,rolling-update,scale,delete,exec,logs。创建资源对象，查看资源对象，描述资源对象，删除资源对象，执行容器命令，查看容器日志。
 
-SVC
+POD：全部配置格式，静态POD，describe pod，configmap，env，envFrom，DownwardAPI，Pending、Running、Succeeded、Failed、Unknown，Always、OnFailure、Never，LivenessProbe，ReadinessProbe，健康检查方式，ExecAction，TCPSocketAction，HTTPGetAction。Deployment/RC自动调度，nodeSelector，nodeAffinity，Taints，Tolerations，DaemonSet，Job，CronJob，Init Container。kubectl edit，Rollover，rollout，pause/resume更新，scale，HPA，StatefulSet。
+
+SVC，配置格式，expose，Create SVC，port，targetPort，selector，RoundRobin，SessionAffinity，多端口服务，HeadLess Service，clusterIP None，Seedprovider，端口映射，NodePort，LoadBalance，DNS，Ingress
 
 # V1
 
