@@ -12,11 +12,18 @@ S1：技术趋势
 
 # V5
 
-S1：Helm，实验
+S1：Helm，实验，Heapster，Chart，Release，Repository，HelmClient，TillerServer，search，install，status，upgrade，rollback，delete，目录结构 ，私有repository，
 
 # V4
 
 S1：运维
+Node类型，unscheduled，patch，cordon，uncordon，扩容，Label更新，namespace，set-context，set-cluster，use-context，Requests，Limits，CPU，Memory，单位，cpu-shares，查看node描述，强行终止，LimitRange，资源配额，ResourceQuota，驱逐。
+
+etcd集群，master集群，cAdvisor，Heapster。
+
+Fluentd，FEK，Audit Log，Dashboard。
+
+Event，容器日志，kubectl logs pod_name，kube服务日志
 
 # V3
 
