@@ -1,5 +1,6 @@
 # Summary
 
+## Basic
 * [序](README.md)
 * [Linux基础](linux_basic/README.md)
     * [系统简介](linux_basic/系统简介.md)
@@ -479,11 +480,11 @@
     * [Deploying](Spark/deploying.md)
 
 ## PM
-* 產品經理
+* [產品經理](產品經理.md)
 * [項目經理](pm/xiang-mu-jing-li.md)
     * [会计基础](pm/xiang-mu-jing-li/hui-ji-ji-chu.md)
         * [基础](pm/xiang-mu-jing-li/hui-ji-ji-chu/ji-chu.md)
 
 ## Solution
-* 設計與架構
+* [設計與架構](設計與架構.md)
 
