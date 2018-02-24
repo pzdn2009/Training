@@ -7,6 +7,7 @@ timeout，keepalive，server，location，匹配，反向代理，upstream，pro
 
 ## V1.0
 1. 配置文件结构，server，location；
+2. 404设置
 
 # 一个简单的代理配置
 
