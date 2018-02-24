@@ -5,7 +5,8 @@ S1：500设置，404设置，双备，查看日志和分析日志（工具），
 
 timeout，keepalive，server，location，匹配，反向代理，upstream，proxy_pass，个数参数，代理cookie，多个upstream，变量定义与使用，CGI（Fast CGI、SCGI、uWSGI），内置变量参数$request_uri，X-Real-IP，X-Forwarded-For。
 
-
+## V1.0
+1. 配置文件结构，server，location；
 
 # 一个简单的代理配置
 

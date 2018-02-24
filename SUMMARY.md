@@ -86,6 +86,7 @@
     * [权威指南笔记](hadoop/hadoop.md)
 * [Nginx](nginx/nginx.md)
     * [安装](nginx/安装.md)
+    * [概念](nginx/概念.md)
 * [ELK](elk/README.md)
     * [安裝](elk/安裝.md)
     * [安裝elasticsearch-head](elk/安裝elasticsearch-head.md)
