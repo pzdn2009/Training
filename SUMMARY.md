@@ -289,6 +289,7 @@
   * [Vue](FrontEnd/vue.md)
     * [環境](FrontEnd/vue/huan-jing.md)
     * [Basic](FrontEnd/vue/basic.md)
+    * [Computed](FrontEnd/vue/computed.md)
 * [Java](Java/java.md)
   * [编程](Java/java/bian-cheng.md)
     * [反射](Java/java/bian-cheng/fan-she.md)
