@@ -8,3 +8,4 @@
 ## V1.1
 
 1. vue-router初步；
+2. Form表单部分；
