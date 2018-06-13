@@ -1,0 +1,3 @@
+# nuxt
+
+* router分析
