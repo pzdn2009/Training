@@ -272,6 +272,7 @@
         * [ES5](FrontEnd/esgui-fan/es5.md)
             * [Array](FrontEnd/esgui-fan/es5/array.md)
         * [ES6](FrontEnd/esgui-fan/es6.md)
+            * [Promise](FrontEnd/esgui-fan/promise.md)
         * [ES7](FrontEnd/esgui-fan/es7.md)
     * [CommonJS规范](FrontEnd/commonjsgui-fan.md)
         * [Modules](FrontEnd/commonjsgui-fan/modules.md)
