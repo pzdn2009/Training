@@ -9,3 +9,4 @@
 
 1. vue-router初步；
 2. Form表单部分；
+3. Axios，Upload手动上传；
