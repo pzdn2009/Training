@@ -6,7 +6,7 @@
 3. 常见日志文件(1)
 4. 正则练习
 5. Kerberos，Kerberos简介(1)
-
+6. Mount原理和命令
 
 # V2.0
 S1:
