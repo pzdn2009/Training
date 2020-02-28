@@ -508,3 +508,27 @@
 
 * [設計與架構](設計與架構.md)
 
+## CS
+
+* [OperatingSystem](cs/operatingsystem.md)
+  * [进程管理](cs/operatingsystem/jin-cheng-guan-li.md)
+    * [进程与线程](cs/operatingsystem/jin-cheng-guan-li/jin-cheng-yu-xian-cheng.md)
+    * [进程状态的切换](cs/operatingsystem/jin-cheng-guan-li/jin-cheng-zhuang-tai-de-qie-huan.md)
+    * [FCFS算法](cs/operatingsystem/jin-cheng-guan-li/fcfssuan-fa.md)
+    * [SJF算法](cs/operatingsystem/jin-cheng-guan-li/sjfsuan-fa.md)
+    * [SRTN算法](cs/operatingsystem/jin-cheng-guan-li/srtnsuan-fa.md)
+    * [多级反馈队列](cs/operatingsystem/jin-cheng-guan-li/duo-ji-fan-kui-dui-lie.md)
+    * [进程同步](cs/operatingsystem/jin-cheng-guan-li/jin-cheng-tong-bu.md)
+    * [读者-写者问题](cs/operatingsystem/jin-cheng-guan-li/du-8005-xie-zhe-wen-ti.md)
+    * [哲学家进餐问题](cs/operatingsystem/jin-cheng-guan-li/zhe-xue-jia-jin-can-wen-ti.md)
+    * [进程通信](cs/operatingsystem/jin-cheng-guan-li/jin-cheng-tong-xin.md)
+  * [死锁](cs/operatingsystem/si-suo.md)
+    * [必要条件](cs/operatingsystem/si-suo/bi-yao-tiao-jian.md)
+    * [死锁检测与死锁恢复](cs/operatingsystem/si-suo/si-suo-jian-ce-yu-si-suo-hui-fu.md)
+  * [内存管理](cs/operatingsystem/nei-cun-guan-li.md)
+    * [虚拟内存](cs/operatingsystem/nei-cun-guan-li/xu-ni-nei-cun.md)
+    * [分页系统地址映射](cs/operatingsystem/nei-cun-guan-li/fen-ye-xi-tong-di-zhi-ying-she.md)
+    * [页面置换算法](cs/operatingsystem/nei-cun-guan-li/ye-mian-zhi-huan-suan-fa.md)
+  * [文件管理](cs/operatingsystem/wen-jian-guan-li.md)
+  * [设备管理](cs/operatingsystem/she-bei-guan-li.md)
+
