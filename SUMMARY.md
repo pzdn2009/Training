@@ -11,6 +11,7 @@
   * [系统启动与运行级别](linux_basic/系统启动与运行级别.md)
     * [init.d](linux_basic/initd.md)
     * [运行级别](linux_basic/运行级别.md)
+    * [sudo命令](linux_basic/sudoming-ling.md)
   * [用户、文件、目录](linux_basic/用户-文件-目录.md)
     * [User&Group](linux_basic/usergroup.md)
     * [File&Directory](linux_basic/filedirectory.md)
