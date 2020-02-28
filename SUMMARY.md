@@ -3,6 +3,7 @@
 ## Basic
 
 * [序](README.md)
+* [目录](mu-lu.md)
 * [Linux基础](linux_basic/README.md)
   * [系统简介](linux_basic/系统简介.md)
     * [历史相关](linux_basic/历史相关.md)
@@ -183,19 +184,6 @@
   * [備份](MongoDB/備份.md)
 * 微服务
 * [GIT](git/)
-* [MLTheory](MLTheory/README.md)
-  * [推荐系统](MLTheory/Rd.md)
-  * [CNN](MLTheory/cnn.md)
-    * [Concept](MLTheory/cnn/concept.md)
-  * [Regularization](MLTheory/regularization.md)
-  * [Caffe](MLTheory/caffe.md)
-    * [tour](MLTheory/caffe/tour.md)
-    * [Training LeNet on MNIST with Caffe](MLTheory/caffe/training-lenet-on-mnist-with-caffe.md)
-    * [Layers](MLTheory/caffe/layers.md)
-    * [Solver](MLTheory/caffe/solver.md)
-    * Install
-  * [Tensorflow](MLTheory/tensorflow.md)
-* [MdMath](mdmath.md)
 
 ## Language
 

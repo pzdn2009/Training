@@ -1,3 +1,16 @@
+# Docker
+
+# V1.6
+1. java8 Dockerfile；
+2. Jenkins Docker；
+3. Compose；
+4. Volume;
+5. Nginx应用；
+6. Docker代理；
+7. 动态修改内存和CPU
+8. 自动重启；
+9. ssl证书。
+
 # V1.5
 1. 增加Release地址；
 2. 增加Nexusdocker安裝；
