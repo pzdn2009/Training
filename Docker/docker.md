@@ -1,5 +1,12 @@
 # Docker
 
+# V1.7
+1. 监控维度；
+2. 监控命令；
+3. APP架构；
+4. 内核知识；
+5. 云平台； 
+
 # V1.6
 1. java8 Dockerfile；
 2. Jenkins Docker；
