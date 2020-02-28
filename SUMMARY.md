@@ -531,4 +531,10 @@
     * [页面置换算法](cs/operatingsystem/nei-cun-guan-li/ye-mian-zhi-huan-suan-fa.md)
   * [文件管理](cs/operatingsystem/wen-jian-guan-li.md)
   * [设备管理](cs/operatingsystem/she-bei-guan-li.md)
+* [Algorithm](cs/algorithm.md)
+  * [搜索篇](cs/algorithm/sou-suo-pian.md)
+  * [动态规划篇](cs/algorithm/dong-tai-gui-hua.md)
+  * [排序算法篇](cs/algorithm/pai-xu-suan-fa-pian.md)
+  * [数据结构篇](cs/algorithm/shu-ju-jie-gou-pian.md)
+  * [图算法篇](cs/algorithm/tu-suan-fa-pian.md)
 
