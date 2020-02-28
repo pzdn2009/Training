@@ -58,7 +58,7 @@ set -o emacs #设置风格为emacs ，默认的做法。
 | Ctrl+z | 将当前程序放到后台运行，恢复到前台为命令fg |
 | Ctrl+a | 将光标移至输入行头，相当于Home键 |
 | Ctrl+e | 将光标移至输入行末，相当于End键 |
-| Ctrl+k | 删除从光标所在位置到行末 |
+| **Ctrl+k** | 删除从光标所在位置到行末 |
 | Shift+PgUp | 将终端显示向上滚动 |
 | Shift+PgDn | 将终端显示向下滚动 |
 
@@ -92,7 +92,7 @@ man -a mkfifo #一次显示第一区段和第三区段，使用q退出之后，�
 
 ```
 
-区段列表：
+Section区段列表：
 
 | 区段 | 说明 |
 | --- | --- |
@@ -107,15 +107,18 @@ man -a mkfifo #一次显示第一区段和第三区段，使用q退出之后，�
 
 # 4. 命令和文件查找
 
-**which**——locate a command
+## 4.1 which
+
+Locate a program file in the user's path.
 
 ```
 which [-a] command #a：PATH中所有的命令，which从当前用户的PATH路径搜索，不同用户可能得到不同结果。
 which ifconfig #/sbin/ifconfig
 which which #
 ```
+## 4.2 whereis
 
-**whereis**——locate the binary, source, and manual page files for a command
+Locate the binary, source, and manual page files for a command.
 
 ```
 whereis [-bmsu] command #b：binary，m：manual，s：source源文件，u：除掉这三者
@@ -123,14 +126,18 @@ whereis ifconfig #/sbin/ifconfig /user/share…/ifconfig.8.gz，对于不同的�
 whereis -m passwd
 ```
 
-**locate**——find files by name
+## 4.3 locate
+
+**locate**——find files by name,find filenames quickly.
 
 ```
 locate [-ir] keyword #i：忽略大小写，r：正则表达式
 locate passwd
 ```
 
-**find**——search for files in a directory hierarchy
+## 4.4 find
+
+**find**——search for files in a directory hierarchy.
 
 ```
 find [path] [option] [action]
@@ -186,27 +193,27 @@ alias h='history'
 
 **PATH变量**
 
-即命令的搜索路径。系统的环境变量一般从\/etc\/profile进行搜索。
+即命令的搜索路径。系统的环境变量一般从/etc/profile进行搜索。
 
 **Profile**
 
 用户可以在Profile文件中加入环境变量，比如ORACLE\_HOME,HOME...这样重新登录之后，这些环境变量都会得以设置，不用每次都手工设置。
 
-Unix\/Linux有两个profile文件：
+Unix/Linux有两个profile文件：
 
-> 1.\/etc\/profile:是全局profile文件，设置后会影响到所有用户
+> 1./etc/profile:是全局profile文件，设置后会影响到所有用户
 >
-> 2.\/home\/username\/.profile或.bash\_profile是针对特定用户的，可以针对用户，来配置自己的环境变量。
+> 2./home/username/.profile或.bash_profile是针对特定用户的，可以针对用户，来配置自己的环境变量。
 >
-> note:profile是unix上才有的;bash\_profile是Linux下有的\(Linux下，用户目录没有.profile文件\)\/home\/username\/.profile或.bash\_profile，都是隐藏文件，需要使用ls -a才能看到。
+> note:profile是unix上才有的;bash_profile是Linux下有的(Linux下，用户目录没有.profile文件\)/home/username/.profile或.bash_profile，都是隐藏文件，需要使用ls -a才能看到。
 
 **执行顺序**
 
-Bash登陆\(login\)的时候，Profile执行的顺序
+Bash登陆(login)的时候，Profile执行的顺序
 
-1. 先执行全局Profile, \/etc\/profile
-2. 接着bash会检查使用者的HOME目录中，是否有 .bash\_profile 或者 .bash\_login或者 .profile，若有，则会执行其中一个，执行顺序为：
-.bash\_profile 最优先 &gt; .bash\_login其次 &gt; .profile 最后。
+1. 先执行全局Profile, /etc/profile
+2. 接着bash会检查使用者的HOME目录中，是否有 .bash_profile 或者 .bash_login或者 .profile，若有，则会执行其中一个，执行顺序为：
+.bash_profile 最优先 &gt; .bash_login其次 &gt; .profile 最后。
 
 **export &lt;= env &lt;= set**
 
