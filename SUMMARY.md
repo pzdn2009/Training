@@ -43,6 +43,7 @@
   * [文本处理](linux_basic/文本处理.md)
     * [sed](linux_basic/sed.md)
   * [日志](linux_basic/日志.md)
+    * [常见的log文件](linux_basic/日志/varlogmessage.md)
   * [OpenSSH](linux_basic/openssh.md)
   * [正则表达式](linux_basic/正则表达式.md)
   * [SELinux](linux_basic/selinux.md)
