@@ -24,6 +24,7 @@
     * [vim块选择](linux_basic/vim块选择.md)
     * [vim环境设置](linux_basic/vim环境设置.md)
   * [磁盘](linux_basic/磁盘.md)
+    * [df命令](linux_basic/磁盘/dfming-ling.md)
   * [Shell](linux_basic/shell.md)
     * [变量](linux_basic/shell变量.md)
     * [测试](linux_basic/shell测试.md)
