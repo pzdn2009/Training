@@ -46,6 +46,7 @@
     * [常见的log文件](linux_basic/日志/varlogmessage.md)
   * [OpenSSH](linux_basic/openssh.md)
   * [正则表达式](linux_basic/正则表达式.md)
+    * [练习](linux_basic/正则表达式/lian-xi.md)
   * [SELinux](linux_basic/selinux.md)
   * [系统启动与运行级别](linux_basic/系统启动与运行级别.md)
   * [常用技能](linux_basic/chang-yong-ji-neng.md)
