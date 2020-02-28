@@ -50,6 +50,7 @@
   * [正则表达式](linux_basic/正则表达式.md)
     * [练习](linux_basic/正则表达式/lian-xi.md)
   * [SELinux](linux_basic/selinux.md)
+    * [实践：关闭SELinux](linux_basic/selinux/shi-jian-ff1a-guan-bi-selinux.md)
   * [系统启动与运行级别](linux_basic/系统启动与运行级别.md)
   * [常用技能](linux_basic/chang-yong-ji-neng.md)
   * [Kerberos](linux_basic/kerberos.md)

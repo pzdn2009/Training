@@ -8,6 +8,7 @@
 5. Kerberos，Kerberos简介(1)
 6. Mount原理和命令
 7. sudo命令
+8. SELinux关闭，SELinux简介(1)
 
 # V2.0
 S1:
