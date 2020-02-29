@@ -4,6 +4,8 @@ Ref:https://www.jianshu.com/p/7de58a36ba4d
 
 在keberos Authentication中，Kerberos有三个主体：**Client、Server和KDC**。
 
+![](/assets/Kerberos.webp)
+
 # Key
 为了便于理解，这里引入两个关键的概念：
 

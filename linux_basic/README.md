@@ -4,6 +4,8 @@
 1. 常见日志文件（2）;
 2. Nginx日志;
 3. Kerberos认证原理；
+4. var目录：cache,log,run,lib等；
+
 
 ## V2.1
 1. df命令；

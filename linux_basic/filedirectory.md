@@ -40,22 +40,32 @@ chmod go-rw iphone # g:group,o:other,u:user,使用guo来代表三个用户组，
 tree / #显示目录树
 ```
 
-**目录解释**
+## 目录解释
 
-\/bin
+/bin
 
 > 重要执行文件，比如bash,cat,chmod,date,mkdir等。
 
-\/etc
+/etc
 
 > FHS中属于不变的，且不可分享的。
-> 系统主要的配置文件几乎都放置在这个目录中。比如\/etc\/password，\/etc\/group，\/etc\/shadow等。FHS建议不要放置可执行文件在这个目录中。其中，重要的目录：
+> 系统主要的配置文件几乎都放置在这个目录中。比如/etc/password，/etc/group，/etc/shadow等。FHS建议不要放置可执行文件在这个目录中。其中，重要的目录：
 > 
-> * \/etc\/init.d\/：所有服务的默认启动脚本都是放在这里的。
-> * \/etc\/xinetd.d\/：super daemon。
-> * \/etc\/X11：X Window有关的配置文件。
+> * /etc/init.d/：所有服务的默认启动脚本都是放在这里的。
+> * /etc/xinetd.d/：super daemon。
+> * /etc/X11：X Window有关的配置文件。
 
-\/usr
+/var
+>/var在系统运行后才会渐渐占用硬盘容量的目录。
+
+> 因为var目录主要针对常态性变动文件，包括缓存（cache）、登录文件（logfile）以及某些软件运行所产生的文件，包括程序文件（lock file，run file），或者例如Mysql数据库的文件等。
+* /var/log/：存放日志。
+* /var/run/：某些程序启动服务后，会将他们PID放置在这个目录下。
+* /var/lib/：程序本身执行的过程中需要使用到的数据文件放置的目录。Eg：Mysql的数据库放置到/var/lib/mysql，而rpm的数据库则放到/var/lib/rpm目录下。
+* /var/cache：应用程序本身运行过程中会产生生的一些暂存文件。
+* /var/lock:某些设备或者是文件资源一次只能被一个应用程序所使用
+
+/usr
 
 >Unix system resource,可分享不可以变动
 * /usr/bin 绝大部分的命令都放在这里
@@ -68,7 +78,7 @@ $PATH的作用就是提供命令搜索路径:
 
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
-绝对路径以\/开头；相对路径：.为当前目录，..上级目录，省略了\/默认从当前目录开始
+绝对路径以/开头；相对路径：.为当前目录，..上级目录，省略了/默认从当前目录开始
 
 ```
 pwd #当前工作路径
