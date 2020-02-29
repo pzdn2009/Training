@@ -5,7 +5,9 @@
 2. Nginx日志;
 3. Kerberos认证原理；
 4. var目录：cache,log,run,lib等；
-
+5. SSH目录；
+6. PAM简介；
+7. mail服务；
 
 ## V2.1
 1. df命令；
