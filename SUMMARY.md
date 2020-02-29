@@ -554,6 +554,7 @@
   * [动态规划篇](cs/algorithm/dong-tai-gui-hua.md)
     * [Lc053--最大子序和](cs/algorithm/dong-tai-gui-hua/lc053zui-da-zi-xu-he.md)
     * [Lc121--卖卖股票的最佳时机](cs/algorithm/dong-tai-gui-hua/lc121mai-mai-gu-piao-de-zui-jia-shi-ji.md)
+    * [Lc392--判断子序列](cs/algorithm/dong-tai-gui-hua/lc392pan-duan-zi-xu-lie.md)
   * [排序算法篇](cs/algorithm/pai-xu-suan-fa-pian.md)
   * [数据结构篇](cs/algorithm/shu-ju-jie-gou-pian.md)
     * [二叉树](cs/algorithm/shu-ju-jie-gou-pian/er-cha-shu.md)
