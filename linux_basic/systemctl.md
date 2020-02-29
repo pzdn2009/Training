@@ -1,4 +1,4 @@
-# systemctl用法
+# systemctl命令
 
 systemctl 是系统服务管理器命令，它实际上将 service 和 chkconfig 这两个命令组合到一起。
 
@@ -27,7 +27,7 @@ systemctl restart httpd.service #重启服务
 systemctl is-active httpd.service #是否 Active
 ```
 
-命令片段-2：#彻底关闭防火墙
+命令片段-2：#**彻底关闭防火墙**
 ```
 sudo systemctl status  firewalld.service
 sudo systemctl stop firewalld.service          

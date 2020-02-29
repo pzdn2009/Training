@@ -12,7 +12,8 @@ https://curl.haxx.se/docs/httpscripting.html
 * -L 进行强制重定向
 * -C 可对大文件使用断点续传功能
 * -T 选项可将指定的本地文件上传到FTP服务器上
-```
+
+```java
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
    "header": { \ 
      "cardInfoId": 0, \ 
@@ -23,3 +24,17 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "transactionId": "string" \ 
  }' 'http://172.18.21.192:18888/api/mpg/direct/retrieveTransaction'
  ```
+ 
+```
+# 重定向
+curl -L www.likegeeks.com
+ 
+# 超时
+curl -m 60 example.com
+ 
+# 用户名和密码
+curl -u username:password ftp://example.com
+
+# 静默
+curl -s http://example.com --output index.html
+```

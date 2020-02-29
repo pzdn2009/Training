@@ -36,7 +36,7 @@
     * [网络理论](linux_basic/网络理论.md)
     * [ifconfig](linux_basic/ifconfig.md)
     * [iptables](linux_basic/iptables.md)
-    * [systemctl](linux_basic/systemctl.md)
+    * [systemctl命令](linux_basic/systemctl.md)
     * [查看和设置时区](linux_basic/cha-kan-he-she-zhi-shi-qu.md)
     * [Kill Process By Port](linux_basic/kill-process-by-port.md)
     * [curl常用命令](linux_basic/curlchang-yong-ming-ling.md)
