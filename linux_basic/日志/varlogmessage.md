@@ -28,7 +28,7 @@ egrep -ri 'error|warn' /var/log/messages
 
 # /var/log/btmp
 
-记录Linux登陆失败的用户、时间以及远程IP地址
+记录Linux**登陆失败**的用户、时间以及远程IP地址
 
 该文件是一个二进制保存的文件，直接使用 **lastb** 命令查看。如果该日志文件过大，可以清空该文件。
 
@@ -39,3 +39,27 @@ egrep -ri 'error|warn' /var/log/messages
 直接使用 last 命令查看。
 
 使用wtmp可以找出谁正在登陆进入系统，谁使用命令显示这个文件或信息等。
+
+# /var/log/maillog 
+
+包含来着系统运行电子邮件服务器的日志信息。例如，sendmail日志信息就全部送到这个文件中。
+
+# /var/log/yum.log 
+
+包含使用yum安装的软件包信息。
+
+# /var/log/cron 
+
+每当cron进程开始一个工作时，就会将相关信息记录在这个文件中。
+
+# /var/log/dmesg 
+
+包含内核缓冲信息（kernel ring buffer）。在系统启动时，会在屏幕上显示许多与硬件有关的信息。可以用dmesg查看它们。
+
+# /var/log/daemon.log 
+
+包含各种系统后台守护进程日志信息。
+
+# /var/log/sa/
+
+包含每日由sysstat软件包收集的sar文件。

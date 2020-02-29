@@ -47,6 +47,7 @@
     * [sed](linux_basic/sed.md)
   * [日志](linux_basic/日志.md)
     * [常见的log文件](linux_basic/日志/varlogmessage.md)
+    * [Nginx日志](linux_basic/日志/nginxri-zhi.md)
   * [OpenSSH](linux_basic/openssh.md)
   * [正则表达式](linux_basic/正则表达式.md)
     * [练习](linux_basic/正则表达式/lian-xi.md)
