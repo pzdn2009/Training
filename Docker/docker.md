@@ -8,15 +8,15 @@
 5. 云平台； 
 
 # V1.6
-1. java8 Dockerfile；
-2. Jenkins Docker；
-3. Compose；
-4. Volume;
-5. Nginx应用；
-6. Docker代理；
-7. 动态修改内存和CPU
-8. 自动重启；
-9. ssl证书。
+1. java8 Dockerfile；Y
+2. Jenkins Docker；Y
+3. Compose；Y
+4. Volume;Y
+5. Nginx应用；Y
+6. Docker代理；Y
+7. 动态修改内存和CPU;Y
+8. 自动重启；Y
+9. insecure-registies。Y
 
 # V1.5
 1. 增加Release地址；
