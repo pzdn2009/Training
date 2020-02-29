@@ -57,6 +57,7 @@
   * [常用技能](linux_basic/chang-yong-ji-neng.md)
   * [Kerberos](linux_basic/kerberos.md)
     * [Kerberos简介](linux_basic/kerberos/kerberosjian-jie.md)
+    * [Kerberos认证原理](linux_basic/kerberos/kerberosren-zheng-yuan-li.md)
 * [Linux系统编程](LinuxSystemProgramming/linux系统编程.md)
   * [简介](LinuxSystemProgramming/简介.md)
   * [文件IO](LinuxSystemProgramming/文件io.md)
