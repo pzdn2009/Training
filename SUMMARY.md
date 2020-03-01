@@ -568,6 +568,9 @@
   * [项目陈述](cs/amian-shi/xiang-mu-chen-shu.md)
     * [CouponMs](cs/amian-shi/xiang-mu-chen-shu/couponms.md)
   * [Java面](cs/amian-shi/javamian.md)
+    * [String\|StringBuilder\|StringBuffer](cs/amian-shi/javamian/stringstringbuilderstringbuffer.md)
+    * [线程池原理](cs/amian-shi/javamian/xian-cheng-chi-yuan-li.md)
+    * [HashMap原理](cs/amian-shi/javamian/hashmapyuan-li.md)
   * [Mysql面](cs/amian-shi/mysqlmian.md)
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
 
