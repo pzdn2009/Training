@@ -2,6 +2,16 @@
 
 # V1
 
+# V0.5
+
+Java 
+1. 对象头；https://www.jianshu.com/p/76959115d486
+2. AQS；
+3. Monitor；
+4. synchronized代码块底层原理；
+5. 线程池源码实现；https://www.jianshu.com/p/11578fd6e272
+
+
 # V0.4
 
 Kafka原理
@@ -59,7 +69,7 @@ SpringBoot源码阅读
 JAVA
 8. JVM思维导图
 9. 多线程思维导图
-10. JAVA锁
+10. JAVA锁 Y；
 
 
 # V0.1
@@ -83,15 +93,15 @@ JAVA
 5. 整理延伸；
 
 JAVA
-6. StringBuilder，StringBuffer，String；
-7. HashMap原理
-8. 线程池原理
+6. StringBuilder，StringBuffer，String； Y
+7. HashMap原理 Y
+8. 线程池原理 Y
 9. ConcurrentHashMap原理
 10. 线程同步原理
 
 JVM
-11. 内存结构原理
-12. 类加载机制
-13. 垃圾回收算法
+11. 内存结构原理 Y
+12. 类加载机制 Y
+13. 垃圾回收算法 Y
 14. 常用的jvm参数
-15. G1与CMS区别
+15. G1与CMS区别 Y

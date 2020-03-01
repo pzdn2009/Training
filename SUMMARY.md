@@ -571,6 +571,10 @@
     * [String\|StringBuilder\|StringBuffer](cs/amian-shi/javamian/stringstringbuilderstringbuffer.md)
     * [线程池原理](cs/amian-shi/javamian/xian-cheng-chi-yuan-li.md)
     * [HashMap原理](cs/amian-shi/javamian/hashmapyuan-li.md)
+    * [JAVA锁分类](cs/amian-shi/javamian/javasuo-fen-lei.md)
+    * [Jvm内存结构](cs/amian-shi/javamian/jvmnei-cun-jie-gou.md)
+    * [Jvm类加载机制](cs/amian-shi/javamian/jvmlei-jia-zai-ji-zhi.md)
+    * [GC原理及算法](cs/amian-shi/javamian/gcyuan-li-ji-suan-fa.md)
   * [Mysql面](cs/amian-shi/mysqlmian.md)
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
 
