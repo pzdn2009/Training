@@ -2,6 +2,10 @@
 
 # V1
 
+# V0.6
+
+复盘utech，并定位清楚自己，技术Manager怎么做？
+
 # V0.5
 
 Java 
@@ -96,12 +100,11 @@ JAVA
 6. StringBuilder，StringBuffer，String； Y
 7. HashMap原理 Y
 8. 线程池原理 Y
-9. ConcurrentHashMap原理
-10. 线程同步原理
+9. ConcurrentHashMap原理 Y
 
 JVM
 11. 内存结构原理 Y
 12. 类加载机制 Y
 13. 垃圾回收算法 Y
-14. 常用的jvm参数
+14. 常用的jvm参数 Y
 15. G1与CMS区别 Y
