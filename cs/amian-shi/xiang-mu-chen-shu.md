@@ -1,7 +1,7 @@
 # 项目陈述
 
 * [Coupon Ms](/cs/amian-shi/xiang-mu-chen-shu/couponms.md).
-
+* [支付架构经验](/cs/amian-shi/xiang-mu-chen-shu/zhi-fu-xi-tong-jing-yan.md)
 
 ## 项目描述的一般方式
 

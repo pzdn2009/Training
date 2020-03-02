@@ -202,6 +202,7 @@
 * [微服务](wei-fu-wu.md)
   * [MS周围](wei-fu-wu/mszhou-wei.md)
     * [微服务真的微吗？](wei-fu-wu/mszhou-wei/wei-fu-wu-zhen-de-wei-ma-ff1f.md)
+    * [怎样才算微服务体？](wei-fu-wu/mszhou-wei/zen-yang-cai-suan-wei-fu-wu-ti-ff1f.md)
   * [MSA核心体系](wei-fu-wu/msahe-xin.md)
     * [接入层](wei-fu-wu/msahe-xin/jie-ru-ceng.md)
     * [网关层](wei-fu-wu/msahe-xin/wang-guan-ceng.md)
@@ -209,6 +210,8 @@
     * [支撑服务](wei-fu-wu/msahe-xin/zhi-cheng-fu-wu.md)
     * [平台服务](wei-fu-wu/msahe-xin/ping-tai-fu-wu.md)
     * [基础设施层](wei-fu-wu/msahe-xin/ji-chu-she-shi-ceng.md)
+  * [网关GW对比](wei-fu-wu/wang-guan-gw-dui-bi.md)
+  * [注册中心对比](wei-fu-wu/zhu-ce-zhong-xin-dui-bi.md)
 * [GIT](git/)
 
 ## Language
@@ -576,6 +579,7 @@
 * [A面试](cs/amian-shi.md)
   * [项目陈述](cs/amian-shi/xiang-mu-chen-shu.md)
     * [CouponMs](cs/amian-shi/xiang-mu-chen-shu/couponms.md)
+    * [支付系统经验](cs/amian-shi/xiang-mu-chen-shu/zhi-fu-xi-tong-jing-yan.md)
   * [Java面](cs/amian-shi/javamian.md)
     * [String\|StringBuilder\|StringBuffer](cs/amian-shi/javamian/stringstringbuilderstringbuffer.md)
     * [线程池原理](cs/amian-shi/javamian/xian-cheng-chi-yuan-li.md)
