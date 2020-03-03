@@ -2,19 +2,9 @@
 
 # V1
 
-# V0.6
-
-复盘utech，并定位清楚自己，技术Manager怎么做？
-
 # V0.5
 
-Java 
-1. 对象头；https://www.jianshu.com/p/76959115d486
-2. AQS；
-3. Monitor；
-4. synchronized代码块底层原理；
-5. 线程池源码实现；https://www.jianshu.com/p/11578fd6e272
-
+复盘utech，并定位清楚自己，技术Manager怎么做？
 
 # V0.4
 
@@ -74,7 +64,11 @@ JAVA
 8. JVM思维导图
 9. 多线程思维导图
 10. JAVA锁 Y；
-
+11. 对象头；https://www.jianshu.com/p/76959115d486
+12. AQS；
+13. Monitor；
+14. synchronized代码块底层原理；
+15. 线程池源码实现；https://www.jianshu.com/p/11578fd6e272
 
 # V0.1
 

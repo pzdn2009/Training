@@ -590,6 +590,14 @@
     * [GC原理及算法](cs/amian-shi/javamian/gcyuan-li-ji-suan-fa.md)
     * [ConcurrentHashMap](cs/amian-shi/javamian/concurrenthashmap.md)
     * [Jvm参数](cs/amian-shi/javamian/jvmcan-shu.md)
+    * [AQS](cs/amian-shi/javamian/aqs.md)
+      * [AQS-Node](cs/amian-shi/javamian/aqs/aqs-node.md)
+      * [AQS-FairSync](cs/amian-shi/javamian/aqs/aqs-fairsync.md)
+      * [独占锁AQS核心源码分析](cs/amian-shi/javamian/aqs/acquirehe-xin-yuan-ma-fen-xi.md)
+    * [对象头](cs/amian-shi/javamian/dui-xiang-tou.md)
+    * [Monitor](cs/amian-shi/javamian/monitor.md)
+    * [线程池源码](cs/amian-shi/javamian/xian-cheng-chi-yuan-ma.md)
+    * 并发编程导图
   * [Mysql面](cs/amian-shi/mysqlmian.md)
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
 
