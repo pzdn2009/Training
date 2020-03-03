@@ -245,7 +245,7 @@ private void cancelAcquire(Node node) {
             if (next != null && next.waitStatus <= 0)
                 compareAndSetNext(pred, predNext, next); //连接起来
         } else {
-            //唤醒
+            //唤醒后继
             unparkSuccessor(node);
         }
 
@@ -254,7 +254,7 @@ private void cancelAcquire(Node node) {
 }
 ```
 
-## 2.7 unparkSuccessor
+## 2.7 unparkSuccessor——唤醒后继
 
 ```java
 /**
@@ -285,12 +285,14 @@ private void unparkSuccessor(Node node) {
             if (t.waitStatus <= 0)
                 s = t;
     }
+    //从后面开始找到非取消的后继，
+    //unPark这个后继
     if (s != null)
         LockSupport.unpark(s.thread);
 }
 ```
 
-## 2.8 release
+## 2.8 release——释放锁
 
 ```java
 //AQS的release
@@ -304,8 +306,12 @@ public final boolean release(int arg) {
         return false;
  }
  
+//c=0,才完全
 protected final boolean tryRelease(int releases) {
+    //同步状态
     int c = getState() - releases;
+    
+    //当前线程要一致
     if (Thread.currentThread() != getExclusiveOwnerThread())
         throw new IllegalMonitorStateException();
     boolean free = false;
