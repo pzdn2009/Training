@@ -1,25 +1,25 @@
 # Lc392--判断子序列
 
-Ref：https://leetcode-cn.com/problems/is-subsequence/
+Ref：[https://leetcode-cn.com/problems/is-subsequence/](https://leetcode-cn.com/problems/is-subsequence/)
 
 ## 题目
 
-```
+```text
 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
 
 你可以认为 s 和 t 中仅包含英文小写字母。字符串 t 可能会很长（长度 ~= 500,000），而 s 是个短字符串（长度 <=100）。
 
 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。（例如，"ace"是"abcde"的一个子序列，而"aec"不是）。
 
-示例 1:
+示例 1:
 s = "abc", t = "ahbgdc"
 
-返回 true.
+返回 true.
 
-示例 2:
+示例 2:
 s = "axc", t = "ahbgdc"
 
-返回 false.
+返回 false.
 
 后续挑战 :
 
@@ -29,15 +29,18 @@ s = "axc", t = "ahbgdc"
 ## 分析
 
 一开始使用递推，打表，得到转移方程：
-```
+
+```text
 dp[i,j]表示(s[i],t[j])时的子串长度。
 结果：dp[m,n] >= s.length;
 状态转移：dp[i,j] = s[i-1] == t[j-1] ? 1 + dp[i-1,j-1] : max { dp[i-1,j]，dp[i,j-1] }
 ```
+
 耗时超过一秒。
 
 降维处理：
-```
+
+```text
 dp[i]=k，k表示地i个字母在字符串中的位置。
 dp[i+1] = l 且 l > k，反之，false。
 ```
@@ -103,3 +106,4 @@ public class T392 {
     }
 }
 ```
+

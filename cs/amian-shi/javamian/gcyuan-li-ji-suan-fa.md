@@ -1,3 +1,4 @@
-# GC 原理及算法
+# GC原理及算法
 
-![](/assets/GC原理以及算法.png)
+![](../../../.gitbook/assets/gc-yuan-li-yi-ji-suan-fa.png)
+

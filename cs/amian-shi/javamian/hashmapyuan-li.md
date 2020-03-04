@@ -1,24 +1,22 @@
 # HashMap原理
 
-Ref：https://blog.csdn.net/Yoga0301/article/details/84452104
+Ref：[https://blog.csdn.net/Yoga0301/article/details/84452104](https://blog.csdn.net/Yoga0301/article/details/84452104)
 
-![](/assets/HashMap原理.png)
+![](../../../.gitbook/assets/hashmap-yuan-li.png)
 
 ## 面试题
 
 ### 1. HashMap底层是如何实现的？
 
-首先底层数据结构是由数组+链表组成链表散列。HashMap先得到key的散列值，在通过扰动函数（减少碰撞次数）得到Hash值，接着通过hash & （n -1 ），n位table的长度，运算后得到数组的索引值。如果当前节点存在元素，则通过比较hash值和key值是否相等，相等则替换，不相等则通过拉链法查找元素，直到找到相等或者下个节点为null时。
-1.8对扰动函数，扩容方法进行优化，并且增加了红黑树的数据结构。
+首先底层数据结构是由数组+链表组成链表散列。HashMap先得到key的散列值，在通过扰动函数（减少碰撞次数）得到Hash值，接着通过hash & （n -1 ），n位table的长度，运算后得到数组的索引值。如果当前节点存在元素，则通过比较hash值和key值是否相等，相等则替换，不相等则通过拉链法查找元素，直到找到相等或者下个节点为null时。 1.8对扰动函数，扩容方法进行优化，并且增加了红黑树的数据结构。
 
 ### 2. HashMap 和 Hashtable 的区别
 
-线程安全 HashMap是线程不安全的，而HashTable是线程安全的，每个人方法通过修饰synchronized来控制线程安全。
-效率 HashMap比HashTable效率高，原因在于HashTable的方法通过synchronized修饰后，并发的效率会降低。
-允不允许null HashMap运行只有一个key为null，可以有多个null的value。而HashTable不允许key，value为null。
+线程安全 HashMap是线程不安全的，而HashTable是线程安全的，每个人方法通过修饰synchronized来控制线程安全。 效率 HashMap比HashTable效率高，原因在于HashTable的方法通过synchronized修饰后，并发的效率会降低。 允不允许null HashMap运行只有一个key为null，可以有多个null的value。而HashTable不允许key，value为null。
 
 ### 3.HashMap的长度为什么是2的倍数
-在HashMap的操作流程中，首先会对key进行hash算法得到一个索引值，这个索引值就是对应哈希桶数组的索引。为了得到这个索引值必须对扰动后的数跟数组长度进行取余运算。即 hash % n (n为hashmap的长度)，又因为&比%运算快。n如果为2的倍数，就可以将%转换为&，结果就是 hash & (n-1)。所以这就解释了为什么HashMap长度是2的倍数。
+
+在HashMap的操作流程中，首先会对key进行hash算法得到一个索引值，这个索引值就是对应哈希桶数组的索引。为了得到这个索引值必须对扰动后的数跟数组长度进行取余运算。即 hash % n \(n为hashmap的长度\)，又因为&比%运算快。n如果为2的倍数，就可以将%转换为&，结果就是 hash & \(n-1\)。所以这就解释了为什么HashMap长度是2的倍数。
 
 ### 4.Jdk1.8中满足什么条件后将链表转化成红黑树？
 
@@ -35,7 +33,7 @@ if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
     resize();
 ```
 
-## hash()
+## hash\(\)
 
 ```java
 //这是根据key值获取value值的方法
@@ -65,7 +63,7 @@ final Node<K,V> getNode(int hash, Object key) {
 }
 ```
 
-## get()
+## get\(\)
 
 ```java
 final Node<K,V> getNode(int hash, Object key) {
@@ -92,10 +90,9 @@ final Node<K,V> getNode(int hash, Object key) {
         }
         return null;
     }
-
 ```
 
-## put()
+## put\(\)
 
 ![](http://img.linyoga.com/2018-11-24-HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png)
 
@@ -155,10 +152,9 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
         afterNodeInsertion(evict);
         return null;
     }
-
 ```
 
-## resize()
+## resize\(\)
 
 ```java
 final Node<K,V>[] resize() {
@@ -177,7 +173,7 @@ final Node<K,V>[] resize() {
                      oldCap >= DEFAULT_INITIAL_CAPACITY)
                 newThr = oldThr << 1; // double threshold
         }
-  
+
         else if (oldThr > 0) // initial capacity was placed in threshold
             newCap = oldThr;
         else {               // zero initial threshold signifies using defaults
@@ -212,11 +208,11 @@ final Node<K,V>[] resize() {
                     else { // preserve order
                         //将桶内的转移到新的哈希桶内
                         //JDK1.8后将新的节点插在最后面
-                        
+
                         //下面就是1.8后的优化
                         //1.7是将哈希桶的所有元素进行hash算法后转移到新的哈希桶中
                         //而1.8后，则是利用哈希桶长度在扩容前后的区别，将桶内元素分为原先索引值和新的索引值（即原先索引值+原先容量）。这里不懂为什么，可以看下一段图文讲解。
-                        
+
                         //loHead记录低位链表的头部节点
                         //loTail是低位链表临时变量，记录上个节点并且让next指向当前节点
                         Node<K,V> loHead = null, loTail = null;
@@ -266,3 +262,4 @@ final Node<K,V>[] resize() {
         return newTab;
     }
 ```
+

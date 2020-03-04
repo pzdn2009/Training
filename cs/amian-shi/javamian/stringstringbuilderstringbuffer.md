@@ -1,4 +1,4 @@
-# String，StringBuilder，StringBuffer区别
+# String\|StringBuilder\|StringBuffer
 
 主要从两点来讲：
 
@@ -8,3 +8,4 @@
 ## 引申
 
 String为什么是不可变的？
+

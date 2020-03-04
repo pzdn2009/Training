@@ -1,4 +1,4 @@
-# 共享锁核心源码解析
+# 共享锁AQS核心源码解析
 
 最主要的区别在于同一时刻能否有多个线程同时获取到同步状态.
 
@@ -38,14 +38,14 @@ protected final int tryAcquireShared(int unused) {
     if (exclusiveCount(c) != 0 &&
         getExclusiveOwnerThread() != current)
         return -1;
-    
+
     //读锁的数量
     int r = sharedCount(c);
     //不需要阻塞读
     if (!readerShouldBlock() &&
         r < MAX_COUNT &&
         compareAndSetState(c, c + SHARED_UNIT)) {
-        
+
         //
         if (r == 0) {
             firstReader = current;
@@ -151,3 +151,4 @@ private void doReleaseShared() {
         }
     }
 ```
+
