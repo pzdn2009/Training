@@ -2,8 +2,10 @@
 
 ## Hadoop 生态
 
-* [Hadoop安装](https://github.com/pzdn2009/Training/tree/2932c696aa70acded17516848b4c34c100d6e9f9/hadoop/hadoop安装.md)
-* [HDFS](https://github.com/pzdn2009/Training/tree/2932c696aa70acded17516848b4c34c100d6e9f9/hadoop/hdfs.md)
+* [Hadoop安装](hadoop-an-zhuang/)
+* [HDFS](hdfs/)
+* [Map-Reduce](map-reduce/)
+* [Hadoop管理](hadoop-guan-li/)
 
 ## V1
 
@@ -13,6 +15,7 @@
 2. Docker化安装；
 3. HDFS全景；
 4. MapReduce全景；
+5. HDFS管理；
 
 ### V1.7
 

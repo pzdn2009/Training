@@ -1,11 +1,10 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [序](README.md)
 
 ## Basic
 
-* [序](basic/basic.md)
-* [目录](basic/mu-lu.md)
+* [知识目录](basic/mu-lu.md)
 * [Linux基础](basic/linux_basic/README.md)
   * [系统简介](basic/linux_basic/xi-tong-jian-jie/README.md)
     * [历史相关](basic/linux_basic/xi-tong-jian-jie/li-shi-xiang-guan.md)
@@ -113,6 +112,8 @@
     * [MR-reduce](basic/hadoop/map-reduce/mr-reduce.md)
     * [本地开发流程](basic/hadoop/map-reduce/ben-di-kai-fa-liu-cheng.md)
     * [MR集群部署运行](basic/hadoop/map-reduce/mr-ji-qun-bu-shu-yun-hang.md)
+  * [Hadoop管理](basic/hadoop/hadoop-guan-li/README.md)
+    * [集群安全性](basic/hadoop/hadoop-guan-li/ji-qun-an-quan-xing.md)
   * [Pig](basic/hadoop/pig.md)
   * [Hive](basic/hadoop/hive.md)
   * [HBase](basic/hadoop/hbase.md)
