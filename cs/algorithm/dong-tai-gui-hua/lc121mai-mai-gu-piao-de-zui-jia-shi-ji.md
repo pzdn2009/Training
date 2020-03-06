@@ -1,11 +1,11 @@
-# Lc121 买卖股票的最佳时机
+# Lc121--卖卖股票的最佳时机
 
-Ref: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+Ref: [https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
 
 ## 题目
 
-```
-给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+```text
+给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
 
 如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。
 
@@ -30,11 +30,9 @@ Ref: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
 
 卖出的最大收益：0,0,4,2,5,3
 
-状态转移方程：在0和差之间选择。
-`dp[i] = max{0, A[i] - min{A[i-1]} };`
+状态转移方程：在0和差之间选择。 `dp[i] = max{0, A[i] - min{A[i-1]} };`
 
-结果：
-`res = max { dp[i]}`
+结果： `res = max { dp[i]}`
 
 ## submit
 

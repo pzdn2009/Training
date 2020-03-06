@@ -40,15 +40,13 @@ static final class FairSync extends Sync {
             setState(nextc);
             return true;
         }
-        
+
         return false;
     }
 }
 ```
 
-
 ```java
-
 //aqs
 public final boolean hasQueuedPredecessors() {
     // The correctness of this depends on head being initialized
@@ -61,9 +59,9 @@ public final boolean hasQueuedPredecessors() {
         ((s = h.next) == null || s.thread != Thread.currentThread());
 }
 ```
+
 * 队头和队尾为空，还不存在，返回false；
 * 队头不等与队尾，说明有节点存在，继续：
- * 如果只有一个节点，即头结点，需要入队，返回true；
- * 如果有多个节点，头节点的下一个节点，不是自己，需要入队，返回true。
- 
- 
+  * 如果只有一个节点，即头结点，需要入队，返回true；
+  * 如果有多个节点，头节点的下一个节点，不是自己，需要入队，返回true。
+

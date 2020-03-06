@@ -1,8 +1,8 @@
 # 线程池源码
 
-Ref: https://www.cnblogs.com/powercto/p/11182754.html
+Ref: [https://www.cnblogs.com/powercto/p/11182754.html](https://www.cnblogs.com/powercto/p/11182754.html)
 
-https://www.jianshu.com/p/ade771d2c9c0
+[https://www.jianshu.com/p/ade771d2c9c0](https://www.jianshu.com/p/ade771d2c9c0)
 
 `![](/assets/ThreadPoolExecutor.png)`
 
@@ -44,7 +44,6 @@ The runState provides the main lifecycle control, taking on values:
 ```
 
 ```java
-
 private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
 //整数位表示: 32
 private static final int COUNT_BITS = Integer.SIZE - 3;
@@ -83,16 +82,13 @@ private static boolean isRunning(int c) {
 
 ## execute
 
-大致分三个步骤
-1、当前运行的线程数量是否小于corePoolSize，直接尝试addWorker()
-2、往阻塞队列里面放入Runnable任务
-3、如果队列已经满了，直接尝试addWorker()
+大致分三个步骤 1、当前运行的线程数量是否小于corePoolSize，直接尝试addWorker\(\) 2、往阻塞队列里面放入Runnable任务 3、如果队列已经满了，直接尝试addWorker\(\)
 
 ```java
 public void execute(Runnable command) {
     if (command == null)
         throw new NullPointerException();
-    
+
     int c = ctl.get();
     //加入到核心线程
     if (workerCountOf(c) < corePoolSize) {
@@ -115,10 +111,7 @@ public void execute(Runnable command) {
 
 ## addWorker
 
-1、前置判断线程池的状态
-2、通过CAS操作让ctl加1，表示运行线程数增加1个
-3、构造一个Worker w，这里要特别注意构造方法里面的这行代码，this.thread = getThreadFactory().newThread(this)，可以看到构造方法内，有一个Thread对象，其使用了ThreadFactory构造了一个新的线程，并且线程的runable是worker本身。
-4、执行w.thread.start()，也就是说，当该线程被运行时，Worker中的run方法会被执行
+1、前置判断线程池的状态 2、通过CAS操作让ctl加1，表示运行线程数增加1个 3、构造一个Worker w，这里要特别注意构造方法里面的这行代码，this.thread = getThreadFactory\(\).newThread\(this\)，可以看到构造方法内，有一个Thread对象，其使用了ThreadFactory构造了一个新的线程，并且线程的runable是worker本身。 4、执行w.thread.start\(\)，也就是说，当该线程被运行时，Worker中的run方法会被执行
 
 ```java
 private boolean addWorker(Runnable firstTask, boolean core) {
@@ -134,7 +127,7 @@ private boolean addWorker(Runnable firstTask, boolean core) {
                firstTask == null &&
                ! workQueue.isEmpty()))
             return false;
-        
+
         // 线程数量范围
         for (;;) {
             int wc = workerCountOf(c);
@@ -191,3 +184,4 @@ private boolean addWorker(Runnable firstTask, boolean core) {
     return workerStarted;
 }
 ```
+

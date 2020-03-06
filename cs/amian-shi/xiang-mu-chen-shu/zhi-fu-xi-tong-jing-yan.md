@@ -1,3 +1,4 @@
 # 支付系统经验
 
-![](/assets/支付架构经验.png)
+![](../../../.gitbook/assets/zhi-fu-jia-gou-jing-yan.png)
+

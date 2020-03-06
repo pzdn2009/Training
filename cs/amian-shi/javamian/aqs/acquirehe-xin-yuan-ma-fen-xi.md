@@ -1,8 +1,10 @@
-# 独占锁核心源码分析
+# 独占锁AQS核心源码分析
 
-![](/assets/SpinAcquire.jpg)
+## 独占锁核心源码分析
 
-# 1. acquire—获取入口
+![](../../../../.gitbook/assets/spinacquire.jpg)
+
+## 1. acquire—获取入口
 
 ```java
 public final void acquire(int arg) {
@@ -14,7 +16,7 @@ public final void acquire(int arg) {
 }
 ```
 
-## 1.1 tryAcquire——尝试获取
+### 1.1 tryAcquire——尝试获取
 
 ```java
 /**
@@ -44,7 +46,8 @@ protected final boolean tryAcquire(int acquires) {
 }
 ```
 
-## 1.2 addWaiter——生成节点
+### 1.2 addWaiter——生成节点
+
 ```java
 /**
  * Creates and enqueues node for current thread and given mode.
@@ -53,10 +56,10 @@ protected final boolean tryAcquire(int acquires) {
  * @return the new node
  */
 private Node addWaiter(Node mode) {
-    
+
     Node node = new Node(Thread.currentThread(), mode);
     // Try the fast path of enq; backup to full enq on failure
-    
+
     //尾指针
     Node pred = tail;
     if (pred != null) {
@@ -69,15 +72,15 @@ private Node addWaiter(Node mode) {
             return node;
         }
     }
-    
+
     //尾指针为空，或者CAS失败--》则创建等待队列
     enq(node);
-    
+
     return node;
 }
 ```
 
-## 1.3. enq——节点入队尾
+### 1.3. enq——节点入队尾
 
 * spin
 * 第一次创建链表头结点
@@ -108,7 +111,7 @@ private Node enq(final Node node) {
 }
 ```
 
-## 1.4 acquireQueued——等待队列中自旋获取
+### 1.4 acquireQueued——等待队列中自旋获取
 
 ```java
 /**
@@ -152,7 +155,7 @@ final boolean acquireQueued(final Node node, int arg) {
 }
 ```
 
-## 1.5 shouldParkAfterFailedAcquire——获取不到是否应该park
+### 1.5 shouldParkAfterFailedAcquire——获取不到是否应该park
 
 ```java
 /**
@@ -193,7 +196,7 @@ private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
 }
 ```
 
-## 1.6 parkAndCheckInterrupt
+### 1.6 parkAndCheckInterrupt
 
 ```java
 private final boolean parkAndCheckInterrupt() {
@@ -203,11 +206,11 @@ private final boolean parkAndCheckInterrupt() {
     }
 ```
 
-## 1.7 cancelAcquire——取消获取
+### 1.7 cancelAcquire——取消获取
 
 ```java
 private void cancelAcquire(Node node) {
-    
+
     if (node == null)
         return;
 
@@ -254,7 +257,7 @@ private void cancelAcquire(Node node) {
 }
 ```
 
-## 2.7 unparkSuccessor——唤醒后继
+### 2.7 unparkSuccessor——唤醒后继
 
 ```java
 /**
@@ -292,7 +295,7 @@ private void unparkSuccessor(Node node) {
 }
 ```
 
-## 2.8 release——释放锁
+### 2.8 release——释放锁
 
 ```java
 //AQS的release
@@ -305,12 +308,12 @@ public final boolean release(int arg) {
         }
         return false;
  }
- 
+
 //c=0,才完全
 protected final boolean tryRelease(int releases) {
     //同步状态
     int c = getState() - releases;
-    
+
     //当前线程要一致
     if (Thread.currentThread() != getExclusiveOwnerThread())
         throw new IllegalMonitorStateException();
@@ -323,3 +326,4 @@ protected final boolean tryRelease(int releases) {
     return free;
 }
 ```
+

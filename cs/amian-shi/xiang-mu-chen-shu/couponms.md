@@ -1,4 +1,4 @@
-# Coupon Ms
+# CouponMs
 
 项目架构图：
 
@@ -12,5 +12,5 @@
 * 队列：Rabbit.
 * 邮件：MailService.
 
-![](/assets/Ctrip-Coupon.png)
+![](../../../.gitbook/assets/ctrip-coupon.png)
 

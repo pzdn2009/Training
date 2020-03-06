@@ -1,5 +1,6 @@
 # JAVA锁分类
 
-![](/assets/Java锁.png)
+![](../../../.gitbook/assets/java-suo.png)
 
-![](/assets/JavaLocks.png)
+![](../../../.gitbook/assets/javalocks.png)
+

@@ -1,6 +1,6 @@
-# ConcurrentHashMap原理
+# ConcurrentHashMap
 
-![](/assets/ConcurrentHashMap原理.png)
+![](../../../.gitbook/assets/concurrenthashmap-yuan-li.png)
 
 * java8 CAS
 * 数组+链表+红黑树
@@ -23,9 +23,9 @@ static class Node<K,V> implements Map.Entry<K,V> {
         }
      --------------------省略---------------------
  }
- ```
- 
- ```java
+```
+
+```java
  public V get(Object key) {
         Node<K,V>[] tab; Node<K,V> e, p; int n, eh; K ek;
         //计算hash值
@@ -50,14 +50,15 @@ static class Node<K,V> implements Map.Entry<K,V> {
         return null;
     }
 ```
+
 * 根据 key 计算 hash 值
-* 根据 hash 值找到数组对应位置: (n – 1) & h
+* 根据 hash 值找到数组对应位置: \(n – 1\) & h
 * 判断该位置是链表还是红黑树
- - 如果该位置为 null，那么直接返回 null
- - 如果该位置的节点刚好就是我们需要的，返回该节点的值
- - 果该位置节点的 **hash 值小于 0，说明正在扩容，或者是红黑树**
- - 如果以上都不满足，那就是链表，进行遍历查找
- 
+  * 如果该位置为 null，那么直接返回 null
+  * 如果该位置的节点刚好就是我们需要的，返回该节点的值
+  * 果该位置节点的 **hash 值小于 0，说明正在扩容，或者是红黑树**
+  * 如果以上都不满足，那就是链表，进行遍历查找
+
 ## put
 
 ```java
@@ -146,7 +147,8 @@ static class Node<K,V> implements Map.Entry<K,V> {
         return null;
     }
 ```
-```
+
+```text
 1、根据 key 计算 hash 值
 
 2、遍历数组 tab 
@@ -155,10 +157,11 @@ static class Node<K,V> implements Map.Entry<K,V> {
     2.2.1、如果数组该位置为空，使用 CAS 操作将值放入该位置
     2.2.2、如果数组该位置的首个元素的hash 值等于 MOVED ，说明在扩容，帮助数据迁移 
     helpTransfer
-    
+
 2.3、如果不满足以上（2.1、2.2）条件，执行以下逻辑：
     2.3.1、获取数组该位置的首节点的监视器锁
     2.3.2、首节点 hash 值大于 0，说明是链表，链表遍历插入值
     2.3.3、否则为红黑树，使用红黑树的 putTreeVal 方法，插入新值
     2.3.4、如果以上执行的是链表操作，判断链表长度是否达到限定值，是否需要转换为红黑树
 ```
+
