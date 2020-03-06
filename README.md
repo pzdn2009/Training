@@ -1,7 +1,3 @@
----
-description: First
----
-
 # Introduction
 
 ## 1. 精深训练的理念
