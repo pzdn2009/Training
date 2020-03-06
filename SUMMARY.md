@@ -85,6 +85,7 @@
     * [Dockerize Nginx](Docker/nginx.md)
     * [nexus3](Docker/nexus3.md)
     * [Dockerize Jenkins](Docker/dockerize-jenkins.md)
+    * [Dockerize Hadoop](Docker/dockerize-hadoop.md)
   * [Compose](Docker/compose.md)
     * [Compose安装](Docker/compose/composean-zhuang.md)
     * [ComposeYml](Docker/compose/composeyml.md)
@@ -95,6 +96,8 @@
 * [Hadoop](hadoop/README.md)
   * [Hadoop简介](hadoop/hadoop简介.md)
   * [Hadoop安装](hadoop/hadoop安装.md)
+    * [原生安装](hadoop/hadoop安装/yuan-sheng-an-zhuang.md)
+    * [HadoopDocker安装](hadoop/hadoop安装/hadoopdockeran-zhuang.md)
   * [HDFS](hadoop/hdfs.md)
   * [Map-Reduce](hadoop/map-reduce.md)
   * [Pig](hadoop/pig.md)
@@ -611,4 +614,5 @@
     * [Spring事务的传递性](cs/amian-shi/javamian/springshi-wu-de-chuan-di-xing.md)
   * [Mysql面](cs/amian-shi/mysqlmian.md)
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
+  * [自我介绍](cs/amian-shi/zi-wo-jie-shao.md)
 
