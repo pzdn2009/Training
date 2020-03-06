@@ -85,7 +85,7 @@
     * [Dockerize Nginx](basic/docker/dockerize-ying-yong/nginx.md)
     * [nexus3](basic/docker/dockerize-ying-yong/nexus3.md)
     * [Dockerize Jenkins](basic/docker/dockerize-ying-yong/dockerize-jenkins.md)
-    * [Dockerize Hadoop](basic/docker/dockerize-hadoop.md)
+    * [Dockerize Hadoop](basic/docker/dockerize-ying-yong/dockerize-hadoop.md)
   * [Compose](basic/docker/compose/README.md)
     * [Compose安装](basic/docker/compose/composean-zhuang.md)
     * [ComposeYml](basic/docker/compose/composeyml.md)
