@@ -10,6 +10,7 @@
 1. Hadoop全景图； 
 2. Docker化安装；
 3. HDFS全景；
+4. MapReduce全景；
 
 ## V1.7
 1. HDFS的序列化
