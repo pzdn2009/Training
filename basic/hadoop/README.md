@@ -5,6 +5,7 @@
 * [Hadoop安装](hadoop-an-zhuang/)
 * [HDFS](hdfs/)
 * [Map-Reduce](map-reduce/)
+* [YARN](/basic/hadoop/yarn.md)
 * [Hadoop管理](hadoop-guan-li/)
 
 ## V1
@@ -18,6 +19,8 @@
 5. HDFS管理；
 6. NameNode工作机制；
 7. DataNode工作机制；
+8. Yarn全景；
+9. MP-split；
 
 ### V1.7
 

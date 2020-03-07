@@ -1,7 +1,5 @@
 # Map-Reduce
 
-## Map-Reduce
-
 ## 1. Basic
 
 Map阶段，Reduce阶段。每个阶段都以键值对作为输入和输出。
@@ -10,7 +8,11 @@ Map阶段，Reduce阶段。每个阶段都以键值对作为输入和输出。
 
 ### 术语
 
-**作业Job**：客户端需要执行的一个工作单元。包括输入，MR程序，配置信息。 **任务Task**：Hadoop将Job分为若干个小任务来执行。主要分为map任务和reduce任务。 **jobtracker**：只有一个。调度tasktracker上运行的任务。 **tasktracker**：有多个。运行任务且将运行进度报告给jobtracker。 **输入分片input split**：将输入数据划分成等长的小数据块。Hadoop为每一个分片构建一个map任务。
+* **作业Job**：客户端需要执行的一个工作单元。包括输入，MR程序，配置信息。 
+* **任务Task**：Hadoop将Job分为若干个小任务来执行。主要分为map任务和reduce任务。 
+* **jobtracker**：只有一个。调度tasktracker上运行的任务。 
+* **tasktracker**：有多个。运行任务且将运行进度报告给jobtracker。 
+* **输入分片input split**：将输入数据划分成等长的小数据块。Hadoop为每一个分片构建一个map任务。
 
 ## 2. Code
 
