@@ -16,6 +16,8 @@
 
 ### V1.9 Cover
 1. MR-map阶段；
+2. MR-shuffle阶段；
+
 
 ### V1.8 全景
 
