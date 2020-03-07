@@ -4,9 +4,10 @@
 
 * [HDFSCLI操作](https://github.com/pzdn2009/Training/tree/7531a005100782f46a0745c7cc5bd5a0aa89a0cc/hadoop/hdfs/hdfsclicao-zuo.md)
 * [HDFS读写数据原理](https://github.com/pzdn2009/Training/tree/7531a005100782f46a0745c7cc5bd5a0aa89a0cc/hadoop/hdfs/hdfsdu-xie-shu-ju-yuan-li.md)
-* [NameNode工作机制](https://github.com/pzdn2009/Training/tree/7531a005100782f46a0745c7cc5bd5a0aa89a0cc/hadoop/hdfs/namenodegong-zuo-ji-zhi.md)
+* [NameNode工作机制](/basic/hadoop/hdfs/namenode-gong-zuo-ji-zhi.md)
 * [DataNode工作机制](https://github.com/pzdn2009/Training/tree/7531a005100782f46a0745c7cc5bd5a0aa89a0cc/hadoop/hdfs/datanodegong-zuo-ji-zhi.md)
 * [HDFSJAVAAPI](https://github.com/pzdn2009/Training/tree/7531a005100782f46a0745c7cc5bd5a0aa89a0cc/hadoop/hdfs/hdfsjavaapi.md)
+* [NameNode工作机制2](/basic/hadoop/hdfs/namenodegong-zuo-ji-zhi-2.md)
 
 Maven依赖：
 

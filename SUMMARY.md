@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [序](README.md)
 
@@ -105,6 +105,7 @@
     * [NameNode工作机制](basic/hadoop/hdfs/namenode-gong-zuo-ji-zhi.md)
     * [DataNode工作机制](basic/hadoop/hdfs/datanode-gong-zuo-ji-zhi.md)
     * [HDFSJavaAPI](basic/hadoop/hdfs/hdfsjavaapi.md)
+    * [NameNode工作机制2](basic/hadoop/hdfs/namenodegong-zuo-ji-zhi-2.md)
   * [Map-Reduce](basic/hadoop/map-reduce/README.md)
     * [MR-split](basic/hadoop/map-reduce/mr-split.md)
     * [MR-map](basic/hadoop/map-reduce/mr-map.md)
