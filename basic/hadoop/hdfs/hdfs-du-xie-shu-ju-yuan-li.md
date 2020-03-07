@@ -1,7 +1,5 @@
 # HDFS读写数据原理
 
-## HDFS读写数据原理
-
 ## 1. Read
 
 ![](../../../.gitbook/assets/hd3.png)

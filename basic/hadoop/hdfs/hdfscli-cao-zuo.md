@@ -6,14 +6,14 @@ hadoop fs -help #查看全部命令
 
 常用参数介绍：
 
-* -help。
+命令|功能|示例
+--|--|--
+-help|输出这个命令参数手册
+-ls|显示目录信息|`hadoop fs -ls hdfs://hadoop-server01:9000/`
+-mkdir|创建目录|`hadoop fs -mkdir -p /aaa/bbb/cc/dd`
+-moveFromLocal|从本地上传文件|`hadoop fs -moveFromLocal /home/hadoop/a.txt /aaa/bbb/cc/dd`
+-moveToLocal|从hdfs剪切粘贴到本地|`hadoop fs - moveToLocal /aaa/bbb/cc/dd /home/hadoop/a.txt`
 
-  功能：输出这个命令参数手册
-
-* -ls 功能：显示目录信息 示例： `hadoop fs -ls hdfs://hadoop-server01:9000/` 备注：这些参数中，所有的hdfs路径都可以简写 –&gt;`hadoop fs -ls /` 等同于上一条命令的效果
-* -mkdir 功能：在hdfs上创建目录 示例：`hadoop fs -mkdir -p /aaa/bbb/cc/dd`
-* -moveFromLocal 功能：从本地剪切粘贴到hdfs 示例：hadoop fs - moveFromLocal /home/hadoop/a.txt /aaa/bbb/cc/dd
-* -moveToLocal 功能：从hdfs剪切粘贴到本地 示例：hadoop fs - moveToLocal /aaa/bbb/cc/dd /home/hadoop/a.txt
 * –appendToFile 功能：追加一个文件到已经存在的文件末尾 示例：hadoop fs -appendToFile ./hello.txt hdfs://hadoop-server01:9000/hello.txt 可以简写为： Hadoop fs -appendToFile ./hello.txt /hello.txt
 * -cat 功能：显示文件内容 示例：hadoop fs -cat /hello.txt
 * -tail 功能：显示一个文件的末尾 示例：hadoop fs -tail /weblog/access\_log.1
@@ -39,7 +39,7 @@ hadoop fs -help #查看全部命令
 
 ```text
 hadoop dfsadmin -report #报告
-hadoop dfsadmin -safemode enter | leave | get | wait
+hadoop dfsadmin -safemode enter | leave | get | wait #安全模式
 hadoop dfsadmin -setBalancerBandwidth 1000
 ```
 

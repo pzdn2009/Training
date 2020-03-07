@@ -1,7 +1,5 @@
 # HDFSJavaAPI
 
-## HDFSJavaAPI
-
 Ref：[https://blog.csdn.net/nihaoa50/article/details/88419432](https://blog.csdn.net/nihaoa50/article/details/88419432)
 
 * CRUD

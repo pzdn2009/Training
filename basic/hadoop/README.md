@@ -17,6 +17,7 @@
 4. MapReduce全景；
 5. HDFS管理；
 6. NameNode工作机制；
+7. DataNode工作机制；
 
 ### V1.7
 
