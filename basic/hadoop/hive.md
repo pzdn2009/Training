@@ -1,5 +1,7 @@
 # Hive
 
+* [Hive安装](/basic/hadoop/hive/hivean-zhuang.md)
+
 ## Hive
 
 ## 1. 简介

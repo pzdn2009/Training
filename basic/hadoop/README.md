@@ -7,8 +7,14 @@
 * [Map-Reduce](map-reduce/)
 * [YARN](/basic/hadoop/yarn.md)
 * [Hadoop管理](hadoop-guan-li/)
+* [Hive](/basic/hadoop/hive.md)
+* [HBase](/basic/hadoop/hbase.md)
+* [Zookeeper](/basic/hadoop/zk/README.md)
+* [Sqoop](/basic/hadoop/sqoop.md)
 
 ## V1
+
+### V1.9 Cover
 
 ### V1.8 全景
 
@@ -21,6 +27,9 @@
 7. DataNode工作机制；
 8. Yarn全景；
 9. MP-split；
+10. Hive全景；
+11. Sqoop全景；
+12. HBase全景；
 
 ### V1.7
 
