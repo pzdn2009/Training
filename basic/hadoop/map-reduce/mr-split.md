@@ -29,11 +29,21 @@ Math.max(minSize, Math.min(maxSize, blockSize));
 
 # 3. 计算过程 
 
-`InputFormat`，MapReduce框架可以做到：
+`InputFormat`接口，MapReduce框架可以做到：
 1. 验证作业的输入的正确性；
-2. 把输入文件切分成多个逻辑InputSplits，并把每一个InputSplit分别分发给一个单独的MapperTask；
-3. 提供RecordReader的实现，这个RecordReader从指定的InputSplit中正确读出一条一条的Ｋ－Ｖ对，这些Ｋ－Ｖ对将由我们写的Mapper方法处理。
+2. 把输入文件切分成多个逻辑`InputSplits`，并把每一个InputSplit分别分发给一个单独的MapperTask；
+3. 提供`RecordReader<Key,Value>`的实现，这个RecordReader从指定的InputSplit中正确读出一条一条的Ｋ－Ｖ对，这些Ｋ－Ｖ对将由我们写的Mapper方法处理。
 
 ![](/assets/MPSplit.png)
 
 Ref:https://blog.csdn.net/yumi6666/article/details/82526276?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+# 4. 输入数据
+
+InputFormat|RecordReader|解释
+--|--|--
+TextInputFormat|LineRecordReader|输入Text文本，读取输入InputSplit的每行内容作为一次输入，并以换行符或回车符表示本行结束，每行内容按分隔符 (默认是制表符 \t) 分为键和值部分。如果不存在分隔符，则键将是整行内容，并且值为空
+FixedLengthInputFormat|FixedLengthRecordReader|固定长度的文件，任意数据格式均可，通过`conf.setInt(FixedLengthInputFormat.FIXED_RECORD_LENGTH, recordLength)`指定长度
+KeyValueTextInputFormat|KeyValueLineRecordReader|行格式，为`KEY分隔符VALUE`
+NLineInputFormat|LineRecordReader|多行作为一个split.
+SequenceFileAsTextInputFormat|SequenceFileAsTextRecordReader|支持SequenceFile

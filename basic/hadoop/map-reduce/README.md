@@ -109,7 +109,8 @@ public class MinTemperature {
         job.setOutputKeyClass(Text.class);
         //输出的值Class
         job.setOutputValueClass(IntWritable.class);
-
+        
+        //job.setInputFormatClass(Class<? extends InputFormat> cls)
         //等待执行
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }

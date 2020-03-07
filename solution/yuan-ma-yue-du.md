@@ -6,3 +6,8 @@
 
 * 类图
 
+* 接口，抽象类，子类 模式
+* void 返回，多个参数收集，Mapper
+* Reader, Position,
+* next
+* 
