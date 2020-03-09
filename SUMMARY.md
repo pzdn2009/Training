@@ -571,6 +571,11 @@
 ## Solution
 
 * [設計與架構](solution/she-ji-yu-jia-gou.md)
+  * [WeChat](solution/she-ji-yu-jia-gou/wechat.md)
+    * [微信开放平台](solution/she-ji-yu-jia-gou/wechat/wei-xin-kai-fang-ping-tai.md)
+    * [微信公众平台](solution/she-ji-yu-jia-gou/wechat/wei-xin-gong-zhong-ping-tai.md)
+    * [小程序](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu.md)
+    * [微信支付](solution/she-ji-yu-jia-gou/wechat/wei-xin-zhi-fu.md)
 * [源码阅读](solution/yuan-ma-yue-du.md)
 
 ## CS
@@ -593,7 +598,7 @@
   * [内存管理](cs/operatingsystem/nei-cun-guan-li/README.md)
     * [虚拟内存](cs/operatingsystem/nei-cun-guan-li/xu-ni-nei-cun.md)
     * [分页系统地址映射](cs/operatingsystem/nei-cun-guan-li/fen-ye-xi-tong-di-zhi-ying-she.md)
-    * [页面置换算法](cs/operatingsystem/nei-cun-guan-li/ye-mian-zhi-huan-suan-fa.md)
+    * [页面替换算法](cs/operatingsystem/nei-cun-guan-li/ye-mian-zhi-huan-suan-fa.md)
   * [文件管理](cs/operatingsystem/wen-jian-guan-li.md)
   * [设备管理](cs/operatingsystem/she-bei-guan-li.md)
 * [Algorithm](cs/algorithm/README.md)

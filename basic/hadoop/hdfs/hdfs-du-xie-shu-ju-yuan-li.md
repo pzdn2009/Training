@@ -2,7 +2,7 @@
 
 ## 1. Read
 
-![](../../../.gitbook/assets/hd3.png)
+![](/assets/hd3.png)
 
 Read流程分析：
 
@@ -15,7 +15,7 @@ Read流程分析：
 
 ## 2 Write
 
-![](../../../.gitbook/assets/hd4.png)
+![](/assets/hd4.png)
 
 Write流程分析：
 
