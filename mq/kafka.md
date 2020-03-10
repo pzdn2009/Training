@@ -12,6 +12,10 @@
 ## V0.2 原理
 
 1. 原理全景图；
+2. Kafka副本集原理；
+3. KafkaISR原理；
+4. KafkaLeader选举原理；
+5. Kafka分区算法；
 
 ## V0.1 全景
 

@@ -264,6 +264,10 @@
   * [Kafka系统架构](mq/kafka/kafkaxi-tong-jia-gou.md)
   * [Kafka应用场景](mq/kafka/kafkaying-yong-chang-jing.md)
   * [Kafka原理](mq/kafka/kafkayuan-li.md)
+    * [Kafka副本集原理](mq/kafka/kafkayuan-li/kafkafu-ben-ji-yuan-li.md)
+    * [KafkaISR原理](mq/kafka/kafkayuan-li/kafkaisryuan-li.md)
+    * [KafkaLeader选举原理](mq/kafka/kafkayuan-li/kafkaleaderxuan-ju-yuan-li.md)
+    * [Kafka分区算法](mq/kafka/kafkayuan-li/kafkafen-qu-suan-fa.md)
 
 ## Language
 
