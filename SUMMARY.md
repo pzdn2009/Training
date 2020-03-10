@@ -247,6 +247,8 @@
   * [网关GW对比](basic/wei-fu-wu/wang-guan-gw-dui-bi.md)
   * [注册中心对比](basic/wei-fu-wu/zhu-ce-zhong-xin-dui-bi.md)
 * [GIT](basic/git.md)
+  * [Git-merge](basic/git/git-merge.md)
+  * [Git-flow](basic/git/git-flow.md)
 
 ## Language
 
