@@ -255,6 +255,14 @@
   * [Git-log](basic/git/git-log.md)
   * [Git-合并两个不同的仓库](basic/git/githe-bing-liang-ge-bu-tong-de-cang-ku.md)
 
+## MQ
+
+* [Kafka](mq/kafka.md)
+  * [kafka简介](mq/kafka/kafkajian-jie.md)
+  * [Kafka环境搭建](mq/kafka/kafkahuan-jing-da-jian.md)
+  * [Kafka核心概念](mq/kafka/kafkahe-xin-gai-nian.md)
+  * [Kafka系统架构](mq/kafka/kafkaxi-tong-jia-gou.md)
+
 ## Language
 
 * [R](language/r/README.md)
