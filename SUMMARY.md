@@ -262,6 +262,8 @@
   * [Kafka环境搭建](mq/kafka/kafkahuan-jing-da-jian.md)
   * [Kafka核心概念](mq/kafka/kafkahe-xin-gai-nian.md)
   * [Kafka系统架构](mq/kafka/kafkaxi-tong-jia-gou.md)
+  * [Kafka应用场景](mq/kafka/kafkaying-yong-chang-jing.md)
+  * [Kafka原理](mq/kafka/kafkayuan-li.md)
 
 ## Language
 
