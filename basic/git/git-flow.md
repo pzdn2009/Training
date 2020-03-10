@@ -144,3 +144,45 @@ IDEA：Git Flow Integration
 * 发布一个Hotfix: `git flow hotfix finish VERSION`
 
 Ref：https://yq.aliyun.com/articles/137035
+
+# 7. 实践
+
+```
+brew install git-flow
+git flow init
+```
+
+场景1：新功能开发，代号 f1：
+
+```
+# 初始化分支 feature/f1
+git flow feature start f1
+# 推送到Remote
+git flow feature publish f1
+# 推送到Remote
+git push origin feature/f1
+
+# 完成，然后删除该分支，切换回 develop
+git flow feature finish f1
+```
+
+场景2：发布上线，代号 0.1：
+```
+# A new branch 'release/0.1' was created, based on 'develop'
+git flow release start 0.1
+
+# 会依次切换到 master develop 下合并 release/0.1 里的修改
+git flow release finish '0.1'
+
+git tag
+```
+
+场景3：紧急 bug 修正，代号 bug1：
+
+```
+# 基于Master
+git flow hotfix start bug1
+
+# 会依次切换到 master develop 分支下合并 hotfix/bug1，然后删掉 hotfix/bug1
+git flow hotfix finish 'bug1'
+```
