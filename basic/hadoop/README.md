@@ -17,6 +17,8 @@
 ### V1.9 Cover
 1. MR-map阶段；
 2. MR-shuffle阶段；
+3. Hive体系架构；
+4. Hive安装；
 
 
 ### V1.8 全景

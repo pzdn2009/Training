@@ -125,6 +125,7 @@
     * [HiveDML操作](basic/hadoop/hive/hivedmlcao-zuo.md)
     * [HiveDDL操作](basic/hadoop/hive/hiveddlcao-zuo.md)
     * [Hive数据管理](basic/hadoop/hive/hiveshu-ju-guan-li.md)
+    * [Hive-Training-单词统计](basic/hadoop/hive/hive-trainingdan-ci-tong-ji.md)
   * [HBase](basic/hadoop/hbase.md)
     * [HBase简介](basic/hadoop/hbase/hbasejian-jie.md)
     * [HBase架构](basic/hadoop/hbase/hbasejia-gou.md)
