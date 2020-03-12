@@ -2,6 +2,8 @@
 
 * [Hive安装](/basic/hadoop/hive/hivean-zhuang.md)
 * [Hive体系架构](/basic/hadoop/hive/hiveti-xi-jia-gou.md)
+* [HiveDDL操作](/basic/hadoop/hive/hiveddlcao-zuo.md)
+* [Hive数据管理](/basic/hadoop/hive/hiveshu-ju-guan-li.md)
 * [Hive-Training-单词统计](/basic/hadoop/hive/hive-trainingdan-ci-tong-ji.md)
 
 ## Hive简介
