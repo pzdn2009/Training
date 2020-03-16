@@ -587,6 +587,7 @@
 * [產品經理](pm/chan-pin-jing-li.md)
 * [項目經理](pm/xiang-mu-jing-li/README.md)
   * [项目经理的本质](pm/xiang-mu-jing-li/xiang-mu-jing-li-de-ben-zhi.md)
+  * [授权](pm/xiang-mu-jing-li/shou-quan.md)
 * [练字](pm/lian-zi.md)
 
 ## Solution
