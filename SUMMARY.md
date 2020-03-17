@@ -146,6 +146,7 @@
     * [Sqoop与Hdfs导](basic/hadoop/sqoop/sqoopyu-hdfs-dao.md)
     * [Sqoop与Hive导](basic/hadoop/sqoop/sqoopyu-hive-dao.md)
     * [Sqoop与HBase的导](basic/hadoop/sqoop/sqoopyu-hbase-de-dao.md)
+  * [Training-安装sandbox-hdp](basic/hadoop/trainingan-zhuang-sandbox-hdp.md)
 * [Nginx](basic/nginx/README.md)
   * [安装](basic/nginx/an-zhuang.md)
   * [概念](basic/nginx/gai-nian.md)

@@ -21,7 +21,7 @@
 4. Hive安装；
 5. Hive-Training-单词统计;
 6. Hive数据管理
-
+7. Mac安装sandbox-hdp；
 
 ### V1.8 全景
 
