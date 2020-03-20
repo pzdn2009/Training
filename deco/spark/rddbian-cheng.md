@@ -1,43 +1,69 @@
 # RDD編程
 
-## RDD編程
-
 RDD實際上是（immutable）不可變的分佈式對象集合。
 
-RDD支持兩種類型的操作：transformation & action。
+RDD支持兩種類型的操作：**transformation** & **action**。
+
+* 创建
+* 转换
+* 动作
+* 缓存
 
 ## 1. 創建
 
+抽象类，只能通过工厂方法创建。
+
+* `parallelize`：从本地scala集合创建RDD实例。对集合中的数据重新分区、重新分布，然后返回一个代表这些数据的RDD。
+* `textFile`：从文本文件创建RDD。
+* `wholeTextFiles`：读取目录下的所有文本文件，然后返回一个键值的RDD。（文件路径，文件内容）。
+* `sequenceFile`：
+
 ```scala
-scala> val lines = sc.parallelize(List("pandas","i like pandas"))
-scala> val lines = sc.textFile("/path/to/README.md")
+val lines = sc.parallelize(List("pandas","i like pandas"))
+val lines = sc.textFile("/path/to/README.md")
+
+
+val data = Array(1, 2, 3, 4, 5)
+val distData = sc.parallelize(data)
 ```
 
 ## 2. Transformation
 
-* map
-* flatMap
-* filter
+* map：高阶，每个元素，返回新RDD。
+* flatMap：高阶，每个元素返回一个序列，扁平化，返回新RDD。
+* mapPartitions：高阶，
+* filter：高阶，布尔函数，每个元素，返回新RDD。
 * sample\(withReplacement,fraction,\[seed\]\)
-* union
-* distinct
-* intersection
-* substract
-* cartesian
+* union：并集
+* distinct：去重
+* intersection：交集
+* substract：差集
+* cartesian：笛卡尔积
+* zip：
+* zipWithIndex:
+* groupBy
+* keyBy
+* sortBy
+* pipe
+* sample
+
 
 ## 3. Action
 
-* collect\(\)  
-* count\(\)  
-* countByValue\(\)  
+* collect()  
+* count
+* countByValue
 * take\(num\)  
-* top\(num\)  
+* top\(num\) 
 * takeOrdered\(num\)\(ordering\)  
 * takeSample\(withReplacement,num,\[seed\]\)  
 * reduce\(func\)  
 * fold\(zeor\)\(func\)  
 * aggregate\(zeroValue\)\(seqOp,comOp\)  
 * foreach\(func\)
+* first
+* max
+* min
 
 ```scala
 scala> rdd.takeSample(false,1)
@@ -77,26 +103,13 @@ scala> rdd.aggregate((0,0))((x,y)=>(x._1+y,x._2+1),(x,y)=>(x._1+y._1,x._2+y._2))
 res34: (Int, Int) = (9,4)
 ```
 
-## 4. 持久化（緩存）
+# 4. 缓存
 
+* cache
 * persist
-
-## 5. Pair RDD
-
-* reduceByKey  
-* groupByKey  
-* combinByKey  
-* mapValues  
-* flatMapValues  
-* keys  
-* values  
-* sortByKey
-* subtractByKey
-* join  
-* rightOuterJoin  
-* leftOuterJoin  
-* cogroup
-* countByKey
-* collectAsMap  
-* lookup
+ * MEMORY_ONLY
+ * DISK_ONLY
+ * MEMORY_AND_DISK
+ * MEMROY_OLY_SER
+ * MEMORY_AND_DISK_SER
 

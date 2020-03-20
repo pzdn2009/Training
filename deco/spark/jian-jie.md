@@ -1,12 +1,19 @@
-# 簡介
 
-## 簡介
+https://github.com/apache/spark/tree/master/examples
 
-Spark SQL，Spark Streaming，MLLib，GraphX
+## 层次
 
-Spark Core
+* Spark SQL，Spark Streaming，MLLib，GraphX
+* Spark Core
+* 獨立調度器，YARN，Mesos
 
-獨立調度器，YARN，Mesos
+
+## Ambari
+
+```
+export SPARK_HOME=/usr/hdp/current/spark2-client
+export SPARK_CONF_DIR=/etc/spark2/conf
+```
 
 ## 啟動
 

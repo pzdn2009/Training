@@ -13,6 +13,7 @@ hadoop fs -help #查看全部命令
 -mkdir|创建目录|`hadoop fs -mkdir -p /aaa/bbb/cc/dd`
 -moveFromLocal|从本地上传文件|`hadoop fs -moveFromLocal /home/hadoop/a.txt /aaa/bbb/cc/dd`
 -moveToLocal|从hdfs剪切粘贴到本地|`hadoop fs - moveToLocal /aaa/bbb/cc/dd /home/hadoop/a.txt`
+-put|功能：等同于copyFromLocal |示例：hadoop fs -put /aaa/jdk.tar.gz /bbb/jdk.tar.gz.2
 
 * –appendToFile 功能：追加一个文件到已经存在的文件末尾 示例：hadoop fs -appendToFile ./hello.txt hdfs://hadoop-server01:9000/hello.txt 可以简写为： Hadoop fs -appendToFile ./hello.txt /hello.txt
 * -cat 功能：显示文件内容 示例：hadoop fs -cat /hello.txt
@@ -27,7 +28,7 @@ hadoop fs -help #查看全部命令
 * -mv 功能：在hdfs目录中移动文件 示例： hadoop fs -mv /aaa/jdk.tar.gz /
 * -get 功能：等同于copyToLocal，就是从hdfs下载文件到本地 示例：hadoop fs -get /aaa/jdk.tar.gz
 * -getmerge 功能：合并下载多个文件 示例：比如hdfs的目录 /aaa/下有多个文件:log.1, log.2,log.3,… hadoop fs -getmerge /aaa/log.\* ./log.sum
-* -put 功能：等同于copyFromLocal 示例：hadoop fs -put /aaa/jdk.tar.gz /bbb/jdk.tar.gz.2
+
 * -rm 功能：删除文件或文件夹 示例：hadoop fs -rm -r /aaa/bbb/
 * -rmdir 功能：删除空目录 示例：hadoop fs -rmdir /aaa/bbb/ccc
 * -df 功能：统计文件系统的可用空间信息 示例：hadoop fs -df -h /
