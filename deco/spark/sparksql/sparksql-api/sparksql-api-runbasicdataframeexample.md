@@ -1,10 +1,18 @@
 
 ## runBasicDataFrameExample
 
-基础数据操作：
-* read.json
-* show
-* 
+* read.json——读取json文件
+* show——显示
+* select
+ * "name"——列名
+ * $"name"——引用
+* filter——过滤
+* groupBy——分组
+* count——统计    
+* createOrReplaceTempView——临时视图
+* sql——执行SQL语句
+* newSession——新Session
+* createGlobalTempView——全局临时视图                                                                                                                                                                                                            
 
 ```scala                                                                                                                                          
   private def runBasicDataFrameExample(spark: SparkSession): Unit = {                                                                         
