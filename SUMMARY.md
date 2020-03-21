@@ -591,6 +591,7 @@
     * [SparkSQL-API-runInferSchemaExample](deco/spark/sparksql/sparksql-api-runinferschemaexample.md)
     * [SparkSQL-API-runProgrammaticSchemaExample](deco/spark/sparksql/sparksql-api-runprogrammaticschemaexample.md)
     * [SparkSQL-数据源](deco/spark/sparksql/sparksqlshu-ju-yuan.md)
+    * [Training-单词统计](deco/spark/sparksql/trainingdan-ci-tong-ji.md)
   * [SparkStreaming](deco/spark/sparkstreaming.md)
   * [Deploying](deco/spark/deploying.md)
     * [Spark-submit](deco/spark/deploying/spark-submit.md)
