@@ -596,6 +596,10 @@
     * [Spark-submit](deco/spark/deploying/spark-submit.md)
     * [Deploying-yarn](deco/spark/deploying/deploying-yarn.md)
   * [Scala](deco/spark/scala.md)
+    * [Scala-语言特性](deco/spark/scala/scalayu-yan-te-xing.md)
+    * [Scala-基础](deco/spark/scala/scalaji-chu.md)
+    * [Scala-类和特质](deco/spark/scala/scalalei-he-te-zhi.md)
+    * [Scala-元组和泛型](deco/spark/scala/scalayuan-zu-he-fan-xing.md)
 
 ## PM
 
