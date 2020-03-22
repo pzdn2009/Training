@@ -147,6 +147,8 @@
     * [Sqoop与Hive导](basic/hadoop/sqoop/sqoopyu-hive-dao.md)
     * [Sqoop与HBase的导](basic/hadoop/sqoop/sqoopyu-hbase-de-dao.md)
   * [Training-安装sandbox-hdp](basic/hadoop/trainingan-zhuang-sandbox-hdp.md)
+  * [数据序列化](basic/hadoop/shu-ju-xu-lie-hua.md)
+  * [列存储](basic/hadoop/lie-cun-chu.md)
 * [Nginx](basic/nginx/README.md)
   * [安装](basic/nginx/an-zhuang.md)
   * [概念](basic/nginx/gai-nian.md)
@@ -601,6 +603,8 @@
     * [Scala-基础](deco/spark/scala/scalaji-chu.md)
     * [Scala-类和特质](deco/spark/scala/scalalei-he-te-zhi.md)
     * [Scala-元组和泛型](deco/spark/scala/scalayuan-zu-he-fan-xing.md)
+    * [Scala-高阶函数和嵌套方法](deco/spark/scala/scalagao-jie-han-shu-he-qian-tao-fang-fa.md)
+    * [Scala-案例类和模式匹配](deco/spark/scala/scalaan-li-lei-he-mo-shi-pi-pei.md)
 
 ## PM
 

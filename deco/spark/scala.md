@@ -6,3 +6,5 @@
 * [基础](/deco/spark/scala/scalaji-chu.md)
 * [类和特质](/deco/spark/scala/scalalei-he-te-zhi.md)
 * [元组和泛型类](/deco/spark/scala/scalayuan-zu-he-fan-xing.md)
+* [高阶函数和嵌套方法](/deco/spark/scala/scalagao-jie-han-shu-he-qian-tao-fang-fa.md)
+* [案例类和模式匹配](/deco/spark/scala/scalaan-li-lei-he-mo-shi-pi-pei.md)

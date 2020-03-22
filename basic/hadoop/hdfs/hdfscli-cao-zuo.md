@@ -13,15 +13,14 @@ hadoop fs -help #查看全部命令
 -mkdir|创建目录|`hadoop fs -mkdir -p /aaa/bbb/cc/dd`
 -moveFromLocal|从本地上传文件|`hadoop fs -moveFromLocal /home/hadoop/a.txt /aaa/bbb/cc/dd`
 -moveToLocal|从hdfs剪切粘贴到本地|`hadoop fs - moveToLocal /aaa/bbb/cc/dd /home/hadoop/a.txt`
--put|功能：等同于copyFromLocal |示例：hadoop fs -put /aaa/jdk.tar.gz /bbb/jdk.tar.gz.2
-
-* –appendToFile 功能：追加一个文件到已经存在的文件末尾 示例：hadoop fs -appendToFile ./hello.txt hdfs://hadoop-server01:9000/hello.txt 可以简写为： Hadoop fs -appendToFile ./hello.txt /hello.txt
-* -cat 功能：显示文件内容 示例：hadoop fs -cat /hello.txt
-* -tail 功能：显示一个文件的末尾 示例：hadoop fs -tail /weblog/access\_log.1
-* -text 功能：以字符形式打印一个文件的内容 示例：hadoop fs -text /weblog/access\_log.1
-* -chgrp
-* -chmod
-* -chown 功能：这三个命令跟linux文件系统中的用法一样，对文件所属权限 示例： hadoop fs -chmod 666 /hello.txt hadoop fs -chown someuser:somegrp /hello.txt
+-put|功能：等同于copyFromLocal |示例：`hadoop fs -put /aaa/jdk.tar.gz /bbb/jdk.tar.gz.2`
+–appendToFile|功能：追加一个文件到已经存在的文件末尾|示例：`hadoop fs -appendToFile ./hello.txt hdfs://hadoop-server01:9000/hello.txt` 可以简写为： `Hadoop fs -appendToFile ./hello.txt /hello.txt`
+-cat|功能：显示文件内容| 示例：`hadoop fs -cat /hello.txt`
+-tail|功能：显示一个文件的末尾|示例：`hadoop fs -tail /weblog/access\_log.1`
+ -text|功能：以字符形式打印一个文件的内容 |示例：`hadoop fs -text /weblog/access\_log.1`
+ -chgrp||
+ -chmod||
+ -chown| 功能：这三个命令跟linux文件系统中的用法一样，对文件所属权限 |示例： `hadoop fs -chmod 666 /hello.txt hadoop fs -chown someuser:somegrp /hello.txt`
 * -copyFromLocal 功能：从本地文件系统中拷贝文件到hdfs路径去 示例：hadoop fs -copyFromLocal ./jdk.tar.gz /aaa/
 * -copyToLocal 功能：从hdfs拷贝到本地 示例：hadoop fs -copyToLocal /aaa/jdk.tar.gz
 * -cp 功能：从hdfs的一个路径拷贝hdfs的另一个路径 示例： hadoop fs -cp /aaa/jdk.tar.gz /bbb/jdk.tar.gz.2
