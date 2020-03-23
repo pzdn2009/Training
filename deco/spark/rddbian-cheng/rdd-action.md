@@ -8,7 +8,7 @@
 * takeOrdered\(num\)\(ordering\)  
 * takeSample\(withReplacement,num,\[seed\]\)  
 * [reduce](/deco/spark/rddbian-cheng/rdd-action/rdd-action-reduce.md)(func)  
-* fold\(zeor\)\(func\)  
+* [fold](/deco/spark/rddbian-cheng/rdd-action/rdd-action-fold.md)(zero)(func)  
 * aggregate\(zeroValue\)\(seqOp,comOp\)  
 * foreach\(func\)
 * first

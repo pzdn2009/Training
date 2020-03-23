@@ -13,11 +13,11 @@ Ref：http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPIExamples.html
 * intersection：交集
 * substract：差集
 * cartesian：笛卡尔积
-* zip：
+* [zip](/deco/spark/rddbian-cheng/rdd-transform/rdd-transform-zip.md)：元组形式连接
 * zipWithIndex:
 * [groupByKey](/deco/spark/rddbian-cheng/rdd-transform/rdd-transform-groupby.md)([_numTasks_])：在一个 (K, V) pair 的 dataset 上调用时，返回一个`(K, Iterable<V>)` .
 * [keyBy](/deco/spark/rddbian-cheng/rdd-transform/rdd-transform-keyby.md)
-* sortBy
+* [sortBy](/deco/spark/rddbian-cheng/rdd-transform/rdd-transform-sortby.md)
 * pipe
 * sample
 

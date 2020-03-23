@@ -550,13 +550,18 @@
 * [Spark](deco/spark/README.md)
   * [簡介](deco/spark/jian-jie.md)
   * [总体架构与核心概念](deco/spark/he-xin-gai-nian.md)
+    * [集群模式](deco/spark/he-xin-gai-nian/ji-qun-mo-shi.md)
+    * [UI监控](deco/spark/he-xin-gai-nian/uijian-kong.md)
   * [RDD編程](deco/spark/rddbian-cheng.md)
     * [RDD-keyValuePair](deco/spark/rddbian-cheng/pairrdd.md)
     * [RDD-transform](deco/spark/rddbian-cheng/rdd-transform.md)
       * [RDD-transform-groupBy](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-groupby.md)
       * [RDD-transform-keyBy](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-keyby.md)
+      * [RDD-transform-zip](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-zip.md)
+      * [RDD-transform-sortBy](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-sortby.md)
     * [RDD-action](deco/spark/rddbian-cheng/rdd-action.md)
       * [RDD-action-reduce](deco/spark/rddbian-cheng/rdd-action/rdd-action-reduce.md)
+      * [RDD-action-fold](deco/spark/rddbian-cheng/rdd-action/rdd-action-fold.md)
     * [RDD-persistence](deco/spark/rddbian-cheng/rdd-persistence.md)
     * [RDD-SharedVar](deco/spark/rddbian-cheng/rdd-sharedvar.md)
   * [SparkR](deco/spark/sparkr/README.md)
@@ -608,6 +613,9 @@
     * [Scala-元组和泛型](deco/spark/scala/scalayuan-zu-he-fan-xing.md)
     * [Scala-高阶函数和嵌套方法](deco/spark/scala/scalagao-jie-han-shu-he-qian-tao-fang-fa.md)
     * [Scala-案例类和模式匹配](deco/spark/scala/scalaan-li-lei-he-mo-shi-pi-pei.md)
+    * [Scala-单例对象和正则表达式](deco/spark/scala/scaladan-li-dui-xiang-he-zheng-ze-biao-da-shi.md)
+    * [Scala-For表达式和提取器对象](deco/spark/scala/scala-forbiao-da-shi-he-ti-qu-qi-dui-xiang.md)
+* [ANTLR4](deco/kube/antlr4.md)
 
 ## PM
 
