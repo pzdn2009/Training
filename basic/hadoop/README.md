@@ -12,6 +12,11 @@
 * [Zookeeper](/basic/hadoop/zk/README.md)
 * [Sqoop](/basic/hadoop/sqoop.md)
 
+## V2
+
+### V2.1 Flume
+1. Flume简介；
+
 ## V1
 
 ### V1.9 Cover
