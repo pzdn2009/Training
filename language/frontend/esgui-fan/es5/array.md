@@ -1,5 +1,8 @@
 # Array
 
+* forEach
+* map
+
 ## 1. forEach
 
 ```javascript

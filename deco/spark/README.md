@@ -22,6 +22,7 @@
 6. 案例类和模式匹配；
 7. 单例对象和正则表达式；
 8. For表达式和提取器对象；
+9. 泛型类和上下界；
 
 ### V2.5 经典示例
 
@@ -31,6 +32,7 @@
 
 1. RDD示例代码-groupBy,keyBy,reduce；
 2. RDD示例代码-zip,sortBy,fold；
+3. collection示例，take示例，zipWithIndex
 
 ### V2.3 集群与监控
 

@@ -565,9 +565,12 @@
       * [RDD-transform-keyBy](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-keyby.md)
       * [RDD-transform-zip](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-zip.md)
       * [RDD-transform-sortBy](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-sortby.md)
+      * [RDD-transform-collection](deco/spark/rddbian-cheng/rdd-transform/rdd-transform-collection.md)
     * [RDD-action](deco/spark/rddbian-cheng/rdd-action.md)
       * [RDD-action-reduce](deco/spark/rddbian-cheng/rdd-action/rdd-action-reduce.md)
       * [RDD-action-fold](deco/spark/rddbian-cheng/rdd-action/rdd-action-fold.md)
+      * [RDD-action-count](deco/spark/rddbian-cheng/rdd-action/rdd-action-count.md)
+      * [RDD-action-take](deco/spark/rddbian-cheng/rdd-action/rdd-action-take.md)
     * [RDD-persistence](deco/spark/rddbian-cheng/rdd-persistence.md)
     * [RDD-SharedVar](deco/spark/rddbian-cheng/rdd-sharedvar.md)
   * [SparkR](deco/spark/sparkr/README.md)
@@ -621,6 +624,7 @@
     * [Scala-案例类和模式匹配](deco/spark/scala/scalaan-li-lei-he-mo-shi-pi-pei.md)
     * [Scala-单例对象和正则表达式](deco/spark/scala/scaladan-li-dui-xiang-he-zheng-ze-biao-da-shi.md)
     * [Scala-For表达式和提取器对象](deco/spark/scala/scala-forbiao-da-shi-he-ti-qu-qi-dui-xiang.md)
+    * [Scala-泛型类和上下界](deco/spark/scala/scalafan-xing-lei-he-shang-xia-jie.md)
 * [ANTLR4](deco/kube/antlr4.md)
 
 ## PM
