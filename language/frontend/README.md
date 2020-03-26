@@ -95,8 +95,8 @@
 1. 创建目录：ES规范、CommonJS、Node、React、React Native
 2. ES5 Array 的9個方法：forEach,map,filter,some,every,indexOf,lastIndexOf,reduce,reduceRight；
 3. ES6：let & const，Y
-4. ES6：变量解构；
-5. ES6：Symbol
+4. ES6：变量解构；Y
+5. ES6：Symbol；Y
 6. ES6：Set & Map；
 7. ES6：迭代器；
 8. ES6：Promise；

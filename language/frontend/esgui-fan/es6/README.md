@@ -1,8 +1,9 @@
 # ES6
 
 * [ES6-let & const](/language/frontend/esgui-fan/es6/es6-let-and-const.md)
-
-Ref:[https://github.com/lukehoban/es6features](https://github.com/lukehoban/es6features)
+* [ES6-解构](/language/frontend/esgui-fan/es6/es6jie-gou.md)
+* [ES6-Symbol](/language/frontend/esgui-fan/es6/es6-symbol.md)
+* [ES6-Promise](/language/frontend/esgui-fan/es6/promise.md)
 
 ## arrows箭头
 
@@ -51,22 +52,6 @@ var name = "Bob", time = "today";
 `Hello ${name}, how are you ${time}?`
 ```
 
-## destructuring解构
-
-自动解析数组或对象中的值.
-
-```javascript
-var [x,y]=getVal(),//函数返回值的解构
-    [name,,age]=['wayou','male','secrect'];//数组解构
-
-function getVal() {
-    return [ 1, 2 ];
-}
-
-console.log('x:'+x+', y:'+y);//输出：x:1, y:2 
-console.log('name:'+name+', age:'+age);//输出： name:wayou, age:secrect
-```
-
 ## default + rest + spread默认+不定+延展
 
 这三个均为参数的特性：
@@ -100,12 +85,6 @@ console.log('name:'+name+', age:'+age);//输出： name:wayou, age:secrect
   // Pass each elem of array as argument
   f(...[1,2,3]) == 6
   ```
-
-## let + const
-
-let 局部的var
-
-const静态
 
 ## iterators + for..of
 
@@ -227,54 +206,7 @@ engineer = Proxy(engineer, interceptor);
 engineer.salary = 60;//salary is changed to 60
 ```
 
-## symbols符号
-
-```javascript
-var MyClass = (function() {
-
-  // module scoped symbol
-  var key = Symbol("key");
-
-  function MyClass(privateData) {
-    this[key] = privateData;
-  }
-
-  MyClass.prototype = {
-    doStuff: function() {
-      ... this[key] ...
-    }
-  };
-
-  return MyClass;
-})();
-
-var c = new MyClass("hello")
-c["key"] === undefined
-```
-
 ## subclassable built-ins
-
-## promises
-
-```javascript
-//创建promise
-var promise = new Promise(function(resolve, reject) {
-    // 进行一些异步或耗时操作
-    if ( /*如果成功 */ ) {
-        resolve("Stuff worked!");
-    } else {
-        reject(Error("It broke"));
-    }
-});
-//绑定处理程序
-promise.then(function(result) {
-    //promise成功的话会执行这里
-    console.log(result); // "Stuff worked!"
-}, function(err) {
-    //promise失败会执行这里
-    console.log(err); // Error: "It broke"
-});
-```
 
 ## math + number + string + array + object APIs
 
