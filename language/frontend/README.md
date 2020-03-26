@@ -6,7 +6,7 @@
 * [CommonJS规范](/language/frontend/commonjsgui-fan/README.md)
 * [React](/language/frontend/react/README.md)
 * [AngularJS](/language/frontend/angularjs/README.md)
-
+* [npm](/language/frontend/esgui-fan/npm.md)
 
 前端技術棧
 
@@ -25,8 +25,8 @@
 ## 1.8 npm
 
 1. package.json
-2. --save，--save-dev
-3. scripts
+2. npm-install: --save，--save-dev
+3. npm-scripts
 4. 版本控制：^1.0.0
 5. _args
 6. devDependencies

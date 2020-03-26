@@ -381,6 +381,12 @@
   * [Something](language/frontend/something.md)
   * [AngularJS](language/frontend/angularjs/README.md)
     * [Handbook](language/frontend/angularjs/handbook.md)
+  * [npm](language/frontend/esgui-fan/npm.md)
+    * [package.json](language/frontend/esgui-fan/npm/packagejson.md)
+    * [npm-scripts](language/frontend/esgui-fan/npm/npm-scripts.md)
+    * [version](language/frontend/esgui-fan/npm/version.md)
+    * [npm-install](language/frontend/esgui-fan/npm/npm-install.md)
+    * [各种dependencies](language/frontend/esgui-fan/npm/ge-zhong-dependencies.md)
 * [Java](language/java/README.md)
   * [编程](language/java/bian-cheng/README.md)
     * [反射](language/java/bian-cheng/fan-she.md)
@@ -718,4 +724,5 @@
   * [Mysql面](cs/amian-shi/mysqlmian.md)
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
   * [自我介绍](cs/amian-shi/zi-wo-jie-shao.md)
+* [Compiler](cs/operatingsystem/compiler.md)
 
