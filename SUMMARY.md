@@ -365,6 +365,7 @@
       * [Array](language/frontend/esgui-fan/es5/array.md)
     * [ES6](language/frontend/esgui-fan/es6/README.md)
       * [Promise](language/frontend/esgui-fan/es6/promise.md)
+      * [ES6-let & const](language/frontend/esgui-fan/es6/es6-let-and-const.md)
     * [ES7](language/frontend/esgui-fan/es7.md)
   * [CommonJS规范](language/frontend/commonjsgui-fan/README.md)
     * [Modules](language/frontend/commonjsgui-fan/modules.md)

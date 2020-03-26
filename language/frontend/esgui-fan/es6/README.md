@@ -1,5 +1,7 @@
 # ES6
 
+* [ES6-let & const](/language/frontend/esgui-fan/es6/es6-let-and-const.md)
+
 Ref:[https://github.com/lukehoban/es6features](https://github.com/lukehoban/es6features)
 
 ## arrows箭头
