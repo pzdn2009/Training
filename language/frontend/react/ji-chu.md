@@ -1,62 +1,8 @@
 # 基礎
 
-## Demo01: Render JSX
 
-React 中的模板语法：JSX。它允许js代码中直接使用HTML标签。
 
-```javascript
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="../build/react.js"></script>
-    <script src="../build/react-dom.js"></script>
-    <script src="../build/browser.min.js"></script>
-  </head>
-  <body>
-    <div id="example"></div>
-    <script type="text/babel">
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('example')
-      );
-    </script>
-  </body>
-</html>
-```
 
-ReactDOM.render\(\) 将JSX 转为HTML。
-
-## Demo02: Use JavaScript in JSX
-
-&lt; 符号作为开始HTML，{ 开始JS代码。
-
-```javascript
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="../build/react.js"></script>
-    <script src="../build/react-dom.js"></script>
-    <script src="../build/browser.min.js"></script>
-  </head>
-  <body>
-    <div id="example"></div>
-    <script type="text/babel">
-      var names = ['Alice', 'Emily', 'Kate'];
-
-      ReactDOM.render(
-        <div>
-        {
-          names.map(function (name) {
-            return <div>Hello, {name}!</div>
-          })
-        }
-        </div>,
-        document.getElementById('example')
-      );
-    </script>
-  </body>
-</html>
-```
 
 ## Demo03: Use array in JSX
 
