@@ -1,5 +1,23 @@
 # ES6-Promise
 
+Ref:https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+语法：
+```js
+new Promise( function(resolve, reject) {...} /* executor */  );
+```
+
+Eg:
+```js
+const myFirstPromise = new Promise((resolve, reject) => {
+  // ?做一些异步操作，最终会调用下面两者之一:
+  //
+  //   resolve(someValue); // fulfilled
+  // ?或
+  //   reject("failure reason"); // rejected
+});
+```
+
 # 1. 基本概念
 
 Ref：https://www.jianshu.com/p/d2f61e8795d2

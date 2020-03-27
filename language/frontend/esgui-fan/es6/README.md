@@ -4,10 +4,9 @@
 * [ES6-解构](/language/frontend/esgui-fan/es6/es6jie-gou.md)
 * [ES6-Symbol](/language/frontend/esgui-fan/es6/es6-symbol.md)
 * [ES6-Promise](/language/frontend/esgui-fan/es6/promise.md)
-
-## arrows箭头
-
-和 C\# 的lambda表达式没什么区别。
+* [ES6-Generator](/language/frontend/esgui-fan/es6/es6-generator.md)
+* [ES6-可迭代对象和协议](/language/frontend/esgui-fan/es6/es6ke-die-dai-xie-yi-he-die-dai-qi-xie-yi.md)
+* [ES6-Set Map](/language/frontend/esgui-fan/es6/es6-set.md)
 
 ## classes类
 
@@ -87,8 +86,6 @@ var name = "Bob", time = "today";
   ```
 
 ## iterators + for..of
-
-## generators
 
 ## unicode
 

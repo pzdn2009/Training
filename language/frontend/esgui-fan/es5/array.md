@@ -6,10 +6,11 @@
 ## 1. forEach
 
 ```javascript
-//原型
+//原型：回调(value,index,array)
 [].forEach(function(value, index, array) {
     // ...
 });
+//原型：
 array.forEach(callback,[ thisObject])
 
 [1, 2 ,3, 4].forEach(alert);

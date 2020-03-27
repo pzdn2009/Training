@@ -9,6 +9,7 @@
 * [npm](/language/frontend/esgui-fan/npm.md)
 * [VSCode](/language/frontend/esgui-fan/vscode.md)
 * [Umi](/language/frontend/esgui-fan/umi.md)
+* [Antd](/language/frontend/esgui-fan/antd.md)
 
 前端技術棧
 
@@ -43,13 +44,13 @@
 
 ## 1.6 Ant Design
 
-1. Button组件：类型；
-2. 图标；
-3. 尺寸；
-4. 加载中；
-5. 不可用；
-6. Block；
-7. 多个组合；
+1. Button组件：类型type；
+2. 图标icon；
+3. 尺寸size；
+4. 加载中loading；
+5. 不可用disabled；
+6. Block block；
+7. 多个组合 dropdown；
 8. API；
 9. 源码解读；
 
@@ -98,8 +99,8 @@
 3. ES6：let & const，Y
 4. ES6：变量解构；Y
 5. ES6：Symbol；Y
-6. ES6：Set & Map；
-7. ES6：迭代器；
-8. ES6：Promise；
-9. ES6：Generator函数；
+6. ES6：Set & Map；Y
+7. ES6：迭代器；Y
+8. ES6：Promise；Y
+9. ES6：Generator函数；Y
 
