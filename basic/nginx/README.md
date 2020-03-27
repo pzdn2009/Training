@@ -18,7 +18,7 @@ timeout，keepalive，server，location，匹配，反向代理，upstream，pro
 
 本地地址localhost:9100将被代理
 
-```text
+```nginx
 upstream eshead {
     server localhost:9100;
 }
@@ -26,7 +26,7 @@ upstream eshead {
 
 对外端口为82，proxy\_pass为真正地址
 
-```text
+```nginx
 server {
         listen       82;
         server_name  localhost;

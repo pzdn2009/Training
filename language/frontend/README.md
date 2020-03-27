@@ -8,6 +8,7 @@
 * [AngularJS](/language/frontend/angularjs/README.md)
 * [npm](/language/frontend/esgui-fan/npm.md)
 * [VSCode](/language/frontend/esgui-fan/vscode.md)
+* [Umi](/language/frontend/esgui-fan/umi.md)
 
 前端技術棧
 
