@@ -1,13 +1,16 @@
 # 1. 概述
 
 1、Hive中所有的数据都存储在 HDFS 中，没有专门的数据存储格式（可支持Text，SequenceFile，ParquetFile，RCFILE等）
+
 2、只需要在创建表的时候告诉 Hive 数据中的列分隔符和行分隔符，Hive 就可以解析数据。
+
 3、Hive 中包含以下数据模型：DB、Table，External Table，Partition，Bucket。
-- db：在hdfs中表现为${hive.metastore.warehouse.dir}目录下一个文件夹
+
+- db：在hdfs中表现为`${hive.metastore.warehouse.dir}`目录下一个文件夹
 - table：在hdfs中表现所属db目录下一个文件夹
 - external table：与table类似，不过其数据存放位置可以在任意指定路径
-- partition：在hdfs中表现为table目录下的子目录
-- bucket：在hdfs中表现为同一个表目录下根据hash散列之后的多个文件
+- partition：在hdfs中表现为table目录下的`子目录`
+- bucket：在hdfs中表现为同一个表目录下根据hash散列之后的`多个文件`
 
 # 2. Hive中的内部表和外部表
 
@@ -41,28 +44,28 @@ clustered by (id) into 4 buckets;
 
 * 查看sampling数据：
 > hive> select * from student tablesample(bucket 1 out of 2 on id);
-  * ablesample是抽样语句，语法：TABLESAMPLE(BUCKET x OUT OF y)
+  * tablesample是抽样语句，语法：TABLESAMPLE(BUCKET x OUT OF y)
   * y必须是table总bucket数的倍数或者因子。hive根据y的大小，决定抽样的比例。例如，table总共分了64份，当y=32时，抽取(64/32=)2个bucket的数据，当y=128时，抽取(64/128=)1/2个bucket的数据。x表示从哪个bucket开始抽取。例如，table总bucket数为32，tablesample(bucket 3 out of 16)，表示总共抽取（32/16=）2个bucket的数据，分别为第3个bucket和第（3+16=）19个bucket的数据。
 
 # 5. Hive数据类型
 
 * 数据类型
-  TINYINT
-  SMALLINT
-  INT
-  BIGINT
-  BOOLEAN
-  FLOAT
-  DOUBLE
-  STRING
-  BINARY（Hive 0.8.0以上才可用）
-  TIMESTAMP（Hive 0.8.0以上才可用）
+ * TINYINT
+ * SMALLINT
+ * INT
+ * BIGINT
+ * BOOLEAN
+ * FLOAT
+ * DOUBLE
+ * STRING
+ * BINARY（Hive 0.8.0以上才可用）
+ * TIMESTAMP（Hive 0.8.0以上才可用）
 
 * 复合类型
- * Arrays：ARRAY<data_type>
- * Maps:MAP<primitive_type, data_type>
- * Structs:STRUCT<col_name: data_type[COMMENT col_comment],……>
- * Union:UNIONTYPE<data_type, data_type,……>
+ * Arrays：`ARRAY<data_type>`
+ * Maps:`MAP<primitive_type, data_type>`
+ * Structs:`STRUCT<col_name: data_type[COMMENT col_comment],……>`
+ * Union:`UNIONTYPE<data_type, data_type,……>`
 
 
 Ref:https://blog.csdn.net/ForgetThatNight/article/details/79632364

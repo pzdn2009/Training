@@ -20,6 +20,7 @@
 ## V1
 
 ### V1.9 Cover
+
 1. MR-map阶段；
 2. MR-shuffle阶段；
 3. Hive体系架构；
@@ -27,6 +28,8 @@
 5. Hive-Training-单词统计;
 6. Hive数据管理
 7. Mac安装sandbox-hdp；
+9. Hive配置；
+10. Hive DDL & DML文法；
 
 ### V1.8 全景
 
