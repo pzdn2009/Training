@@ -30,6 +30,10 @@
 7. Mac安装sandbox-hdp；
 9. Hive配置；
 10. Hive DDL & DML文法；
+11. YARN提交过程详解；
+12. sqoop安装；
+13. sqoop-import原理；
+14. sqoop-import hdfs、hive；
 
 ### V1.8 全景
 

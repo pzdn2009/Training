@@ -1,6 +1,8 @@
 * yarn简介
 * yarn组件结构
 * [yarn提交过程分析](/basic/hadoop/yarn/yarnti-jiao-guo-cheng-fen-xi.md)
+* [yarn调度器](/basic/hadoop/yarn/yarn-schedulers.md)
+* [yarn参数配置](/basic/hadoop/yarn/yarncan-shu-pei-zhi.md)
 
 # 1. yarn简介
 
@@ -10,6 +12,8 @@ Hadoop YARN: A framework for job scheduling and cluster resource management.
 
 ![](/assets/yarn.webp)
 
+在Yarn中我们把`job`的概念换成了`application`。
+
 # 2. YARN组件架构
 
 ![](/assets/yarn2.webp)
@@ -18,13 +22,13 @@ Yarn主要由以下几个组件组成：
 
 1. ResourceManager：Global（全局）的进程
 2. NodeManager：运行在每个节点上的进程
-3. ApplicationMaster：Application-specific（应用级别）的进程
+3. ApplicationMaster：`Application-specific`（应用级别）的进程
  - Scheduler：是ResourceManager的一个组件
- - Container：节点上一组CPU和内存资源
+ - Container：节点上一组`CPU`和`内存`资源
 
 ## 2.1 Container
 
-Container是Yarn框架的计算单元，是具体执行应用task（如map task、reduce task）的基本单位。
+Container是Yarn框架的计算单元，是具体执行应用`task`（如map task、reduce task）的基本单位。
 
 Container和集群节点的关系是：一个节点会运行多个Container，但一个Container不会跨节点。
 
@@ -43,7 +47,7 @@ Container和集群节点的关系是：一个节点会运行多个Container，�
 
 NodeManager进程运行在集群中的节点上，每个节点都会有自己的NodeManager。
 
-NodeManager是一个slave服务：它负责接收ResourceManager的资源分配请求，分配具体的Container给应用。同时，它还负责监控并报告Container使用信息给ResourceManager。通过和ResourceManager配合，NodeManager负责整个Hadoop集群中的资源分配工作。
+NodeManager是一个`slave`服务：它负责接收ResourceManager的资源分配请求，分配具体的Container给应用。同时，它还负责监控并报告Container使用信息给ResourceManager。通过和ResourceManager配合，NodeManager负责整个Hadoop集群中的资源分配工作。
 
 ResourceManager是一个全局的进程，而NodeManager只是每个节点上的进程，管理这个节点上的资源分配和监控运行节点的健康状态。下面是NodeManager的具体任务列表：
 
