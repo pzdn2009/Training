@@ -9,6 +9,7 @@
 * [HDFSJAVAAPI](/basic/hadoop/hdfs/hdfsjavaapi.md)
 * [NameNode工作机制2](/basic/hadoop/hdfs/namenodegong-zuo-ji-zhi-2.md)
 * [HDFS-参数配置](/basic/hadoop/hdfs/hdfscan-shu-pei-zhi.md)
+* [hadoop-sh](/basic/hadoop/hdfs/hadoop-sh.md)
 
 Maven依赖：
 

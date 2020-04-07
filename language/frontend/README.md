@@ -13,6 +13,77 @@
 
 前端技術棧
 
+# V2
+
+## 2.6 less
+
+1. less原理；
+2. Variables;
+3. Mixins;
+4. Nesting;
+5. Operations;
+6. Escaping;
+7. Functions;
+8. Namespaces and Accessors;
+9. Scope;
+10. Comments,Importing;
+
+## 2.5 Antd
+
+1. 组件：Icon；
+2. 组件：Typography；
+3. 组件：Grid；
+4. 组件：Layout；
+5. 色彩；
+
+## 2.4 dva
+
+1. 知识地图；
+2. Dva概念：state，action，dispatch；
+3. Dva概念：Reducer；
+4. 快速上手步骤；
+5. Count例子；
+6. User Dashboard例子；
+
+## 2.3 Umi
+
+1. config:10;
+2. config:10;
+3. config:10;
+4. api: dynamic,history,;
+5. api: Link,NavLink;
+6. plugin: access;
+7. plugin: layout;
+
+## 2.2 React
+
+1. 组件State；
+2. Event处理；
+3. 表单与事件；
+4. React-Redux todolist；
+5. react-router了解；
+
+## 2.1 ES6
+
+1. Spread Operator;
+2. String Template；
+3. Modules；
+4. Classes；
+5. this;
+6. Prototype；
+
+## 2.0 ts
+
+1. 中文网：基础类型 & 变量声明；
+2. 接口 & 类
+3. 函数 & 泛型
+4. 枚举 & 类型推导
+5. Sysmbols & 迭代器和生成器
+6. 模块 & 命名空间；
+7. 模块解析 & 声明合并；
+8. JXS & 装饰器；
+9. tsconfig
+
 # V1
 
 按照番茄时间来做

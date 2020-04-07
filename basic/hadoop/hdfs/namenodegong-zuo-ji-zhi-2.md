@@ -38,5 +38,5 @@ hadoop dfsadmin -safemode enter
   <description> 1分钟检查一次操作次数</description>
 </property >
 ```
-* 定时
-* 定量
+* 定时：默认一个小时
+* 定量：默认1 million。
