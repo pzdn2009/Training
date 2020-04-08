@@ -10,24 +10,39 @@ _主版本.次版本.释出版本-修改版本_
 
 命令：
 
-```text
+```bash
+# 查看帮忙
+man uname
+# 查看全部 
+uname -a
+# 显示操作系统的发行编号
 uname -r #3.16.0-23-generic
+uname -s/-r/-n/-m
+
+# prints certain LSB (Linux Standard Base) and Distribution information.
 lsb_release -a #
 
-//output
+//ubantu
 Distributor ID: Ubuntu
 Description: Ubuntu 14.10
 Release: 14.10
 Codename: utopic
+
+//centos
+LSB Version:    :core-4.1-amd64:core-4.1-noarch
+Distributor ID: CentOS
+Description:    CentOS Linux release 7.7.1908 (Core)
+Release:        7.7.1908
+Codename:       Core
 ```
 
-**Distribution**:Kernel + Softwares + Tools 称为linux发行版。
+>**Distribution**:Kernel + Softwares + Tools 称为linux发行版。
 
-**POSIX** Portable Operating System Interface，可携式操作系统接口——规范内核和应用程序之间的接口。
+>**POSIX** Portable Operating System Interface，可携式操作系统接口——规范内核和应用程序之间的接口。
 
-**LSB** Linux Standard Base。
+>**LSB** Linux Standard Base。
 
-**FHS** File system Hierarchy Standard。
+>**FHS** File system Hierarchygroff Standard。
 
 Linux包含内核和系统调用。
 
@@ -37,9 +52,9 @@ Linux是没有图形界面的，所谓的图形界面是一套软件。X Window�
 
 **Terminal**：我们并不是直接与系统打交道，而是通过一个叫做 Shell 的中间程序来完成的。gnome-terminal，kconsole，xterm，rxvt，kvt，nxterm 和 eterm，xfce 。
 
-**tty**：\[Ctrl\]+\[Alt\]+\[F1\]～\[F6\]，\[Ctrl\]+\[Alt\]+\[F7\]，对应\/dev\/tty 设备。
+**tty**：[Ctrl]+[Alt]+[F1]～[F6]，[Ctrl]+[Alt]+[F7]，对应`/dev/tty` 设备。
 
-**Shell类型**：UNIX\/Linux 中比较流行的常见的 Shell 有 bash，zsh，ksh，csh。
+**Shell类型**：UNIX/Linux 中比较流行的常见的 Shell 有 `bash，zsh，ksh，csh`。
 
 **风格切换**
 
@@ -112,6 +127,8 @@ Section区段列表：
 
 ### 4.1 which
 
+shows the full path of (shell) commands.
+
 Locate a program file in the user's path.
 
 ```text
@@ -127,7 +144,7 @@ Locate the binary, source, and manual page files for a command.
 ```text
 whereis [-bmsu] command #b：binary，m：manual，s：source源文件，u：除掉这三者
 whereis ifconfig #/sbin/ifconfig /user/share…/ifconfig.8.gz，对于不同的用户，搜索结果应该是相同的，因为不是从PATH查找。
-whereis -m passwd
+whereis -m passwd # Search only for manuals
 ```
 
 ### 4.3 locate
@@ -149,7 +166,7 @@ find /etc/ -name interfaces
 find /home/pzdn/Code -name *.c -exec chmod g+w {} \;
 ```
 
-与时间相关的选项： ![](../../../.gitbook/assets/linuxfind%20%281%29.png)
+与时间相关的选项： ![](../../../../assets/linuxfind%20%281%29.png)
 
 * mtime n: n 为数字，表示为在n天之前的“一天之内”修改过的文件
 * mtime +n: 列出在n天之前（不包含n天本身）被修改过的文件

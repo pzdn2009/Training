@@ -14,10 +14,12 @@
 * sudoedit 
 
 免sudo：
+编辑/etc/sudoers
 
-> 1. 编辑/etc/sudoers
->
-> \#\# Allow root to run any commands anywhere root ALL=\(ALL\) ALL 添加：
+```
+# Allow root to run any commands anywhere 
+root ALL=(ALL) ALL 
 
-user1 ALL=\(root\) NOPASSWD: /usr/sbin/useradd, /usr/sbin/usermod
-
+添加：
+user1 ALL=(root) NOPASSWD: /usr/sbin/useradd, /usr/sbin/usermod
+```

@@ -100,7 +100,7 @@ centos模板制作，yum格式，进程，sed与awk应用场景。
 ### V1.2
 
 1. 系统简介，Add：GNU，GPL Linux的版本，命令查找;
-2. 用户文件目录，Add:chgrp,权限解释，\/etc，\/bin；
+2. 用户文件目录，Add:chgrp,权限解释，/etc，/bin；
 3. vim编辑器，Add：块选择，环境设置
 4. 磁盘，Add：硬盘的组成
 5. 添加进程节

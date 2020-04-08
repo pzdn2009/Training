@@ -47,7 +47,7 @@ if [ $# = 0 ]; then
   exit
 fi
 
-COMMAND=$1
+COMMAND=$1 #hadoop fs
 # 打印帮助命令
 case $COMMAND in
   # usage flags
@@ -164,3 +164,6 @@ case $COMMAND in
 
 esac
 ```
+
+
+
