@@ -678,6 +678,8 @@
     * [Scala-单例对象和正则表达式](deco/spark/scala/scaladan-li-dui-xiang-he-zheng-ze-biao-da-shi.md)
     * [Scala-For表达式和提取器对象](deco/spark/scala/scala-forbiao-da-shi-he-ti-qu-qi-dui-xiang.md)
     * [Scala-泛型类和上下界](deco/spark/scala/scalafan-xing-lei-he-shang-xia-jie.md)
+    * [Scala-多态方法和类型推到](deco/spark/scala/scaladuo-tai-fang-fa-he-lei-xing-tui-dao.md)
+    * [Scala-运算符和传名参数](deco/spark/scala/scalayun-suan-fu-he-chuan-ming-can-shu.md)
 * [ANTLR4](deco/kube/antlr4.md)
 
 ## PM
@@ -695,6 +697,9 @@
     * [微信开放平台](solution/she-ji-yu-jia-gou/wechat/wei-xin-kai-fang-ping-tai.md)
     * [微信公众平台](solution/she-ji-yu-jia-gou/wechat/wei-xin-gong-zhong-ping-tai.md)
     * [小程序](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu.md)
+      * [miniapp-api列表](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu/miniapp-apilie-biao.md)
+      * [miniapp-服务端](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu/miniappfu-wu-duan.md)
+      * [miniapp-登录授权](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu/miniappdeng-lu-shou-quan.md)
     * [微信支付](solution/she-ji-yu-jia-gou/wechat/wei-xin-zhi-fu.md)
 * [源码阅读](solution/yuan-ma-yue-du.md)
 
