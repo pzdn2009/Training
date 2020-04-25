@@ -4,8 +4,8 @@ Spring Boot官网：[http://projects.spring.io/spring-boot/](http://projects.spr
 
 Docs: [http://docs.spring.io/spring-boot/docs/current/reference/html/](http://docs.spring.io/spring-boot/docs/current/reference/html/)
 
-* swagger
-* restapi
+* [swagger](/language/java/spring/springboot/swagger.md)
+* [restapi](/language/java/spring/springboot/restapi.md)
 * JPA
 * MySQL
 * 單元測試
