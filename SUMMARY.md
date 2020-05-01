@@ -580,6 +580,7 @@
   * [Java分布式](language/java/javafen-bu-shi/README.md)
     * [Zipkin](language/java/javafen-bu-shi/zipkin.md)
   * [Utils](language/java/utils-1.md)
+  * [Dubbo](language/java/bian-cheng/dubbo.md)
 * [Vue](language/vue/README.md)
   * [Vue技术点](language/vue/vue-ji-shu-dian/README.md)
     * [vue-router](language/vue/vue-ji-shu-dian/vue-router.md)
@@ -593,6 +594,7 @@
   * [Nuxt](language/vue/nuxt/README.md)
     * [router分析](language/vue/nuxt/router-fen-xi.md)
   * [VueAdminTemplate](language/vue/vueadmintemplate.md)
+* [Kotlin](language/r/kotlin.md)
 
 ## DECO
 
@@ -685,9 +687,18 @@
 ## PM
 
 * [產品經理](pm/chan-pin-jing-li.md)
+  * [电商产品](pm/chan-pin-jing-li/dian-shang-chan-pin.md)
+    * [购物车模块](pm/chan-pin-jing-li/dian-shang-chan-pin/gou-wu-che-mo-kuai.md)
+    * [订单模块](pm/chan-pin-jing-li/dian-shang-chan-pin/ding-dan-mo-kuai.md)
+    * [优惠券模块](pm/chan-pin-jing-li/dian-shang-chan-pin/you-hui-quan-mo-kuai.md)
+  * 原型工具
+  * 辅助工具
 * [項目經理](pm/xiang-mu-jing-li/README.md)
   * [项目经理的本质](pm/xiang-mu-jing-li/xiang-mu-jing-li-de-ben-zhi.md)
   * [授权](pm/xiang-mu-jing-li/shou-quan.md)
+  * [番茄工作法](pm/xiang-mu-jing-li/fan-qie-gong-zuo-fa.md)
+  * [6Sigma](pm/xiang-mu-jing-li/6sigma.md)
+  * scrum
 * [练字](pm/lian-zi.md)
 
 ## Solution
@@ -701,6 +712,17 @@
       * [miniapp-服务端](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu/miniappfu-wu-duan.md)
       * [miniapp-登录授权](solution/she-ji-yu-jia-gou/wechat/xiao-cheng-xu/miniappdeng-lu-shou-quan.md)
     * [微信支付](solution/she-ji-yu-jia-gou/wechat/wei-xin-zhi-fu.md)
+  * [飞猪](solution/she-ji-yu-jia-gou/fei-zhu.md)
+    * [飞猪-门票](solution/she-ji-yu-jia-gou/fei-zhu/fei-732a-men-piao.md)
+    * [飞猪-酒店](solution/she-ji-yu-jia-gou/fei-zhu/fei-732a-jiu-dian.md)
+  * [美团旅游](solution/she-ji-yu-jia-gou/mei-tuan-lv-you.md)
+    * [美团-门票](solution/she-ji-yu-jia-gou/mei-tuan-lv-you/mei-56e2-men-piao.md)
+    * [美团-酒店](solution/she-ji-yu-jia-gou/mei-tuan-lv-you/mei-56e2-jiu-dian.md)
+  * [SDK](solution/she-ji-yu-jia-gou/sdk.md)
+  * 插件架构
+  * 选举架构
+  * 安全架构
+  * TOGAF
 * [源码阅读](solution/yuan-ma-yue-du.md)
 
 ## CS

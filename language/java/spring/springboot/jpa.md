@@ -1,18 +1,13 @@
 # JPA
 
-JPA\(Java Persistence API\)。主要是为了简化现有的持久化开发工作和整合ORM技术。JPA是一套规范，不是一套产品。
 
 ## 1. 引用
-
-教程Ref：[https://spring.io/guides/gs/accessing-data-jpa/](https://spring.io/guides/gs/accessing-data-jpa/)
 
 官方文檔Ref：[http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/](http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/)
 
 中文版指南：[https://ityouknow.gitbooks.io/spring-data-jpa-reference-documentation/content/](https://ityouknow.gitbooks.io/spring-data-jpa-reference-documentation/content/)
 
-## 2. 依賴
-
-```markup
+```xml
 <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -20,8 +15,7 @@ JPA\(Java Persistence API\)。主要是为了简化现有的持久化开发工�
 ```
 
 配置：
-
-```text
+```properties
 # 配置数据库
 spring.jpa.database = sql_server
 # 查询时是否显示日志
@@ -34,31 +28,58 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2008Dialect
 ```
 
-## 3. Annotations
-
-### 3.1 Entity的註解
+## 2. 注解
 
 * @Entity。對應關係型DB表
 * @Document。支持Mongo表
 * @Id。對應主鍵
-* @GeneratedValue\(strategy=GenerationType.AUTO\)。主键的产生策略。
-  * Identity：表自动增长字段，Oracle不支持这种方式；
-  * AUTO：JPA自动选择合适的策略，是默认选项；
-  * Sequence：通过序列产生主键，通过@SequenceGenerator注解指定序列名，Mysql不支持这种方式。
-  * TABLE：通过表产生主键，框架借由表模拟产生主键，使用该策略可以使用更易于数据库的移植。 
-* @Lob。NVARCHAR\(max\)
+* @GeneratedValue(strategy=GenerationType.AUTO)。主键的产生策略。
+* Identity：表自动增长字段，Oracle不支持这种方式；
+ * AUTO：JPA自动选择合适的策略，是默认选项；
+ * Sequence：通过序列产生主键，通过@SequenceGenerator注解指定序列名，Mysql不支持这种方式。
+ * TABLE：通过表产生主键，框架借由表模拟产生主键，使用该策略可以使用更易于数据库的移植。
+* @Lob。NVARCHAR(max)
 * @Column。對應列名。
+ * name
+ * unique
+ * nullable
+ * inserttable：表示在ORM框架执行插入操作时,该字段是否应出现INSETRT语句中,默认为true
+ * updateable：表示在ORM框架执行更新操作时,该字段是否应该出现在UPDATE语句中,默认为true.
+ * columnDefinition
+ * secondaryTable
 * @Temporal。时间类型。
-  * TemporalType.DATE
-  * TemporalType.TIME
-  * TemporalType.TIMESTAMP
+ * TemporalType.DATE
+ * TemporalType.TIME
+ * TemporalType.TIMESTAMP
+* @Transient
+* @Enumerated
+* @Version
+* @OneToOne
+* @OneToMany
+* @ManyToOne
+* @ManyToMany
+* @Formula 一个SQL表达式，这种属性是只读的,不在数据库生成属性(可以使用sum、average、max等)
+* @OrderBy(name = "group_name ASC, name DESC")
+* @JoinColumn(name = "ONE_ID", referencedColumnName = "ONE_ID")//设置对应数据表的列名和引用的数据表的列名 
+* @MappedSuperclass
+* @Embedded
+* @Embeddable
+* InheritanceType
+ * SINGLE_TABLE：全部合併在一個表
+ * TABLE_PER_CLASS：父子表獨立，屬性冗餘
+ * JOINED：父子表獨立，通過外鍵
 
-### 3.2 Repository的註解
+
+Ref:https://blog.csdn.net/dragonpeng2008/article/details/52297426
+
+Ref：http://www.oracle.com/technetwork/cn/middleware/ias/toplink-jpa-annotations-100895-zhs.html
+
+---
 
 * @Query\(value = "select \* from t\_userinfo limit ?1", nativeQuery =true\)
 * @Transactional
 
-## 4. Repository
+## 3. Repository
 
 Spring Data JPA creates an implementation on the fly when you run the application.
 
@@ -66,7 +87,7 @@ Spring Data JPA creates an implementation on the fly when you run the applicatio
 * CrudRepository
 * PagingAndSortingRepository
 
-### 4.1 CrudRepository
+### 3.1 CrudRepository
 
 ```java
 package hello;
@@ -113,7 +134,7 @@ public void testPageQuery() throws Exception {
 void deleteByUserId(Long id);
 ```
 
-### 4.2 PagingAndSortingRepository
+### 3.2 PagingAndSortingRepository
 
 PagingAndSortingRepository 接口继承于 CrudRepository 接口，拥有CrudRepository 接口的所有方法， 并新增两个方法：分页和排序。 但是**这两个方法不能包含筛选条件**。
 
@@ -168,193 +189,15 @@ Sample：
 
 * 排序語法構造：Sort sort = new Sort\(Direction.DESC, "sort"\).and\(new Sort\(Direction.DESC, "id"\)\);
 
-## 5. Test
+# 4. 高级
 
-```java
-    @Bean
-    public CommandLineRunner demo(CustomerRepository repository) {
-        return (args) -> {
-            // save a couple of customers
-            repository.save(new Customer("Jack", "Bauer"));
-            repository.save(new Customer("Chloe", "O'Brian"));
-            repository.save(new Customer("Kim", "Bauer"));
-            repository.save(new Customer("David", "Palmer"));
-            repository.save(new Customer("Michelle", "Dessler"));
-
-            // fetch all customers
-            log.info("Customers found with findAll():");
-            log.info("-------------------------------");
-            for (Customer customer : repository.findAll()) {
-                log.info(customer.toString());
-            }
-            log.info("");
-
-            // fetch an individual customer by ID
-            Customer customer = repository.findOne(1L);
-            log.info("Customer found with findOne(1L):");
-            log.info("--------------------------------");
-            log.info(customer.toString());
-            log.info("");
-
-            // fetch customers by last name
-            log.info("Customer found with findByLastName('Bauer'):");
-            log.info("--------------------------------------------");
-            for (Customer bauer : repository.findByLastName("Bauer")) {
-                log.info(bauer.toString());
-            }
-            log.info("");
-        };
-    }
-```
-
-## 6. 坑
-
-### 6.1 MS SQL Exception: Incorrect syntax near '@P0'
-
-解決：MS SQL TOP需要加上括號
-
-```sql
-SELECT TOP (?)
-```
-
-使用2008的方言：
-
-```text
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServer2008Dialect
-```
-
-Ref：Upgraded hibernate to version 5.x and came across this issue. Had to update "hibernate.dialect" configuration from org.hibernate.dialect.SQLServerDialect to org.hibernate.dialect.SQLServer2012Dialect.
-
-### 6.2 映射NVARCHAR
-
-NVARCHAR\(MAX\)使用@Lob來完成映射
-
-### 6.3 映射UNIQUEIDENTIFIER
-
-用類型UUID不行，改為String即可。
-
-```java
-@Id
-@GenericGenerator(name = "generator", strategy = "guid", parameters = {})
-@GeneratedValue(generator = "generator")
-@Column(name = "APPLICATION_ID" , columnDefinition="uniqueidentifier")
-private String id = UUID.randomUUID().toString();
-```
-
-### 6.4 hb5.0命名策略
-
-Ref：[https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc\#naming-strategies](https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#naming-strategies)
-
-```text
-# 有 ImprovedNamingStrategy的效果。
-org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-
-# 有 DefaultNamingStrategy的效果。
-org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-```
-
-### 6.5 多條件查詢與分頁
-
-spring Data JPA支持JPA2.0的Criteria查询，相应的接口是JpaSpecificationExecutor。
-
-**Criteria 查询**：是一种类型安全和更面向对象的查询 。
-
-```java
-private class MySpec implements Specification<ResourceItem> {
-
-    private GetResourceItemListRequestDTO requestDTO;
-
-    public MySpec(GetResourceItemListRequestDTO requestDTO) {
-        this.requestDTO = requestDTO;
-    }
-
-    @Override
-    public Predicate toPredicate(Root<ResourceItem> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-
-        List<Predicate> list = new ArrayList<Predicate>();
-
-        list.add(cb.equal(root.get("applicationID"), requestDTO.getApplicationId()));
-        list.add(cb.equal(root.get("categoryID"), requestDTO.getCategoryId()));
-
-        Predicate[] p = new Predicate[list.size()];
-
-        return cb.and(list.toArray(p));
-    }
-}
-
-var query = repository.findAll(new MySpec(requestDTO),new PageRequest(requestDTO.getPage(), requestDTO.getSize()));
-```
-
-手殘的：PageRequest的page與size傳遞反了。
-
-### 6.6 映射tinyint
-
-对应java的Byte类型。
-
-## 7. JPA中使用Convertor
-
-AttributeConverter
-
-* 持久化enum
-* 加解密数据
-* 持久化日期
-
-轉換枚舉值：
-
-```java
-@Convert(converter = TransactionOperation.Converter.class)
-private TransactionOperation operationType;
-
-public enum TransactionOperation {
-    PAY(1, "收款"),
-    AUTHORIZE(3, "預授權"),
-
-        @Getter
-    private int code;
-
-    @Getter
-    private String chineseName;
-
-    TransactionOperation(int code, String name_ch) {
-        this.code = code;
-        this.chineseName = name_ch;
-    }
-
-    @javax.persistence.Converter(autoApply = true)
-    public static class Converter implements AttributeConverter<TransactionOperation, String> {
-        @Override
-        public String convertToDatabaseColumn(TransactionOperation transactionOperation) {
-            return transactionOperation.name();
-        }
-
-        @Override
-        public TransactionOperation convertToEntityAttribute(String s) {
-            return TransactionOperation.valueOf(s);
-        }
-    }
-}
-```
-
-JPA中的日期轉換：
-
-```java
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-
-@Converter(autoApply = true)
-public class LocalDateTimeAttributeConverter implements AttributeConverter<LocalDateTime, Timestamp> {
-
-    @Override
-    public Timestamp convertToDatabaseColumn(LocalDateTime locDateTime) {
-        return (locDateTime == null ? null : Timestamp.valueOf(locDateTime));
-    }
-
-    @Override
-    public LocalDateTime convertToEntityAttribute(Timestamp sqlTimestamp) {
-        return (sqlTimestamp == null ? null : sqlTimestamp.toLocalDateTime());
-    }
-}
-```
-
+* 命名查询
+* @Query
+* 命名参数
+* 集成层次
+* @QueryHint
+* @NamedEntityGraph
+* Projection
+* Specifications
+* QueryByExample
+* Auditing
