@@ -694,8 +694,11 @@
     * [支付模块](pm/chan-pin-jing-li/dian-shang-chan-pin/zhi-fu-mo-kuai.md)
     * [充值提现模块](pm/chan-pin-jing-li/dian-shang-chan-pin/chong-zhi-ti-xian-mo-kuai.md)
     * [会员积分模块](pm/chan-pin-jing-li/dian-shang-chan-pin/hui-yuan-ji-fen-mo-kuai.md)
+    * [评论模块](pm/chan-pin-jing-li/dian-shang-chan-pin/ping-lun-mo-kuai.md)
+    * [账单模块](pm/chan-pin-jing-li/dian-shang-chan-pin/zhang-dan-mo-kuai.md)
   * 原型工具
   * 辅助工具
+  * [教育产品](pm/chan-pin-jing-li/jiao-yu-chan-pin.md)
 * [項目經理](pm/xiang-mu-jing-li/README.md)
   * [项目经理的本质](pm/xiang-mu-jing-li/xiang-mu-jing-li-de-ben-zhi.md)
   * [授权](pm/xiang-mu-jing-li/shou-quan.md)
