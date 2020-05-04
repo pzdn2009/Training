@@ -696,6 +696,7 @@
     * [会员积分模块](pm/chan-pin-jing-li/dian-shang-chan-pin/hui-yuan-ji-fen-mo-kuai.md)
     * [评论模块](pm/chan-pin-jing-li/dian-shang-chan-pin/ping-lun-mo-kuai.md)
     * [账单模块](pm/chan-pin-jing-li/dian-shang-chan-pin/zhang-dan-mo-kuai.md)
+    * [充值提现模块2](pm/chan-pin-jing-li/dian-shang-chan-pin/chong-zhi-ti-xian-mo-kuai-2.md)
   * 原型工具
   * 辅助工具
   * [教育产品](pm/chan-pin-jing-li/jiao-yu-chan-pin.md)
