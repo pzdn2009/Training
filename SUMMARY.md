@@ -1,6 +1,7 @@
 # Summary
 
 * [序](README.md)
+* [Resume](resume.md)
 
 ## Basic
 
