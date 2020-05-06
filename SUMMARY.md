@@ -1,7 +1,6 @@
 # Summary
 
 * [序](README.md)
-* [Resume](resume.md)
 
 ## Basic
 
@@ -809,4 +808,5 @@
   * [核心技术架构](cs/amian-shi/he-xin-ji-zhu-jia-gou.md)
   * [自我介绍](cs/amian-shi/zi-wo-jie-shao.md)
 * [Compiler](cs/operatingsystem/compiler.md)
+* [Resume](resume.md)
 
