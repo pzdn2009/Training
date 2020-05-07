@@ -706,6 +706,12 @@
   * [番茄工作法](pm/xiang-mu-jing-li/fan-qie-gong-zuo-fa.md)
   * [6Sigma](pm/xiang-mu-jing-li/6sigma.md)
   * scrum
+* [RD](pm/rd.md)
+  * [DevSpec](pm/rd/devspec.md)
+    * [代码提交规范](pm/rd/devspec/dai-ma-ti-jiao-gui-fan.md)
+    * [分支管理规范](pm/rd/devspec/fen-zhi-guan-li-gui-fan.md)
+    * [API合规](pm/rd/devspec/apihe-gui.md)
+    * [DB合规](pm/rd/devspec/dbhe-gui.md)
 * [练字](pm/lian-zi.md)
 
 ## Solution
