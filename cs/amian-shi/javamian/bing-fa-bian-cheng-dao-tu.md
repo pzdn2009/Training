@@ -47,7 +47,12 @@
  * 悲观乐观，阻塞/自旋，无锁/偏向锁/轻量级锁/重量级锁，公平/非公平，可重入，共享/排他
 * [JAVA对象头](/cs/amian-shi/javamian/dui-xiang-tou.md)
  * 锁的升级
- 
+* Synchronized“ 锁 ”到底是什么 ？如何确定对象的锁 ？
+* Synchronized是不是重入锁？重入锁的原理？
+* JVM对JAVA的原生锁做了什么优化？
+* ReetrantLock是如何实现可重用性的？
+
+
 ## 1.4工具包
 
 * LockSupport工具
@@ -59,4 +64,4 @@
  * await, countdown（倒数，递减1）
  * 使用AQS
 * Cyclicbarrier
-
+* Java线程同步器有哪些？
