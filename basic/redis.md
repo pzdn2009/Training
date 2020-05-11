@@ -3,11 +3,11 @@
 * [Redis简介](/basic/redis/redisjian-jie.md)
 * [Redis数据类型](/basic/redis/redisshu-ju-lei-xing.md)
 * [Redis线程模型](/basic/redis/redisxian-cheng-mo-xing.md)
+* [Redis持久化原理](/basic/redis/redischi-jiu-hua-yuan-li.md)
+* [Redis事务](/basic/redis/redisshi-wu.md)
+* [Redis主从复制](/basic/redis/rediszhu-cong-fu-zhi.md)
 
-Redis的两种持久化操作以及如何保障数据安全（快照和AOF）
-如何防止数据出错（Redis事务）
 如何使用流水线来提升性能
-Redis主从复制
 Redis集群的搭建
 Redis的几种淘汰策略
 Redis集群宕机，数据迁移问题
@@ -19,11 +19,7 @@ Redis缓存使用有很多，怎么解决缓存雪崩和缓存穿透？
 Redis为什么这么快
 数据类型
 Redis的应用场景
-持久化
-什么是Redis持久化？
-Redis 的持久化机制是什么？各自的优缺点？
-如何选择合适的持久化方式
-Redis持久化数据和缓存怎么做扩容？
+
 过期键的删除策略
 Redis的过期键的删除策略
 Redis key的过期时间和永久有效分别怎么设置？
@@ -34,15 +30,6 @@ Redis的内存淘汰策略有哪些
 Redis主要消耗什么物理资源？
 Redis的内存用完了会发生什么？
 Redis如何做内存优化？
-事务
-什么是事务？
-Redis事务的概念
-Redis事务的三个阶段
-Redis事务相关命令
-事务管理（ACID）概述
-Redis事务支持隔离性吗
-Redis事务保证原子性吗，支持回滚吗
-Redis事务其他实现
 集群方案
 哨兵模式
 官方Redis Cluster 方案(服务端路由查询)
@@ -95,14 +82,16 @@ Redis回收使用的是什么算法？
 
 ## V0.3 Redis应用
 
-1. Redis数据类型
+1. Redis数据类型；
+2. Redis计数器应用；
 
 ## V0.2 Redis原理
 
-1. Redis单线程
+1. Redis单线程；
+2. 什么是Redis持久化；
+3. Redis主从复制；
+4. Redis事务；
 
 ## V0.1 Redis简介
 
 1. 什么是Redis，Redis的优缺点；
-
-
