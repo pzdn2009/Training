@@ -15,16 +15,13 @@
 
 S1：500设置，404设置，双备，查看日志和分析日志（工具），nginx-rrd，client IP转发，GoAccess。监控。安装第三方插件。http到https，https到http。
 
-timeout，keepalive，server，location，匹配，反向代理，upstream，proxy\_pass，个数参数，代理cookie，多个upstream，变量定义与使用，CGI（Fast CGI、SCGI、uWSGI），内置变量参数$request\_uri，X-Real-IP，X-Forwarded-For。
-
-1. 配置文件结构，server，location；
-2. 404设置
-3. upstream
-
+timeout，keepalive，server，location，匹配，反向代理，代理cookie，多个upstream，变量定义与使用，CGI（Fast CGI、SCGI、uWSGI），内置变量参数$request\_uri，X-Real-IP，X-Forwarded-For。
 
 ## V0.2 
 
 1. Nginx简介；
+2. Nginx Location；
+3. Nginx实战；
 
 ## V0.1
 

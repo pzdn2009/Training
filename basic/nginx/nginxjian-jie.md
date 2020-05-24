@@ -1,6 +1,7 @@
 # Nginx 简介
 
 * [Nginx安装](/basic/nginx/nginxjian-jie/nginxan-zhuang.md)
+* [概念](/basic/nginx/gai-nian.md)
 
 * C10K
 * WEB服务器，Mail服务器

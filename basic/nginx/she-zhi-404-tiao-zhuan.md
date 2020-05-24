@@ -6,7 +6,7 @@ Ref：[http://www.yunweipai.com/archives/22238.html](http://www.yunweipai.com/ar
 
 如果后台Tomcat处理报错抛出404，想把这个状态叫Nginx反馈给客户端或者重定向到某个连接，配置如下：
 
-```text
+```nginx
 upstream www {
 
 server 192.168.1.201:7777 weight=20 max_fails=2 fail_timeout=30s;
