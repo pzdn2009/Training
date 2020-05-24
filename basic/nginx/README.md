@@ -1,5 +1,14 @@
 # Nginx
 
+
+* [Nginx简介](/basic/nginx/nginxjian-jie.md)；
+* [Nginx模块化](/basic/nginx/nginxmo-kuai-hua.md)；
+* [Nginx配置](/basic/nginx/nginxpei-zhi.md)；
+* [Nginx反向代理](/basic/nginx/nginxfan-xiang-dai-li.md)；
+* [Nginx常用指令](/basic/nginx/nginxchang-yong-zhi-ling.md)；
+* [Nginx实战](/basic/nginx/nginxshi-zhan.md)；
+* [Nginx示例配置](/basic/nginx/nginxshi-li-pei-zhi.md)
+
 ## Nginx
 
 ## V1
@@ -8,39 +17,23 @@ S1：500设置，404设置，双备，查看日志和分析日志（工具），
 
 timeout，keepalive，server，location，匹配，反向代理，upstream，proxy\_pass，个数参数，代理cookie，多个upstream，变量定义与使用，CGI（Fast CGI、SCGI、uWSGI），内置变量参数$request\_uri，X-Real-IP，X-Forwarded-For。
 
-### V1.0
-
 1. 配置文件结构，server，location；
 2. 404设置
 3. upstream
 
-## 一个简单的代理配置
 
-本地地址localhost:9100将被代理
+## V0.2 
 
-```nginx
-upstream eshead {
-    server localhost:9100;
-}
-```
+1. Nginx简介；
 
-对外端口为82，proxy\_pass为真正地址
+## V0.1
 
-```nginx
-server {
-        listen       82;
-        server_name  localhost;
+创建大纲：
 
-        location / {
-            root   html;
-            index  index.html index.htm;
-            proxy_pass  http://eshead;
-        }
-
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   html;
-        }
-}
-```
-
+1. Nginx简介；
+2. Nginx模块化；
+3. Nginx配置；
+4. Nginx反向代理；
+5. Nginx常用指令；
+6. Nginx实战；
+7. 示例配置
